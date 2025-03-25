@@ -44,4 +44,5 @@ add_executable(k6 kolok1/zad6.cpp)
 add_executable(k7 kolok1/zad7.cpp)
 add_executable(k8 kolok1/zad8.cpp)
 add_executable(k10 kolok1/zad10.cpp)
+add_executable(k11 kolok1/zad11.cpp)
 

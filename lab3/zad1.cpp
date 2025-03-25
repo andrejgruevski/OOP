@@ -1,63 +1,46 @@
-//
-// Created by Huhe on 3/24/2025.
-//
-#include <iostream>
-#include <cstring>
+#include "iostream"
+#include "cstring"
 using namespace std;
 class MobilePhone{
-
-    char model[20];
-    int year;
-    int serialNumber;
+private:
+    char model[21];
+    int brModel;
+    int godina;
 public:
-    MobilePhone(){}
-    MobilePhone(char *model,int serialNumber,int year){
+    MobilePhone(char *model="", int brModel=0, int godina=0) {
         strcpy(this->model,model);
-        this->year=year;
-        this->serialNumber =serialNumber;
+        this->brModel=brModel;
+        this->godina=godina;
     }
-    ~MobilePhone(){}
-
-    char *getmodel(){
-        return this->model;
+    MobilePhone(const MobilePhone &m){
+        strcpy(this->model,m.model);
+        this->brModel=m.brModel;
+        this->godina=m.godina;
     }
-    int getseriski(){
-        return this->serialNumber;
-    }
-    int getgodina(){
-        return this->year;
-    }
-    void show(){
-        cout<<model<<" "<<serialNumber<<" release year: "<<year;
+    void pechati(){
+        cout<<model<<" "<<brModel<<" release year: "<<godina<<endl;
     }
 };
-
 class Owner{
-    char name[20],surname[20];
+private:
+    char name[20];
+    char surname[20];
     MobilePhone tel;
 public:
-    Owner(){}
-    Owner(char *name,char *surname,MobilePhone tel){
+    Owner(){
+
+    }
+    Owner(char *name, char *surname, MobilePhone tel) {
         strcpy(this->name,name);
         strcpy(this->surname,surname);
         this->tel=tel;
     }
-    ~Owner(){}
-    char *getname(){
-        return this->name;
-    }
-    char *getprezime(){
-        return this->surname;
-    }
-    MobilePhone gettel(){
-        return this->tel;
-    }
+
     void print(){
-        cout<< this->name<<" "<<this->surname<<" has a mobile phone:"<<endl;
-        tel.show();
+        cout<<name<<" "<<surname<<" has a mobile phone: "<<endl;
+        tel.pechati();
     }
 };
-//DO NOT CHANGE THE MAIN FUNCTION
 int main() {
     char model[20];
     int modelNumber;

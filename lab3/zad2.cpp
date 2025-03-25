@@ -52,9 +52,6 @@ public:
         strcpy(imeAerodrom, ia);
     }
 
-    const char* getImeAerodrom() const { return imeAerodrom; }
-    int getBrLetovi() const { return brLetovi; }
-    const Flight* getLL() const { return listaLetovi; }
 };
 
 // Функција за најевтиниот лет
