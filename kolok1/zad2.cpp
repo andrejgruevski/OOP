@@ -11,25 +11,20 @@ private:
 public:
     List(int *n= nullptr, int brN=0)  {
         this->brN=brN;
-        if (brN > 0){
             this->n = new int[brN];
             for (int i = 0; i <brN ; ++i) {
                 this->n[i] = n[i];
             }
-        } else{
-            this->n= nullptr;
-        }
+
     }
     List(const List &l){
         this->brN=l.brN;
-        if (brN > 0){
+
             this->n = new int[brN];
             for (int i = 0; i <brN ; ++i) {
                 this->n[i] = l.n[i];
             }
-        } else{
-            this->n= nullptr;
-        }
+
     }
     ~List(){
         delete[]n;
@@ -37,14 +32,10 @@ public:
     List &operator =(const List &l){
         if (this !=&l){
             delete[]n;
-            if (brN > 0){
                 this->n = new int[brN];
                 for (int i = 0; i <brN ; ++i) {
                     this->n[i] = l.n[i];
                 }
-            } else{
-                this->n= nullptr;
-            }
             this->brN=l.brN;
         }
         return *this;
@@ -110,6 +101,7 @@ public:
         cout<<"Sum: "<<sum()<<" Average: "<<average();
 
     }
+
     int sum(){
         int s=0;
         for (int i = 0; i < brListi; ++i) {
