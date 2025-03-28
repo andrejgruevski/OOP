@@ -17,3 +17,28 @@
 //        За класата да се дефинира default конструктор и конструктор со аргументи.
 //
 //По потреба може да се креираат get и set методи.
+#include "iostream"
+using namespace std;
+
+int main()
+{
+    char stName[100], stSurname[100], stIndex[100];
+    cin>>stName>>stSurname>>stIndex;
+//Testing default constructor for Subject
+    Subject subjects[5];
+    for(int i=0; i<5; i++)
+    {
+        char sbName[100];
+        int c;
+        cin>>sbName>>c;
+//Testing constructor with arguments for Subject
+        subjects[i]=Subject(sbName, c);
+    }
+//Testing default constructor for Student
+    Student student;
+//Testing constructor with arguments for Student and copy constructor for Subject
+    student=Student(stName, stSurname, stIndex, subjects);
+//Testing display() and total() methods
+    student.display();
+    return 0;
+}
