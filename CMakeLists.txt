@@ -3,14 +3,12 @@ project(OOP)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(OOP main.cpp)
-
-
 add_executable(vezhbi1.1 vezhbiLabs/zad1.cpp)
 add_executable(vezhbi1.2 vezhbiLabs/zad2.cpp)
 add_executable(vezhbi1.3 vezhbiLabs/zad3.cpp)
 add_executable(vezhbi1.4 vezhbiLabs/zad4.cpp)
 add_executable(vezhbi1.5 vezhbiLabs/zad5.cpp)
+
 
 
 add_executable(lab1.1 lab1/zad1.cpp)
@@ -33,6 +31,8 @@ add_executable(lab3.8 lab3/zad8.cpp)
 add_executable(lab3.9 lab3/zad9.cpp)
 add_executable(lab3.10 lab3/zad10.cpp)
 add_executable(lab3.11 lab3/zad11.cpp)
+
+add_executable(lab4.1 lab4/zad1.cpp)
 
 
 add_executable(kolok1 kval_kolok/zad1.cpp)
