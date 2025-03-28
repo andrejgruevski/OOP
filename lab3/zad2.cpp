@@ -1,7 +1,27 @@
 //
 // Created by Huhe on 3/24/2025.
 //
-#include "iostream " // За INT_MAX
+//Да се дефинира класа Flight во која што ќе се чуваат податоци за лет:
+//
+//име на лет (низа од максимум 100 карактери)
+//полетување од (низа од максимум 50 карактери)
+//пристигнување во (низа од максимум 50 карактери)
+//цена на лет (цел број)
+//За класата да се дефинира copy конструктор, default конструктор и конструктор со аргументи.
+//Доколку е потребно да се креираат и get методи.
+//
+//Потоа да се креира класа Airport во која што се чуваат следните податоци:
+//
+//име на аеродром (низа од максимум 50 карактери)
+//број на летови на аеродромот(цел број)
+//низа од летови на аеродромот(низа од објекти од Flight класата, max 100)
+//Да се креира конструктор со аргументи за класата.
+//Доколку е потребно да се креира и get методи.
+//
+//Во класата да се креира функција cheapestFlight што ќе го врати најевтиниот лет на аеродромот.
+//
+//ДА НЕ СЕ МЕНУВА MAIN ФУНКЦИЈАТА.
+#include "iostream "
 #include "cstring"
 using namespace std;
 
@@ -12,21 +32,25 @@ private:
     char departure[30];
     int cena;
 public:
-    Flight(const char* _ime = "", const char* _arr = "", const char* _dep = "", int _cena = 0) {
-        strcpy(ime, _ime);
-        strcpy(arrival, _arr);
-        strcpy(departure, _dep);
-        cena = _cena;
+    Flight(const char* ime = "", const char* arr = "", const char* dep = "", int _ena = 0) {
+        strcpy(this->ime, ime);
+        strcpy(this->arrival, arr);
+        strcpy(this->departure, dep);
+        this->cena = cena;
     }
 
     ~Flight() {}
 
-    const char* getFlightName() const { return ime; }
-    const char* getArrival() const { return arrival; }
-    const char* getDeparture() const { return departure; }
-    int getCena() const { return cena; }
+    const char* getFlightName() const{
+        return ime;
+    }
 
-// Copy конструктор
+
+
+    int getCena() const {
+        return cena;
+    }
+
     Flight(const Flight& copyFlight) {
         strcpy(ime, copyFlight.ime);
         strcpy(arrival, copyFlight.arrival);
@@ -41,12 +65,12 @@ private:
     int brLetovi;
     Flight listaLetovi[100];
 public:
-// Конструктор за аеродром
+
     Airport(const char* ia = "", int _brL = 0, Flight* ll = nullptr) {
         brLetovi = _brL;
         if (ll) {
             for (int i = 0; i < _brL; i++) {
-                listaLetovi[i] = ll[i]; // Копирање на летовите од низата ll
+                listaLetovi[i] = ll[i];
             }
         }
         strcpy(imeAerodrom, ia);
@@ -54,7 +78,7 @@ public:
 
 };
 
-// Функција за најевтиниот лет
+
 void cheapestFlight(Flight f[], int n) {
     int cheapest = INT_MAX;
     int index = -1;
@@ -68,15 +92,15 @@ void cheapestFlight(Flight f[], int n) {
 }
 
 int main() {
-// Примерни летови
+
     Flight f1("Flight 101", "Belgrade", "Paris", 250);
     Flight f2("Flight 102", "New York", "London", 150);
     Flight f3("Flight 103", "Berlin", "Dubai", 200);
 
-    Flight flights[] = {f1, f2, f3}; // Масив со летови
-    Airport airport("Nikola Tesla", 3, flights); // Креирање на аеродром
+    Flight flights[] = {f1, f2, f3};
+    Airport airport("Nikola Tesla", 3, flights);
 
-// Пребарување на најевтиниот лет
+
     cheapestFlight(flights, 3);
 
     return 0;

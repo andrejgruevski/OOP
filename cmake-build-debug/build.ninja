@@ -503,6 +503,270 @@ build lab3.3.exe: CXX_EXECUTABLE_LINKER__lab3.2e3_Debug CMakeFiles/lab3.3.dir/la
   TARGET_PDB = lab3.3.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target lab3.4
+
+
+#############################################
+# Order-only phony target for lab3.4
+
+build cmake_object_order_depends_target_lab3.4: phony || CMakeFiles/lab3.4.dir
+
+build CMakeFiles/lab3.4.dir/lab3/zad4.cpp.obj: CXX_COMPILER__lab3.2e4_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad4.cpp || cmake_object_order_depends_target_lab3.4
+  DEP_FILE = CMakeFiles\lab3.4.dir\lab3\zad4.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.4.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.4.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.4
+
+
+#############################################
+# Link the executable lab3.4.exe
+
+build lab3.4.exe: CXX_EXECUTABLE_LINKER__lab3.2e4_Debug CMakeFiles/lab3.4.dir/lab3/zad4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.4.exe
+  TARGET_IMPLIB = liblab3.4.dll.a
+  TARGET_PDB = lab3.4.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.5
+
+
+#############################################
+# Order-only phony target for lab3.5
+
+build cmake_object_order_depends_target_lab3.5: phony || CMakeFiles/lab3.5.dir
+
+build CMakeFiles/lab3.5.dir/lab3/zad5.cpp.obj: CXX_COMPILER__lab3.2e5_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad5.cpp || cmake_object_order_depends_target_lab3.5
+  DEP_FILE = CMakeFiles\lab3.5.dir\lab3\zad5.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.5.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.5.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.5
+
+
+#############################################
+# Link the executable lab3.5.exe
+
+build lab3.5.exe: CXX_EXECUTABLE_LINKER__lab3.2e5_Debug CMakeFiles/lab3.5.dir/lab3/zad5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.5.exe
+  TARGET_IMPLIB = liblab3.5.dll.a
+  TARGET_PDB = lab3.5.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.6
+
+
+#############################################
+# Order-only phony target for lab3.6
+
+build cmake_object_order_depends_target_lab3.6: phony || CMakeFiles/lab3.6.dir
+
+build CMakeFiles/lab3.6.dir/lab3/zad6.cpp.obj: CXX_COMPILER__lab3.2e6_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad6.cpp || cmake_object_order_depends_target_lab3.6
+  DEP_FILE = CMakeFiles\lab3.6.dir\lab3\zad6.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.6.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.6.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.6
+
+
+#############################################
+# Link the executable lab3.6.exe
+
+build lab3.6.exe: CXX_EXECUTABLE_LINKER__lab3.2e6_Debug CMakeFiles/lab3.6.dir/lab3/zad6.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.6.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.6.exe
+  TARGET_IMPLIB = liblab3.6.dll.a
+  TARGET_PDB = lab3.6.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.7
+
+
+#############################################
+# Order-only phony target for lab3.7
+
+build cmake_object_order_depends_target_lab3.7: phony || CMakeFiles/lab3.7.dir
+
+build CMakeFiles/lab3.7.dir/lab3/zad7.cpp.obj: CXX_COMPILER__lab3.2e7_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad7.cpp || cmake_object_order_depends_target_lab3.7
+  DEP_FILE = CMakeFiles\lab3.7.dir\lab3\zad7.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.7.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.7.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.7
+
+
+#############################################
+# Link the executable lab3.7.exe
+
+build lab3.7.exe: CXX_EXECUTABLE_LINKER__lab3.2e7_Debug CMakeFiles/lab3.7.dir/lab3/zad7.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.7.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.7.exe
+  TARGET_IMPLIB = liblab3.7.dll.a
+  TARGET_PDB = lab3.7.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.8
+
+
+#############################################
+# Order-only phony target for lab3.8
+
+build cmake_object_order_depends_target_lab3.8: phony || CMakeFiles/lab3.8.dir
+
+build CMakeFiles/lab3.8.dir/lab3/zad8.cpp.obj: CXX_COMPILER__lab3.2e8_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad8.cpp || cmake_object_order_depends_target_lab3.8
+  DEP_FILE = CMakeFiles\lab3.8.dir\lab3\zad8.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.8.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.8.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.8
+
+
+#############################################
+# Link the executable lab3.8.exe
+
+build lab3.8.exe: CXX_EXECUTABLE_LINKER__lab3.2e8_Debug CMakeFiles/lab3.8.dir/lab3/zad8.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.8.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.8.exe
+  TARGET_IMPLIB = liblab3.8.dll.a
+  TARGET_PDB = lab3.8.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.9
+
+
+#############################################
+# Order-only phony target for lab3.9
+
+build cmake_object_order_depends_target_lab3.9: phony || CMakeFiles/lab3.9.dir
+
+build CMakeFiles/lab3.9.dir/lab3/zad9.cpp.obj: CXX_COMPILER__lab3.2e9_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad9.cpp || cmake_object_order_depends_target_lab3.9
+  DEP_FILE = CMakeFiles\lab3.9.dir\lab3\zad9.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.9.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.9.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.9
+
+
+#############################################
+# Link the executable lab3.9.exe
+
+build lab3.9.exe: CXX_EXECUTABLE_LINKER__lab3.2e9_Debug CMakeFiles/lab3.9.dir/lab3/zad9.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.9.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.9.exe
+  TARGET_IMPLIB = liblab3.9.dll.a
+  TARGET_PDB = lab3.9.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.10
+
+
+#############################################
+# Order-only phony target for lab3.10
+
+build cmake_object_order_depends_target_lab3.10: phony || CMakeFiles/lab3.10.dir
+
+build CMakeFiles/lab3.10.dir/lab3/zad10.cpp.obj: CXX_COMPILER__lab3.2e10_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad10.cpp || cmake_object_order_depends_target_lab3.10
+  DEP_FILE = CMakeFiles\lab3.10.dir\lab3\zad10.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.10.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.10.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.10
+
+
+#############################################
+# Link the executable lab3.10.exe
+
+build lab3.10.exe: CXX_EXECUTABLE_LINKER__lab3.2e10_Debug CMakeFiles/lab3.10.dir/lab3/zad10.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.10.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.10.exe
+  TARGET_IMPLIB = liblab3.10.dll.a
+  TARGET_PDB = lab3.10.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab3.11
+
+
+#############################################
+# Order-only phony target for lab3.11
+
+build cmake_object_order_depends_target_lab3.11: phony || CMakeFiles/lab3.11.dir
+
+build CMakeFiles/lab3.11.dir/lab3/zad11.cpp.obj: CXX_COMPILER__lab3.2e11_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab3/zad11.cpp || cmake_object_order_depends_target_lab3.11
+  DEP_FILE = CMakeFiles\lab3.11.dir\lab3\zad11.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab3.11.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab3.11.dir\lab3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab3.11
+
+
+#############################################
+# Link the executable lab3.11.exe
+
+build lab3.11.exe: CXX_EXECUTABLE_LINKER__lab3.2e11_Debug CMakeFiles/lab3.11.dir/lab3/zad11.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab3.11.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab3.11.exe
+  TARGET_IMPLIB = liblab3.11.dll.a
+  TARGET_PDB = lab3.11.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target kolok1
 
 
@@ -1102,9 +1366,25 @@ build lab2.2: phony lab2.2.exe
 
 build lab3.1: phony lab3.1.exe
 
+build lab3.10: phony lab3.10.exe
+
+build lab3.11: phony lab3.11.exe
+
 build lab3.2: phony lab3.2.exe
 
 build lab3.3: phony lab3.3.exe
+
+build lab3.4: phony lab3.4.exe
+
+build lab3.5: phony lab3.5.exe
+
+build lab3.6: phony lab3.6.exe
+
+build lab3.7: phony lab3.7.exe
+
+build lab3.8: phony lab3.8.exe
+
+build lab3.9: phony lab3.9.exe
 
 build vezhbi1.1: phony vezhbi1.1.exe
 
@@ -1124,7 +1404,7 @@ build vezhbi1.5: phony vezhbi1.5.exe
 #############################################
 # Folder: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
 
-build all: phony OOP.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe kolok1.exe kolok2.exe kolok3.exe kolok4.exe kolok5.exe kolok6.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe
+build all: phony OOP.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe kolok1.exe kolok2.exe kolok3.exe kolok4.exe kolok5.exe kolok6.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe
 
 # =============================================================================
 # Built-in targets
