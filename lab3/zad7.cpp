@@ -16,60 +16,49 @@
 //Во класата да се додаде метод кој ќе проверува дали постојат два исти потпишувачи (имаат ист ЕМБГ).
 #include <iostream>
 #include <cstring>
-
 using namespace std;
-
-class Potpisuvac
-{
+class Potpisuvac{
 private:
-    char name[20];
-    char surname[20];
+    char name[21];
+    char surname[21];
     char embg[14];
 public:
-    Potpisuvac()
-    {
-        *name = '\0';
-        *surname = '\0';
-        *embg = '\0';
+    Potpisuvac(char *name=" ", char *surname=" ", char *embg=" ")  {
+        strcpy(this->name,name);
+        strcpy(this->surname,surname);
+        strcpy(this->embg,embg);
     }
-
-    Potpisuvac(const char *name, const char *surname, const char *embg)
-    {
-        strcpy(this->name, name);
-        strcpy(this->surname, surname);
-        strcpy(this->embg, embg);
+    Potpisuvac(const Potpisuvac &p){
+        strcpy(this->name,p.name);
+        strcpy(this->surname,p.surname);
+        strcpy(this->embg,p.embg);
     }
-
-    const char *getEmbg()
-    {
-        return embg;
-    }
-
-    Potpisuvac(const Potpisuvac &p) : Potpisuvac(p.name, p.surname, p.embg)
-    {}
+    friend class Dogovor;
 };
-
-class Dogovor
-{
+class Dogovor{
 private:
-    int n;
-    char cat[20];
+    int broj;
+    char kategorija[50];
     Potpisuvac p[3];
 public:
-    Dogovor(int n, char *cat, Potpisuvac *p)
-    {
-        this->n = n;
-        strcpy(this->cat, cat);
-        for (int i = 0; i < 3; i++)
-            this->p[i] = p[i];
-    }
+    Dogovor(){
 
-    bool proverka()
-    {
-        for (int i = 0; i < 3; i++)
-            for (int j = i + 1; j < 3; j++)
-                if (strcmp(p[i].getEmbg(), p[j].getEmbg()) == 0)
+    }
+    Dogovor(int broj, char *kategorija, Potpisuvac *p) {
+        this->broj=broj;
+        strcpy(this->kategorija,kategorija);
+        for (int i = 0; i < 3; ++i) {
+            this->p[i] = p[i];
+        }
+    }
+    bool proverka(){
+        for (int i = 0; i < 3; ++i) {
+            for (int j = i + 1; j < 3; ++j) {
+                if (strcmp(p[i].embg, p[j].embg)==0){
                     return true;
+                }
+            }
+        }
         return false;
     }
 };

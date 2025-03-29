@@ -37,75 +37,57 @@ Price: [price], Edition number: [editionNumber]
 
 article.print()
 */
-#include<iostream>
-#include<cstring>
-
+#include "iostream"
+#include "cstring"
 using namespace std;
-
-class Category
-{
+class Category{
 private:
     char name[20];
 public:
-    Category(char *name = "unnamed")
-    {
-        strcpy(this->name, name);
-    }
+    Category(char *name="unamed") {
+        strcpy(this->name,name);
 
-    void print()
-    {
-        cout << "Category: " << name << endl;
+    }
+    void print(){
+        cout<<"Category: "<<name;
     }
 };
-
-class NewsArticle
-{
+class NewsArticle{
 private:
-    Category c;
+    Category category;
     char title[30];
 public:
-    NewsArticle()
-    {
-        strcpy(title, "untitled");
+    NewsArticle(){
+        strcpy(this->title,"untitled");
     }
+    NewsArticle( Category category, char *title="untitled")  {
+        this->category=category;
+        strcpy(this->title,title);
 
-    NewsArticle(Category c, char *title = "untitled")
-    {
-        this->c = c;
-        strcpy(this->title, title);
     }
-
-    void print()
-    {
-        cout << "Article title: " << title << endl;
-        c.print();
+    void print(){
+        cout<<title<<endl;
+        category.print();
     }
 };
-
-class FrontPage
-{
+class FrontPage{
 private:
-    NewsArticle n;
+    NewsArticle naslovna;
     float price;
     int editionNumber;
 public:
-    FrontPage()
-    {
-        editionNumber = 0;
-        price = 0;
+    FrontPage(){
+        price=0;
+        editionNumber=0;
     }
-
-    FrontPage(NewsArticle n, float price, int editionNumber = 0)
-    {
-        this->n = n;
-        this->price = price;
-        this->editionNumber = editionNumber;
+    FrontPage( NewsArticle naslovna, float price, int editionNumber=0)  {
+        this->naslovna=naslovna;
+        this->price=price;
+        this->editionNumber=editionNumber;
     }
-
-    void print()
-    {
-        cout << "Price: " << price << ", Edition number: " << editionNumber << endl;
-        n.print();
+    void print(){
+        cout<<"Price: "<<price<<" , Edition number: "<<editionNumber<<endl;
+        naslovna.print();
     }
 };
 

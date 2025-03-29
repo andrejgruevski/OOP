@@ -23,72 +23,58 @@ pecatiSoPlata(int plata) ги печати сите вработени со пл
 
 На излез да се прикажат прво сите вработени, а потоа само оние со поголема плата од минималната. Треба да се корисатат методите pecatiVraboteni и pecatiSoPlata!
 */
-#include <bits/stdc++.h>
-
+#include "iostream"
+#include "cstring"
 using namespace std;
-
-class Rabotnik
-{
+class Rabotnik {
 private:
     char name[30];
     char surname[30];
     int salary;
 public:
-    Rabotnik()
-    {
-        *name = '\0';
-        *surname = '\0';
-        salary = 0;
+    Rabotnik(char *name=" ", char *surname=" ", int salary=0) {
+        strcpy(this->name,name);
+        strcpy(this->surname,surname);
+        this->salary=salary;
     }
 
-    Rabotnik(char *name, char *surname, int salary)
-    {
-        strcpy(this->name, name);
-        strcpy(this->surname, surname);
-        this->salary = salary;
-    }
-
-    int getSalary() const
-    {
+    int getSalary() const {
         return salary;
     }
-
-    void print()
-    {
-        cout << name << " " << surname << " " << salary << endl;
+    void pecati(){
+        cout<<name<<" "<<surname<<" "<<salary;
     }
 };
-
-class Fabrika
-{
+class Fabrika{
 private:
     Rabotnik r[100];
-    int n;
+    int brR;
 public:
-    Fabrika(Rabotnik *r, int n)
-    {
-        this->n = n;
-        for (int i = 0; i < n; i++)
-            this->r[i] = r[i];
-    }
+    Fabrika(){
 
-    void print()
-    {
+    }
+    Fabrika(Rabotnik *r, int brR) {
+        this->brR=brR;
+        for (int i = 0; i < brR; ++i) {
+            this->r[i]=r[i];
+        }
+    }
+    void print(){
         cout << "Site vraboteni: " << endl;
-
-        for (int i = 0; i < n; i++)
-            r[i].print();
+        for (int i = 0; i < brR; ++i) {
+            r[i].pecati();
+        }
     }
-
-    void printSalary(int salary)
-    {
-        cout << "Vraboteni so plata povisoka od " << salary << " :" << endl;
-
-        for (int i = 0; i < n; i++)
-            if (r[i].getSalary() > salary)
-                r[i].print();
+    void printSalary(int plata){
+        cout << "Vraboteni so plata povisoka od " << plata << " :" << endl;
+        for (int i = 0; i < brR; ++i) {
+            if (r[i].getSalary() >= plata){
+                r[i].pecati();
+            }
+        }
     }
 };
+
 
 int main()
 {

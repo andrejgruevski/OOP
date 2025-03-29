@@ -1,71 +1,106 @@
+//Во оваа задача потребно е да се внесат податоци за насловна страница на списание.
 //
-// Created by Huhe on 3/28/2025.
+//За претставување на насловната страница напишете класа FrontPage која ќе содржи:
 //
-//Да се дефинира класа InvoiceItem во која што ќе се чуваат податоци за една ставка во фактура:
+//објект од класата NewsArticle која ја претставува насловната вест на страницата
+//цена (float price) со предодредена вредност 0
+//број на издание на списанието (int editionNumber) со предодредена вредност 0
+//За класата FrontPage напишете предодреден (default) конструктор и конструктор со параметри. Класата NewsArticle треба да содржи:
 //
-//име на ставка (низа од максимум 100 карактери)
-//цена на ставка (цел број)
-//За класата да се дефинира copy конструктор, default конструктор и конструктор со аргументи.
-//Доколку е потребно да се креира и get методи.
+//објект од класата Category која ја претставува категоријата во која спаѓа веста
+//наслов од максимум 30 знаци (char title[30]) со предодредена вредност untitled
+//За класата NewsArticle напишете предодреден конструктор и конструктор со параметри.
 //
-//Потоа да се креира класа Invoice во која што се чуваат следните податоци:
+//Класата Category треба да содржи име од максимум 20 знаци (char name[20]) со предодредена вредност unnamed.
 //
-//број на фактура (низа од максимум 10 карактери)
-//број на ставки во фактурата (цел број)
-//низа од ставки во фактурата (низа од објекти од InvoiceItem класата, max 100)
-//Да се креира конструктор со аргументи за класата.
-//Доколку е потребно да се креира и get методи.
+//За сите класи треба да напишете соодветен метод за печатење print().
 //
-//Во класата да се креира метода totalPrice што ќе го пресметува вкупниот износ на фактурата. Вкупниот износ на фактурата се пресметува како збир од цените на сите ставки во нејзе.
+//Внимајте на редоследот на параметрите во конструкторите. Не го менувајте main методот.
 //
-//ДА НЕ СЕ МЕНУВА MAIN ФУНКЦИЈАТА.
-#include <iostream>
-#include <cstring>
+//За категоријата се печати само името: Category: [name].
+//
+//За веста се печати насловот, па категоријата во нов ред:
+//
+//
+//
+//Title: [title]
+//
+//category.print()
+//
+//За насловната страница се печати цената и изданието во прв ред, па веста во втор:
+//
+//Price: [price], Edition number: [editionNumber]
+//
+//article.print()
+//*/
+#include<iostream>
+#include<cstring>
+
 using namespace std;
-class InvoiceItem {
+
+class Category
+{
 private:
-    char stavka[100];
-    int cena;
+    char name[20];
 public:
-    InvoiceItem (char stavka[]=" ", int cena=0) {
-        strcpy(this->stavka, stavka);
-        this->cena=cena;
+    Category(char *name = "unnamed")
+    {
+        strcpy(this->name, name);
     }
-    InvoiceItem (InvoiceItem &i) {
-        strcpy(this->stavka, i.stavka);
-        this->cena=i.cena;
-    }
-    ~InvoiceItem() {};
-    int getCena() {
-        return cena;
+
+    void print()
+    {
+        cout << "Category: " << name << endl;
     }
 };
-class Invoice {
+
+class NewsArticle
+{
 private:
-    char br_faktura[10];
-    int br_stavki;
-    InvoiceItem items[100];
+    Category c;
+    char title[30];
 public:
-    Invoice(char br_faktura[], int br_stavki, InvoiceItem items[100]) {
-        strcpy(this->br_faktura, br_faktura);
-        this->br_stavki = br_stavki;
-
-        for (int i = 0; i < br_stavki; i++) {
-            this->items[i] = items[i];
-        }
+    NewsArticle()
+    {
+        strcpy(title, "untitled");
     }
-    Invoice(Invoice &ii) {
-        strcpy(this->br_faktura, ii.br_faktura);
-        this->br_stavki = ii.br_stavki;
 
-        for (int i = 0; i < br_stavki; i++) {
-            this->items[i] = ii.items[i];
-        }
+    NewsArticle(Category c, char *title = "untitled")
+    {
+        this->c = c;
+        strcpy(this->title, title);
     }
-    int totalPrice() {
-        int vkupno=0;
-        for (int i=0; i<br_stavki; i++) {
-            vkupno+=items[i].getCena();
-        } return vkupno;
+
+    void print()
+    {
+        cout << "Article title: " << title << endl;
+        c.print();
+    }
+};
+
+class FrontPage
+{
+private:
+    NewsArticle n;
+    float price;
+    int editionNumber;
+public:
+    FrontPage()
+    {
+        editionNumber = 0;
+        price = 0;
+    }
+
+    FrontPage(NewsArticle n, float price, int editionNumber = 0)
+    {
+        this->n = n;
+        this->price = price;
+        this->editionNumber = editionNumber;
+    }
+
+    void print()
+    {
+        cout << "Price: " << price << ", Edition number: " << editionNumber << endl;
+        n.print();
     }
 };

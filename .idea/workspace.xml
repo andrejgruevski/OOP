@@ -59,60 +59,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-6b555cd8bc5b1ae856ce.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-28T14-11-21-0064.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k1-Debug-fea7931321e3ced73da4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k10-Debug-e5b97646d91e6d47cc79.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k11-Debug-3b3f276616dcd043593a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k2-Debug-e5079f77f66e56bee262.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k3-Debug-129127cdb4b766a30728.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k4-Debug-aab2d4562acf301bb46a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k5-Debug-477ef2ae03922501d546.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k6-Debug-8b3c348827e5e51537ae.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k7-Debug-66c5207d480dd50e6488.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k8-Debug-f99ae543cf0386d3744a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok1-Debug-4bc5a33b46d3662f4edb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2-Debug-8827fec6e0fd93421aa1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok3-Debug-a5e4e67c951b0bb99d31.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok4-Debug-85ec37390be0e581e751.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok5-Debug-5de976c9cfe1cad0d121.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok6-Debug-416ae6b108cb0a60351e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab1.1-Debug-055cd2e5036d9ce98896.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab1.2-Debug-d50a316cdad3fdb97172.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab1.3-Debug-fd43936a0900d64d0368.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab2.1-Debug-b8f99d0a52ca1574f969.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab2.2-Debug-4df5179f1a18fc109cb9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.1-Debug-3385207255e5071b81cb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.10-Debug-35bd28b394c20e53613f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.11-Debug-abbb777934ddc0d2c759.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.2-Debug-1e4672c52c64c636e17c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.3-Debug-7ab71eac8b8d5e774a3d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.4-Debug-94c8d077bc101a17dbae.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.5-Debug-567b6da9b7f9de056d74.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.6-Debug-62a9749cb1b8c23f8b3c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.7-Debug-ab13ae42619ccd073bdb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.8-Debug-49ab854b96e30c5acfb4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab3.9-Debug-ca6eeb48c038c00585de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-lab4.1-Debug-7dbc588e6545328f9b62.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vezhbi1.1-Debug-54ffee91fcf1e07493b8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vezhbi1.2-Debug-12ef1759c3434bf6bd1c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vezhbi1.3-Debug-fb4f3fa962e74d22a1f6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vezhbi1.4-Debug-f8e1b88c02f44edbd179.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-vezhbi1.5-Debug-e14cb28621a7ee96f1a7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3/zad6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/zad7.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad7.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/zad8.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad8.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/zad9.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/zad9.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +76,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -444,7 +400,7 @@
       <workItem from="1743123078845" duration="1634000" />
       <workItem from="1743170715212" duration="302000" />
       <workItem from="1743171031178" duration="1408000" />
-      <workItem from="1743194609084" duration="9071000" />
+      <workItem from="1743194609084" duration="13400000" />
     </task>
     <servers />
   </component>
