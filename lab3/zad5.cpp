@@ -18,8 +18,58 @@
 //
 //По потреба може да се креираат get и set методи.
 #include "iostream"
+#include "cstring"
 using namespace std;
+class Subject{
+    char name[100];
+    int credits;
+public:
+    Subject(){
 
+    }
+    Subject(char *name, int credits) {
+        strcpy(this->name, name);
+        this->credits=credits;
+    }
+    Subject(const Subject &s){
+        strcpy(this->name, s.name);
+        this->credits=s.credits;
+    }
+    friend class Student;
+
+};
+
+class Student{
+private:
+    char name[100];
+    char surname[100];
+    char index[100];
+    Subject subjects[5];
+public:
+    Student(){
+
+    }
+    Student(char *name, char *surname, char *index, Subject *subjects) {
+        strcpy(this->name,name);
+        strcpy(this->surname,surname);
+        strcpy(this->index,index);
+        for (int i = 0; i < 5; ++i) {
+            this->subjects[i] = subjects[i];
+        }
+    }
+
+    int total(){
+        int suma=0;
+        for (int i = 0; i < 5; ++i) {
+            suma+=subjects[i].credits;
+        }
+        return suma;
+    }
+    void display(){
+        cout<<name<<" "<<surname<<" -> "<<index<<" -> "<<total();
+    }
+
+};
 int main()
 {
     char stName[100], stSurname[100], stIndex[100];

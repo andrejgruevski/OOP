@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target m
+
+
+#############################################
+# Order-only phony target for m
+
+build cmake_object_order_depends_target_m: phony || CMakeFiles/m.dir
+
+build CMakeFiles/m.dir/main.cpp.obj: CXX_COMPILER__m_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/main.cpp || cmake_object_order_depends_target_m
+  DEP_FILE = CMakeFiles\m.dir\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\m.dir
+  OBJECT_FILE_DIR = CMakeFiles\m.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target m
+
+
+#############################################
+# Link the executable m.exe
+
+build m.exe: CXX_EXECUTABLE_LINKER__m_Debug CMakeFiles/m.dir/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\m.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = m.exe
+  TARGET_IMPLIB = libm.dll.a
+  TARGET_PDB = m.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target vezhbi1.1
 
 
@@ -1386,6 +1419,8 @@ build lab3.9: phony lab3.9.exe
 
 build lab4.1: phony lab4.1.exe
 
+build m: phony m.exe
+
 build vezhbi1.1: phony vezhbi1.1.exe
 
 build vezhbi1.2: phony vezhbi1.2.exe
@@ -1404,7 +1439,7 @@ build vezhbi1.5: phony vezhbi1.5.exe
 #############################################
 # Folder: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
 
-build all: phony vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe kolok1.exe kolok2.exe kolok3.exe kolok4.exe kolok5.exe kolok6.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe
+build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe kolok1.exe kolok2.exe kolok3.exe kolok4.exe kolok5.exe kolok6.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe
 
 # =============================================================================
 # Built-in targets

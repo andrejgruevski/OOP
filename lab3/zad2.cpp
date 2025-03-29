@@ -21,87 +21,98 @@
 //Во класата да се креира функција cheapestFlight што ќе го врати најевтиниот лет на аеродромот.
 //
 //ДА НЕ СЕ МЕНУВА MAIN ФУНКЦИЈАТА.
-#include "iostream "
+//
+// Created by Huhe on 3/28/2025.
+//
+#include "iostream"
 #include "cstring"
 using namespace std;
-
 class Flight {
 private:
-    char ime[30];
-    char arrival[30];
-    char departure[30];
-    int cena;
+    char name[100];
+    char departure[50];
+    char arrival[50];
+    int price;
 public:
-    Flight(const char* ime = "", const char* arr = "", const char* dep = "", int _ena = 0) {
-        strcpy(this->ime, ime);
-        strcpy(this->arrival, arr);
-        strcpy(this->departure, dep);
-        this->cena = cena;
+    Flight(char *name="", char *departure="", char *arrival="", int price=0) {
+        strcpy(this->name,name);
+        strcpy(this->departure,departure);
+        strcpy(this->arrival,arrival);
+        this->price=price;
+    }
+    Flight(const Flight &f){
+        strcpy(this->name,f.name);
+        strcpy(this->departure,f.departure);
+        strcpy(this->arrival,f.arrival);
+        this->price=f.price;
     }
 
-    ~Flight() {}
-
-    const char* getFlightName() const{
-        return ime;
+    int getPrice() const {
+        return price;
     }
 
-
-
-    int getCena() const {
-        return cena;
+    const char *getName() const {
+        return name;
     }
 
-    Flight(const Flight& copyFlight) {
-        strcpy(ime, copyFlight.ime);
-        strcpy(arrival, copyFlight.arrival);
-        strcpy(departure, copyFlight.departure);
-        cena = copyFlight.cena;
-    }
 };
-
-class Airport {
+class Airport{
 private:
-    char imeAerodrom[30];
-    int brLetovi;
-    Flight listaLetovi[100];
+    char nameAirport[50];
+    int numFlights;
+    Flight flights[100];
 public:
-
-    Airport(const char* ia = "", int _brL = 0, Flight* ll = nullptr) {
-        brLetovi = _brL;
-        if (ll) {
-            for (int i = 0; i < _brL; i++) {
-                listaLetovi[i] = ll[i];
-            }
+    Airport(char *nameAirport=" ", int numFlights=0) {
+        strcpy(this->nameAirport,nameAirport);
+        this->numFlights=numFlights;
+        for (int i = 0; i < numFlights; ++i) {
+            this->flights[i] = flights[i];
         }
-        strcpy(imeAerodrom, ia);
     }
-
 };
 
-
-void cheapestFlight(Flight f[], int n) {
-    int cheapest = INT_MAX;
+void cheapestFlight(Flight arr[], int n){
+    int cheapest = 0;
     int index = -1;
-    for (int i = 0; i < n; i++) {
-        if (f[i].getCena() < cheapest) {
-            cheapest = f[i].getCena();
+    for (int i = 0; i < n; ++i) {
+        if (arr[i].getPrice() < cheapest){
+            cheapest = arr[i].getPrice();
             index = i;
         }
     }
-    cout << "Najevtin let: " << f[index].getFlightName() << " Cena: " << f[index].getCena() << endl;
+    cout<<"Cheapest flight: "<<arr[index].getName()<<" with price: "<<arr[index].getPrice()<<endl;
 }
 
 int main() {
+    int testCase;
+    cin >> testCase;
 
-    Flight f1("Flight 101", "Belgrade", "Paris", 250);
-    Flight f2("Flight 102", "New York", "London", 150);
-    Flight f3("Flight 103", "Berlin", "Dubai", 200);
-
-    Flight flights[] = {f1, f2, f3};
-    Airport airport("Nikola Tesla", 3, flights);
-
-
-    cheapestFlight(flights, 3);
-
+    if (testCase == 1) {
+        char name[100], departure[50], arrival[50];
+        int price;
+        cin >> name >> departure >> arrival >> price;
+        Flight flight(name, departure, arrival, price);
+        cout << "Flight created: " << flight.getName() << " with price: " << flight.getPrice() << endl;
+    }
+    else if (testCase == 2) {
+        char name[100], departure[50], arrival[50];
+        int price;
+        cin >> name >> departure >> arrival >> price;
+        Flight flight1(name, departure, arrival, price);
+        Flight flight2(flight1);
+        cout << "Copied flight: " << flight2.getName() << " with price: " << flight2.getPrice() << endl;
+    }
+    else {
+        int numFlights;
+        cin >> numFlights;
+        Flight flights[10];
+        for (int i = 0; i < numFlights; i++) {
+            char name[100], departure[50], arrival[50];
+            int price;
+            cin >> name >> departure >> arrival >> price;
+            flights[i] = Flight(name, departure, arrival, price);
+        }
+        cheapestFlight(flights, numFlights);
+    }
     return 0;
 }

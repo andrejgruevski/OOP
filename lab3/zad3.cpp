@@ -29,104 +29,78 @@ Price: [price]
 
 Покрај тоа, потребно е да се напише метод cheaperThan(Car* cars, int numCars, float price) кој ќе ги испечати сите објекти Car од низата cars со големина numCars чија цена е помала од price.
 */
-#include<iostream>
-#include<cstring>
-
+#include "iostream"
+#include "cstring"
 using namespace std;
-
 class Date{
 private:
-    int day;
-    int month;
-    int year;
+    int year,month,day;
 public:
-    Date()
-    {
-        day = 0;
-        month = 0;
-        year = 0;
+    Date(){
+
     }
-
-    Date(int day, int month, int year)
-    {
-        this->day = day;
-        this->month = month;
-        this->year = year;
+    Date(int year, int month, int day)  {
+        this->year=year;
+        this->month-month;
+        this->day=day;
     }
-
-    Date(const Date &d) : Date(d.day, d.month, d.year)
-    {}
-
-    void print() const
-    {
-        cout << day << "." << month << "." << year << endl;
+    Date(const Date &d)  {
+        this->year=d.year;
+        this->month-d.month;
+        this->day=d.day;
+    }
+    void print(){
+        cout<<year<<"."<<month<<"."<<day;
     }
 };
-
-class Person
-{
+class Person{
 private:
-    char name[20];
-    char surname[20];
+    char name[21];
+    char surname[21];
 public:
-    Person()
-    {
-        strcpy(name, "not specified");
-        strcpy(surname, "not specified");
+    Person(char *name="not specified", char *surname="not specified") {
+        strcpy(this->name,name);
+        strcpy(this->surname,surname);
+    }
+    void print(){
+        cout<<name<<" "<<surname;
     }
 
-    Person(char *name, char *surname)
-    {
-        strcpy(this->name, name);
-        strcpy(this->surname, surname);
-    }
-
-    Person(Person &p) : Person(p.name, p.surname)
-    {}
-
-    void print()
-    {
-        cout << name << " " << surname << endl;
-    }
 };
-
-class Car
-{
+class Car{
 private:
-    Person p;
-    Date d;
+    Person owner;
+    Date date;
     float price;
 public:
     Car(){
 
-    };
-
-    Car(Person p, Date d, float price){
-        this->p = p;
-        this->d = d;
-        this->price = price;
+    }
+    Car( Person owner,  Date date, float price) {
+        this->owner=owner;
+        this->date=date;
+        this->price=price;
     }
 
     void print(){
-        p.print();
-        d.print();
-        cout << "Price: " << price << endl;
+        owner.print();
+        date.print();
+        cout<<"Price: "<<price;
     }
 
-    float getPrice() const{
+    float getPrice() const {
         return price;
     }
-
 };
-
-void cheaperThan(Car *cars, int n, float price){
-    for (int i = 0; i < n; i++)
-        if (cars[i].getPrice() < price)
+void cheaperThan(Car* cars, int numCars, float price){
+    for (int i = 0; i < numCars; ++i) {
+        if (price > cars[i].getPrice()){
             cars[i].print();
+        }
+    }
 }
+int main(){
 
-int main()
-{
     char name[20];
     char lastName[20];
     int year;
@@ -135,64 +109,59 @@ int main()
     float price;
 
     int testCase;
-    cin >> testCase;
+    cin>>testCase;
 
-    if (testCase == 1)
-    {
-        cin >> name;
-        cin >> lastName;
-        Person lik(name, lastName);
+    if (testCase == 1){
+        cin>>name;
+        cin>>lastName;
+        Person p(name,lastName);
 
-        cin >> year;
-        cin >> month;
-        cin >> day;
-        Date date(year, month, day);
+        cin>>year;
+        cin>>month;
+        cin>>day;
+        Date d(year,month,day);
 
-        cin >> price;
-        Car car(lik, date, price);
+        cin>>price;
+        Car car(p,d,price);
 
         car.print();
     }
-    else if (testCase == 2)
-    {
-        cin >> name;
-        cin >> lastName;
-        Person lik(name, lastName);
+    else if (testCase == 2){
+        cin>>name;
+        cin>>lastName;
+        Person p(name,lastName);
 
-        cin >> year;
-        cin >> month;
-        cin >> day;
-        Date date(Date(year, month, day));
+        cin>>year;
+        cin>>month;
+        cin>>day;
+        Date d(Date(year,month,day));
 
-        cin >> price;
-        Car car(lik, date, price);
+        cin>>price;
+        Car car(p,d,price);
         car.print();
     }
-    else
-    {
+    else{
         int numCars;
-        cin >> numCars;
+        cin>>numCars;
 
         Car cars[10];
-        for (int i = 0; i < numCars; i++)
-        {
-            cin >> name;
-            cin >> lastName;
-            Person lik(name, lastName);
+        for (int i = 0; i < numCars; ++i) {
+            cin>>name;
+            cin>>lastName;
+            Person p(name,lastName);
 
-            cin >> year;
-            cin >> month;
-            cin >> day;
-            Date date(year, month, day);
+            cin>>year;
+            cin>>month;
+            cin>>day;
+            Date d(year,month,day);
 
-            cin >> price;
-            cars[i] = Car(lik, date, price);
+            cin>>price;
+            cars[i] = Car(p,d,price);
         }
         float priceLimit;
-        cin >> priceLimit;
-        cheaperThan(cars, numCars, priceLimit);
+        cin>>priceLimit;
+        cheaperThan(cars,numCars,priceLimit);
     }
-
 
     return 0;
 }

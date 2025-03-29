@@ -19,74 +19,53 @@
 //Во класата да се креира метода totalPrice што ќе го пресметува вкупниот износ на фактурата. Вкупниот износ на фактурата се пресметува како збир од цените на сите ставки во нејзе.
 //
 //ДА НЕ СЕ МЕНУВА MAIN ФУНКЦИЈАТА.
-#include "iostream"
-#include "cstring"
+#include <iostream>
+#include <cstring>
 using namespace std;
-class InoviceItem{
+class InvoiceItem {
 private:
-    char name[100];
-    int price;
+    char stavka[100];
+    int cena;
 public:
-    InoviceItem(char *name="", int price=0) {
-        strcpy(this->name,name);
-        this->price= price;
+    InvoiceItem (char stavka[]=" ", int cena=0) {
+        strcpy(this->stavka, stavka);
+        this->cena=cena;
     }
-    InoviceItem(const InoviceItem &ii){
-        strcpy(this->name,ii.name);
-        this->price=ii.price;
+    InvoiceItem (InvoiceItem &i) {
+        strcpy(this->stavka, i.stavka);
+        this->cena=i.cena;
     }
-    void print()const {
-        cout<<"Item: "<<name<<", Price: "<<price<<endl;
+    ~InvoiceItem() {};
+    int getCena() {
+        return cena;
     }
-    friend class Inovice;
 };
-class Inovice{
-    char numInovice[10];
-    int numInovices;
-    InoviceItem items[100];
+class Invoice {
+private:
+    char br_faktura[10];
+    int br_stavki;
+    InvoiceItem items[100];
 public:
-    Inovice(){
+    Invoice(char br_faktura[], int br_stavki, InvoiceItem items[100]) {
+        strcpy(this->br_faktura, br_faktura);
+        this->br_stavki = br_stavki;
 
-    }
-    Inovice(char *numInovice, int numInovices, InoviceItem *items) {
-        strcpy(this->numInovice, numInovice);
-        this->numInovices = numInovices;
-        for (int i = 0; i < numInovices; ++i) {
+        for (int i = 0; i < br_stavki; i++) {
             this->items[i] = items[i];
         }
     }
-    int totalPrice()const{
-        int sum=0;
-        for (int i = 0; i < numInovices; ++i) {
-            sum+=items[i].price;
+    Invoice(Invoice &ii) {
+        strcpy(this->br_faktura, ii.br_faktura);
+        this->br_stavki = ii.br_stavki;
+
+        for (int i = 0; i < br_stavki; i++) {
+            this->items[i] = ii.items[i];
         }
-        return sum;
     }
-    void print()const{
-        cout<<"Inovice Number: "<<numInovice<<endl;
-        cout<<"Number pf items: "<<numInovices<<endl;
-        for (int i = 0; i < numInovices; ++i) {
-            items[i].print();
-        }
-        cout<<"Total price: "<<totalPrice()<<endl;
+    int totalPrice() {
+        int vkupno=0;
+        for (int i=0; i<br_stavki; i++) {
+            vkupno+=items[i].getCena();
+        } return vkupno;
     }
 };
-int main(){
-
-    char  inoviceNumber[10];
-    int numItems;
-    cin>>inoviceNumber>>numItems;
-
-    InoviceItem items[100];
-    for (int i = 0; i < numItems; ++i) {
-        char itemName[100];
-        int price;
-        cin>>itemName>>price;
-        items[i] = InoviceItem(itemName,price);
-    }
-    Inovice inovice(inoviceNumber,numItems,items);
-    inovice.print();
-
-
-    return 0;
-}

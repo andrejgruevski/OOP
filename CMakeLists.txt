@@ -3,6 +3,9 @@ project(OOP)
 
 set(CMAKE_CXX_STANDARD 17)
 
+
+
+add_executable(m main.cpp)
 add_executable(vezhbi1.1 vezhbiLabs/zad1.cpp)
 add_executable(vezhbi1.2 vezhbiLabs/zad2.cpp)
 add_executable(vezhbi1.3 vezhbiLabs/zad3.cpp)
