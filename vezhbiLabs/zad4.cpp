@@ -1,18 +1,15 @@
-//
-// Created by Huhe on 3/16/2025.
-//
 #include <iostream>
 #include <cstring>
 using namespace std;
 class County{
 private:
-    char name[50];
+    char name[30];
     int gdp;
 public:
     County(){
 
     }
-    County(char *name, int gdp) {
+    County(char *name, int gdp){
         strcpy(this->name,name);
         this->gdp=gdp;
     }
@@ -24,12 +21,11 @@ public:
     int getGdp() const {
         return gdp;
     }
-
 };
 class State{
 private:
-    County *counties;
-    char name[50];
+    County counties[100];
+    char name[31];
     int numCounties;
     static float federalTax;
     bool redState;
@@ -37,16 +33,15 @@ public:
     State(){
 
     }
-    State(const County *counties, char *name, int numCounties, bool redState)  {
+    State( County *counties, char *name, int numCounties, bool redState){
+        for (int i = 0; i < numCounties; ++i) {
+            this->counties[i]=counties[i];
+        }
         strcpy(this->name,name);
         this->numCounties=numCounties;
         this->redState=redState;
-        this->counties = new County[numCounties];
-        for (int i = 0; i < numCounties; ++i) {
-            this->counties[i]= counties[i];
-        }
+//        federalTax++;
     }
-
 
     const char *getName() const {
         return name;
@@ -56,63 +51,57 @@ public:
         return federalTax;
     }
 
-    static void setFederalTax(float tax) {
-       federalTax = tax;
+    static void setFederalTax(float fedTax) {
+        State::federalTax = fedTax;
     }
-    static void increaseFederalTax(float n){
-        federalTax +=n;
+    static float increaseFederalTax(float increase){
+        State::federalTax+=increase;
     }
-
-    bool isRedState() const {
-        return redState;
-    }
-
-    double getFullGDP(){
-        double sum=0;
+    float getFullGDP(){
+        float vkupno=0;
         for (int i = 0; i < numCounties; ++i) {
-            sum += counties[i].getGdp();
+            vkupno+=counties[i].getGdp();
         }
-        return sum * (1- federalTax/100.0);
+        vkupno = vkupno * (1.0 - federalTax/100);
+        return vkupno;
     }
-    void print()const{
+    void print(){
         cout<<"State of "<<name<<endl;
         for (int i = 0; i < numCounties; ++i) {
             cout<<counties[i].getName()<<endl;
         }
-
     }
-    ~State(){
-        delete[]counties;
-    };
-
     friend void printStatesInGDPOrderByStateType(State states[], int numStates, bool redStates);
 };
 void printStatesInGDPOrderByStateType(State states[], int numStates, bool redStates){
-    State sortiatni[numStates];
-    int counter = 0 ;
-    for (int i = 0; i < numStates; ++i) {
-        if (states[i].isRedState() == redStates){
-            sortiatni[counter++] = states[i];
-        }
-    }
 
-    for (int i = 0; i < counter-1; ++i) {
-        for (int j = 0; j < counter - i - 1; ++j) {
-            if (sortiatni[j].getFullGDP() < sortiatni[j+1].getFullGDP()){
-                swap(sortiatni[j],sortiatni[j+1]);
+    for (int i = 0; i < numStates; ++i) {
+        for (int j = 0; j < numStates-1; ++j) {
+            if (states[i].getFullGDP() > states[j].getFullGDP()){
+                State tmp = states[j];
+                states[j]=states[j+1];
+                states[j+1]=tmp;
+
+            }
+        }
+
+    }
+    if (redStates){
+        for (int i = 0; i < numStates; ++i) {
+            if (states[i].redState){
+                cout<<states[i].name<<endl;
+            }
+        }
+    }else {
+        for (int i = 0; i < numStates; ++i) {
+            if (!states[i].redState) {
+                cout << states[i].name << endl;
             }
         }
     }
-    for (int i = 0; i < counter; ++i) {
-        sortiatni[i].print();
-    }
 }
-
-
 //main should remain unchanged!
 float State::federalTax = 15.5;
-
-
 
 int main() {
     int n;
