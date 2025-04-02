@@ -42,11 +42,7 @@ public:
         this->redState=redState;
 //        federalTax++;
     }
-
-    const char *getName() const {
-        return name;
-    }
-
+    
     static float getFederalTax() {
         return federalTax;
     }

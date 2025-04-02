@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "k2.exe"
+			"path" : "k6.exe"
 		},
 		{
-			"path" : "k2.pdb"
+			"path" : "k6.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 50,
+				"line" : 55,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "k2::@6890427a1f51a3e7e1df",
+	"id" : "k6::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "k2",
-	"nameOnDisk" : "k2.exe",
+	"name" : "k6",
+	"nameOnDisk" : "k6.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "kolok1/zad2.cpp",
+			"path" : "kolok1/zad6.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
