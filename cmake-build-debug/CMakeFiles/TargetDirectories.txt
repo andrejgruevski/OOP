@@ -22,6 +22,8 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab3.10.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab3.11.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.2.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.3.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.4.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kolok1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kolok2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kolok3.dir
@@ -38,5 +40,6 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k7.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k8.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k10.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k11.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kk1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

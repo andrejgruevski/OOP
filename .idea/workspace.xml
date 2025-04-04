@@ -11,6 +11,7 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="OOP" targetName="kk1" />
       <config projectName="OOP" targetName="lab3.11" />
       <config projectName="OOP" targetName="k2" />
       <config projectName="OOP" targetName="k1" />
@@ -31,7 +32,9 @@
       <config projectName="OOP" targetName="kolok6" />
       <config projectName="OOP" targetName="lab3.4" />
       <config projectName="OOP" targetName="vezhbi1.5" />
+      <config projectName="OOP" targetName="lab4.3" />
       <config projectName="OOP" targetName="lab3.5" />
+      <config projectName="OOP" targetName="lab4.4" />
       <config projectName="OOP" targetName="kolok4" />
       <config projectName="OOP" targetName="lab3.6" />
       <config projectName="OOP" targetName="kolok5" />
@@ -60,27 +63,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab4/zad2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kolok1/k1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/zad3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab4/zad4.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-30f0468ba669a8ee72b5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-03-28T21-12-49-0096.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k1-Debug-2638c393191a9d8f8205.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k10-Debug-96b8b975f91d140feeea.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k11-Debug-8ba3970ec6b664b0925c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k2-Debug-952503a11e68ca0d5ec1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k3-Debug-600e3397e72b195941fa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k4-Debug-809a5a1f7a0761fb5c8c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k5-Debug-247fcea6e2a132e35300.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k6-Debug-82e937dbe2087ab739b8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k7-Debug-2058ef14acb11815ae49.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k8-Debug-ee01b7ead0f96e2f233a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok1-Debug-da5a6b054783dd4a36b5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2-Debug-9f70c8797d4975b9bcdf.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok3-Debug-ef9be84c330367408851.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok4-Debug-124ce00c97980ed2675a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok5-Debug-bf4ce68ff1344a9558f3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok6-Debug-260eaccf39261e5fb139.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3bdd8fd34e5c457ba223.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-04-02T00-11-47-0960.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k1-Debug-9db925ddb3f90b5df8e0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k10-Debug-f66bc4ca58e46b6cb763.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k11-Debug-66564cf79f55338735de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k2-Debug-037d978c5cb9147895f9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k3-Debug-f8dfed3bd74ad6b368e0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k4-Debug-180b6946ad4e02f5335d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k5-Debug-37a44abf5695035cf660.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k6-Debug-784285dd1136c2909173.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k7-Debug-79d452465296150bec0f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k8-Debug-3243cf508c8a2c5f15cc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok1-Debug-124910d395e1b2b9ed36.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2-Debug-9c94f9a8c1be6b354ec6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok3-Debug-96bfda05782303f2b633.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok4-Debug-01bead5453375984e608.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok5-Debug-2f9cc074687fb8ccece3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok6-Debug-25d5a60810f069022c51.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
@@ -88,8 +93,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab4/zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/zad1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vezhbiLabs/zad4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vezhbiLabs/zad4.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +113,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -133,8 +139,10 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;CMake Application.OOP.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.k8.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.kk1.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.kolok1.executor&quot;: &quot;Debug&quot;,
     &quot;CMake Application.lab2.1.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.lab4.3.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.m.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -153,12 +161,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.m">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.kk1">
     <configuration name="k1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="k1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="k1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -205,6 +208,11 @@
       </method>
     </configuration>
     <configuration name="k8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="k8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="k8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kk1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kk1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kk1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -329,6 +337,16 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lab4.3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab4.3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab4.3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab4.4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab4.4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab4.4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="m" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="m" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="m">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -360,9 +378,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.k1" />
       <item itemvalue="CMake Application.k10" />
       <item itemvalue="CMake Application.k11" />
+      <item itemvalue="CMake Application.k1" />
       <item itemvalue="CMake Application.k2" />
       <item itemvalue="CMake Application.k3" />
       <item itemvalue="CMake Application.k4" />
@@ -370,6 +388,7 @@
       <item itemvalue="CMake Application.k6" />
       <item itemvalue="CMake Application.k7" />
       <item itemvalue="CMake Application.k8" />
+      <item itemvalue="CMake Application.kk1" />
       <item itemvalue="CMake Application.kolok1" />
       <item itemvalue="CMake Application.kolok2" />
       <item itemvalue="CMake Application.kolok3" />
@@ -381,9 +400,9 @@
       <item itemvalue="CMake Application.lab1.3" />
       <item itemvalue="CMake Application.lab2.1" />
       <item itemvalue="CMake Application.lab2.2" />
-      <item itemvalue="CMake Application.lab3.1" />
       <item itemvalue="CMake Application.lab3.10" />
       <item itemvalue="CMake Application.lab3.11" />
+      <item itemvalue="CMake Application.lab3.1" />
       <item itemvalue="CMake Application.lab3.2" />
       <item itemvalue="CMake Application.lab3.3" />
       <item itemvalue="CMake Application.lab3.4" />
@@ -394,6 +413,8 @@
       <item itemvalue="CMake Application.lab3.9" />
       <item itemvalue="CMake Application.lab4.1" />
       <item itemvalue="CMake Application.lab4.2" />
+      <item itemvalue="CMake Application.lab4.3" />
+      <item itemvalue="CMake Application.lab4.4" />
       <item itemvalue="CMake Application.m" />
       <item itemvalue="CMake Application.vezhbi1.1" />
       <item itemvalue="CMake Application.vezhbi1.2" />
@@ -435,7 +456,12 @@
       <workItem from="1743194609084" duration="14018000" />
       <workItem from="1743245415066" duration="679000" />
       <workItem from="1743446722489" duration="6149000" />
-      <workItem from="1743552173121" duration="2848000" />
+      <workItem from="1743552173121" duration="3218000" />
+      <workItem from="1743613981958" duration="1304000" />
+      <workItem from="1743618495502" duration="50000" />
+      <workItem from="1743708528027" duration="34000" />
+      <workItem from="1743792572231" duration="11524000" />
+      <workItem from="1743810795442" duration="6000" />
     </task>
     <servers />
   </component>

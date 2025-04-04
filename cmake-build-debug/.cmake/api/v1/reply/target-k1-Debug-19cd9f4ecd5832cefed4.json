@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "k5.exe"
+			"path" : "k1.exe"
 		},
 		{
-			"path" : "k5.pdb"
+			"path" : "k1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 54,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "k5::@6890427a1f51a3e7e1df",
+	"id" : "k1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "k5",
-	"nameOnDisk" : "k5.exe",
+	"name" : "k1",
+	"nameOnDisk" : "k1.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "kolok1/zad5.cpp",
+			"path" : "kolok1/zad1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

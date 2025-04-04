@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "k10.exe"
+			"path" : "k3.exe"
 		},
 		{
-			"path" : "k10.pdb"
+			"path" : "k3.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 58,
+				"line" : 54,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "k10::@6890427a1f51a3e7e1df",
+	"id" : "k3::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -76,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "k10",
-	"nameOnDisk" : "k10.exe",
+	"name" : "k3",
+	"nameOnDisk" : "k3.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "kolok1/zad10.cpp",
+			"path" : "kolok1/zad3.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

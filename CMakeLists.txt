@@ -37,6 +37,8 @@ add_executable(lab3.11 lab3/zad11.cpp)
 
 add_executable(lab4.1 lab4/zad1.cpp)
 add_executable(lab4.2 lab4/zad2.cpp)
+add_executable(lab4.3 lab4/zad3.cpp)
+add_executable(lab4.4 lab4/zad4.cpp)
 
 
 add_executable(kolok1 kval_kolok/zad1.cpp)
@@ -57,4 +59,6 @@ add_executable(k7 kolok1/zad7.cpp)
 add_executable(k8 kolok1/zad8.cpp)
 add_executable(k10 kolok1/zad10.cpp)
 add_executable(k11 kolok1/zad11.cpp)
+
+add_executable(kk1 kolok1/k1.cpp)
 
