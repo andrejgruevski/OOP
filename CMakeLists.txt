@@ -56,6 +56,7 @@ add_executable(q12 kvalifikaciski/zad12.cpp)
 add_executable(q13 kvalifikaciski/zad13.cpp)
 add_executable(q14 kvalifikaciski/zad14.cpp)
 add_executable(q15 kvalifikaciski/zad15.cpp)
+add_executable(q16 kvalifikaciski/zad16.cpp)
 
 
 add_executable(k1 kolok1/zad1.cpp)
@@ -70,4 +71,5 @@ add_executable(k10 kolok1/zad10.cpp)
 add_executable(k11 kolok1/zad11.cpp)
 
 add_executable(kk1 kolok1/k1.cpp)
+add_executable(kk2 kolok1/k2.cpp)
 

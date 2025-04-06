@@ -1,152 +1,126 @@
-#include <iostream>
-#include <cstring>
+//
+// Created by Huhe on 4/6/2025.
+//
+#include "iostream"
+#include "cstring"
 using namespace std;
-
-// Да се дефинира класа Book, која репрезентира една книга. За класата Book се чуваат:
-// Наслов (текстуална низа од 30 знаци)
-// Сериски број (цел број)
-// Тип на книга (енумерациски тип, стручна литература или роман)
-// Цена (децимален број)
-// Серискиот број е единствен за секоја книга, неговата почетна вредност е 777550. Да се обезбеди секвенцијално генерирање на овој број, така што првата книга ќе има сериски број 777551, втората 777552, третата 777553 итн. (5 поени)
-// За оваа класа да се обезбедат потребните конструктори и set/get методи. (5 поени)
-//
-// Да се имплементира метод print() со кој ќе се печатат информациите за секој објект во формат:
-// [сериски број] - [наслов] [тип] [цена]
-// (5 поени)
-//
-// Да се имплементира метод increasePrice(float) кој како аргумент ќе прима реален број, што ќе претставува износ кој се додава на цената на книгата. (5 поени)
-//
-// Потоа да се дефинира класа BookStore, во која се чуваат информации за:
-// Име (текстуална низа од 20 знаци)
-// Листа од книги (обична низа со максимум 100 објекти од класата Book)
-// Број на книги (број на елементи во низата од книги, иницијално е 0)
-
-// За оваа класа да се дефинираат потребните конструктори, деструктор (ако е потребен), set и get методи. (5 поени)
-//
-// Да се имплементира метод print() во формат:
-// [име]
-// и потоа сите книги поединечно (види форматот од методот Book::print). (5 поени)
-//
-// Да се имплементира метод addBook(const Book&) за додавање нова книга во продавницата.
-// Книгите се менаџираат според нивниот наслов, односно не смее да се дозволи додавање книга со ист наслов повеќе од еднаш. (10 поени)
-// Да се дефинира метод greaterThan(const BookStore&) кој ќе споредува дали едната продавница има повеќе книги од другата. (5 поени)
-// Да се дефинира метод void createMarketPrice() - со кој продавницата генерира продажни цени на сите книги. Продажните цени се пресметуваат во зависност од тоа за каков тип на литература станува збор:
-// За стручна литература се додава 5% на цената
-// За романи се додава 3% (10 поени)
-//
-// Да се дефинира глобална функција best() - која прима низа од објекти од класатa BookStore и бројот на продавници, а ја враќа онаа продавница која има најмногу книги. Доколку повеќе продавници имаат ист број на книги, се враќа првата најдена. (5 поени)
-
-//YOUR CODE HERE:
-enum Type {
-    ACADEMIC,// 0
-    ROMAN // 1
+enum TYPE{
+    ACADEMIC,ROMAN
 };
-class Book {
-    char title[31];
+class Book{
+private:
+    char title[30];
     int id;
-    Type type;
-    float price;
+    TYPE type;
+    double price;
     static int serial;
 public:
-    Book(){}
-    Book(const char *title, int type, float price) {
-        strcpy(this->title, title);
-        this->price = price;
-        this->type = (Type) type;
+    Book(){
+
+    }
+    Book(char *title, int type, double price) {
+        strcpy(this->title,title);
+        this->type=TYPE(type);
+        this->price=price;
         this->id=++serial;
     }
-    //[сериски број] - [наслов] [тип] [цена]
-    void print() {
+
+    void print(){
         cout<<id<<" - "<<title<<" ";
-        if(type==ACADEMIC) {
-            cout<<"academic";
+        if (type==0){
+            cout<<"academic ";
+        }else if (type==1){
+            cout<<"roman ";
         }
-        else {
-            cout<<"roman";
-        }
-        cout<<" "<<price<<endl;
+        cout<<price<<endl;
     }
-    void increasePrice(float p) {
-        this->price+=p;
+    void increasePrice(float num){
+        price+=num;
     }
+
     const char *getTitle() const {
         return title;
     }
-    Type getType() const {
+
+    TYPE getType() const {
         return type;
     }
-    float getPrice() const {
+
+    double getPrice() const {
         return price;
     }
+
+
+    friend class Book;
 };
-class BookStore {
+int Book::serial = 777550;
+
+class BookStore{
+private:
     char name[21];
     Book books[100];
-    int number;
+    int numBooks;
 public:
-    BookStore (const char *name=" ") {
-        strcpy(this->name, name);
-        this->number = 0;
+    BookStore(char *name="") {
+        strcpy(this->name,name);
+        numBooks=0;
     }
-    // BookStore (const char *name, Book books[], int number) {
-    //     strcpy(this->name, name);
-    //     this->number = number;
-    //     for(int i=0; i<number; i++) {
-    //         this->books[i]=books[i];
-    //     }
-    // }
-    // BookStore(const BookStore &bs) {
-    //     strcpy(this->name, bs.name);
-    //     this->number = bs.number;
-    //     for(int i=0; i<number; i++) {
-    //         books[i]=bs.books[i];
-    //     }
-    // }
-    void print() {
+     BookStore (const char *name, Book books[], int numBooks) {
+         strcpy(this->name, name);
+         this->numBooks = numBooks;
+         for(int i=0; i<numBooks; i++) {
+             this->books[i]=books[i];
+         }
+     }
+    BookStore(const BookStore &bs){
+        strcpy(this->name,bs.name);
+        this->numBooks = bs.numBooks;
+        for(int i=0; i<bs.numBooks; i++) {
+            this->books[i]=bs.books[i];
+         }
+    }
+    void print(){
         cout<<name<<endl;
-        for(int i=0; i<number; i++) {
+        for (int i = 0; i < numBooks; ++i) {
             books[i].print();
         }
     }
-    void addBook(const Book& b) {
-        if(number<100) {
-            for(int i=0; i<number; i++) {
-                if(strcmp(b.getTitle(), books[i].getTitle())==0) {
+    void addBook(const Book &book){
+        if (numBooks < 100){
+            for (int i = 0; i < numBooks; ++i) {
+                if (strcmp(books[i].getTitle(),book.getTitle())==0){
                     return;
                 }
             }
-            books[number]=b;
-            number++;
+            books[numBooks]=book;
+            numBooks++;
         }
-        return;
     }
-    bool greaterThan(const BookStore& bs) {
-        return (this->number>bs.number);
+    bool greaterThan(const BookStore&store){
+        return (this->numBooks> store.numBooks);
     }
-    void createMarketPrice() {
-        for(int i=0; i<number; i++) {
-            if(books[i].getType()==ACADEMIC) {
-                books[i].increasePrice(books[i].getPrice()*0.05);
-            }
-            else {
+    void createMarketPrice(){
+
+        for (int i = 0; i < numBooks; ++i) {
+            if (books[i].getType() == ACADEMIC){
+                books[i].increasePrice(books[i].getPrice() *0.05);
+            }else{
                 books[i].increasePrice(books[i].getPrice()*0.03);
             }
         }
     }
     friend BookStore best(BookStore bs[],int number);
-};
 
-BookStore best(BookStore bs[],int n) {
-    BookStore max = bs[0];
-    for(int i=0; i<n; i++) {
-        if(bs[i].number>max.number) {
-            max = bs[i];
+};
+BookStore best(BookStore bs[],int n){
+    BookStore max=bs[0];
+    for (int i = 0; i < n; ++i) {
+        if (max.numBooks < bs[i].numBooks){
+            max=bs[i];
         }
     }
     return max;
-
 }
-int Book::serial=777550;
 int main() {
     int testCase;
     cin>>testCase;
