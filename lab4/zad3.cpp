@@ -74,13 +74,13 @@ public:
     Agency(){
 
     }
-    Agency(char *name, Tour *tours, int numTours) {
-        strcpy(this->name,name);
-        this->numTours=numTours;
-        for (int i = 0; i < numTours; ++i) {
-            this->tours[i]=tours[i];
-        }
-    }
+//    Agency(char *name, Tour *tours, int numTours) {
+//        strcpy(this->name,name);
+//        this->numTours=numTours;
+//        for (int i = 0; i < numTours; ++i) {
+//            this->tours[i]=tours[i];
+//        }
+//    }
     void display(){
         cout<<"Travel Agency: "<<name<<endl;
         for (int i = 0; i < numTours; ++i) {

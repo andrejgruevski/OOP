@@ -1,171 +1,143 @@
 #include <iostream>
 #include <cstring>
+
 using namespace std;
-
-class Scholarship;
-void studentsWithScholarship(Scholarship &scholarship, int num_students);
-
-class Student {
+//YOUR CODE HERE!
+class Student{
 private:
-    char name[100];
-    char surname[100];
-    char faculty[100];
-    float avgGrade;
-    static int totalStudents;
-    static int finkiStudents;
+    char ime[51];
+    char prezime[51];
+    char fakultet[51];
+    float prosek;
+    static int vkupnoAplicirale;
+    static int finkashiAplicirale;
     friend class Scholarship;
-    friend void studentsWithScholarship(Scholarship &scholarship, int num_students);
-
 public:
-    Student() {}
+    Student(){
 
-    Student(char *name, char *surname, char *faculty, float avgGrade) {
-        strncpy(this->name, name, 99);
-        this->name[99] = '\0';
-        strncpy(this->surname, surname, 99);
-        this->surname[99] = '\0';
-        strncpy(this->faculty, faculty, 99);
-        this->faculty[99] = '\0';
-        this->avgGrade = avgGrade;
+    }
+    Student(char *ime, char *prezime, char *fakultet, float prosek) {
+        strcpy(this->ime,ime);
+        strcpy(this->prezime,prezime);
+        strcpy(this->fakultet,fakultet);
+        this->prosek=prosek;
+//        vkupnoAplicirale++;
+
     }
 
-    void print() const {
-        cout << name << " " << surname << " " << faculty << " " << avgGrade << endl;
+    bool finkiStudent(){
+        if (strcmp(fakultet,"FINKI")==0 && prosek > 9){
+            return true;
+        }
+        return false;
     }
 
-    bool isFinki() const {
-        return strcmp(faculty, "FINKI") == 0 && avgGrade >= 9;
+    float getProsek() const {
+        return prosek;
+    }
+    void print(){
+        cout<<ime<<" "<<prezime<<" "<<fakultet<<" "<<prosek<<endl;
     }
 
-    float getAvgGrade() const {
-        return avgGrade;
+    static int getVkupnoAplicirale() {
+        return vkupnoAplicirale;
     }
 
-    static int getTotalStudents() {
-        return totalStudents;
+    static int getFinkashiAplicirale() {
+        return finkashiAplicirale;
     }
 
-    static int getFinkiStudents() {
-        return finkiStudents;
-    }
 
-    static void incrementTotal() {
-        totalStudents++;
-    }
-
-    static void incrementFinki() {
-        finkiStudents++;
-    }
 };
-
-int Student::totalStudents = 0;
-int Student::finkiStudents = 0;
-
-class Scholarship {
+int Student::finkashiAplicirale = 0;
+int Student::vkupnoAplicirale = 0;
+class Scholarship{
 private:
-    char name[100];
-    Student applicants[100];
-    int count;
-    static float sumFinkiGrades;
-
+    char imeKompanija[51];
+    Student studenti[100];
+    static float srednaVrednost;
+    friend class Student;
+    friend void studentsWithScholarship(Scholarship &scholarship, int num_students);
 public:
-    Scholarship() {
-        name[0] = '\0';
-        count = 0;
+    Scholarship(char *imeKompanija="") {
+        strcpy(this->imeKompanija,imeKompanija);
     }
 
-    Scholarship(char *name) {
-        strncpy(this->name, name, 99);
-        this->name[99] = '\0';
-        count = 0;
-    }
-
-    void addStudent(Student &s) {
-        if (count < 100) {
-            applicants[count++] = s;
-            Student::incrementTotal();
-            if (s.isFinki()) {
-                Student::incrementFinki();
-                sumFinkiGrades += s.getAvgGrade();
-            }
+    void addStudent(Student student){
+        int broj = Student::vkupnoAplicirale;
+        studenti[broj] = student;
+        if (student.finkiStudent()){
+            Student::finkashiAplicirale++;
+            srednaVrednost = srednaVrednost + student.getProsek();
         }
+        Student::vkupnoAplicirale++;
     }
 
-    void print() const {
-        cout << "Scholarship name: " << name << ", total applicants: " << Student::getTotalStudents() << endl;
-    }
-
-    Student* getApplicants() {
-        return applicants;
-    }
-
-    int getCount() const {
-        return count;
-    }
-
-    static float getSumFinkiGrades() {
-        return sumFinkiGrades;
+//    Scholarship name: ITCompany, total applicants: 1
+    void print(){
+        cout<<"Scholarship name: "<<imeKompanija<<", total applicants: "<<Student::vkupnoAplicirale<<endl;
     }
 };
-
-float Scholarship::sumFinkiGrades = 0;
-
-void studentsWithScholarship(Scholarship &sch, int num_students) {
-    Student *arr = sch.getApplicants();
-
-    // Sort students by avgGrade (descending)
-    for (int i = 0; i < num_students - 1; i++) {
-        for (int j = i + 1; j < num_students; j++) {
-            if (arr[j].getAvgGrade() > arr[i].getAvgGrade()) {
-                swap(arr[i], arr[j]);
+void studentsWithScholarship(Scholarship &scholarship, int num_students){
+    for (int i = 0; i < num_students; ++i) {
+        for (int j = 0; j < num_students -i -1; ++j) {
+            if (scholarship.studenti[j].getProsek() < scholarship.studenti[j+1].getProsek()){
+                Student tmp = scholarship.studenti[j];
+                scholarship.studenti[j]= scholarship.studenti[j+1];
+                scholarship.studenti[j+1] = tmp;
             }
         }
     }
-
-    cout << "FINKI students with a scholarship" << endl;
-    int shown = 0;
-    for (int i = 0; i < num_students && shown < 3; i++) {
-        if (arr[i].isFinki()) {
-            arr[i].print();
-            shown++;
+    cout<<"FINKI students with a scholarship"<<endl;
+    int counter=0;
+    for (int i = 0; i < num_students; ++i) {
+        if (scholarship.studenti[i].finkiStudent() && counter < 3){
+            scholarship.studenti[i].print();
+            counter++;
         }
     }
+    cout<<"Scholarship data shows that "<<Student::getFinkashiAplicirale()/(Student::getVkupnoAplicirale()*1.0)*100
+    <<"% of applicants are from FINKI, with an average grade of "
+    <<Scholarship::srednaVrednost / (Student::getFinkashiAplicirale()*1.0);
+//    Scholarship data shows that 60% of applicants are from FINKI, with an average grade of 9.68333
 
-    if (Student::getFinkiStudents() > 0) {
-        float percent = (Student::getFinkiStudents() * 100.0) / Student::getTotalStudents();
-        float avg = Scholarship::getSumFinkiGrades() / Student::getFinkiStudents();
-        cout << "Scholarship data shows that " << percent
-             << "% of applicants are from FINKI, with an average grade of " << avg << endl;
-    }
+
+
 }
-
-// DO NOT CHANGE THE MAIN FUNCTION!
+float Scholarship::srednaVrednost = 0;
+//DO NOT CHANGE THE MAIN FUNCTION!
 int main() {
     char name[50], surname[50], faculty[50], scholarship_name[50];
     float average_grade;
-    int n, case_;
-    cin >> case_;
-    if (case_ == 0) {
-        cout << "--Testing finkiStudent method--" << endl;
+    int n,case_;
+    cin>>case_;
+    if (case_ == 0)
+        //Testing Student constructor
+    {
+        cout<<"--Testing finkiStudent method--"<<endl;
         Student s("Ana", "Denkova", "BAS", 9.89);
-        cout << s.isFinki();
-    } else if (case_ == 1) {
-        cout << "--Testing addStudent and print method--" << endl;
+        cout<<s.finkiStudent();
+    }
+    else if (case_==1){
+        //Testing addStudent and print method
+        cout<<"--Testing addStudent and print method--"<<endl;
         Scholarship sc("ITCompany");
         Student s("Ana", "Denkova", "BAS", 9.89);
         sc.addStudent(s);
         sc.print();
-    } else if (case_ == 2) {
-        cin >> scholarship_name;
+    }
+    else if (case_ == 2){
+        cin>>scholarship_name;
         Scholarship sc(scholarship_name);
-        cin >> n;
-        for (int i = 0; i < n; i++) {
-            cin >> name >> surname >> faculty >> average_grade;
-            Student s(name, surname, faculty, average_grade);
+        cin>>n;
+        for(int i=0; i<n; i++)
+        {
+            cin>>name>>surname>>faculty>>average_grade;
+            Student s = Student(name, surname, faculty, average_grade);
             sc.addStudent(s);
         }
         sc.print();
-        studentsWithScholarship(sc, sc.getCount());
+        studentsWithScholarship(sc,n);
     }
     return 0;
 }
