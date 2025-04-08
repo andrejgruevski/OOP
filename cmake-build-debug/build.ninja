@@ -899,6 +899,39 @@ build lab4.4.exe: CXX_EXECUTABLE_LINKER__lab4.2e4_Debug CMakeFiles/lab4.4.dir/la
   TARGET_PDB = lab4.4.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target lab4.5
+
+
+#############################################
+# Order-only phony target for lab4.5
+
+build cmake_object_order_depends_target_lab4.5: phony || CMakeFiles/lab4.5.dir
+
+build CMakeFiles/lab4.5.dir/lab4/zad5.cpp.obj: CXX_COMPILER__lab4.2e5_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab4/zad5.cpp || cmake_object_order_depends_target_lab4.5
+  DEP_FILE = CMakeFiles\lab4.5.dir\lab4\zad5.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab4.5.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab4.5.dir\lab4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab4.5
+
+
+#############################################
+# Link the executable lab4.5.exe
+
+build lab4.5.exe: CXX_EXECUTABLE_LINKER__lab4.2e5_Debug CMakeFiles/lab4.5.dir/lab4/zad5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab4.5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab4.5.exe
+  TARGET_IMPLIB = liblab4.5.dll.a
+  TARGET_PDB = lab4.5.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target q1
 
 
@@ -1427,6 +1460,303 @@ build q16.exe: CXX_EXECUTABLE_LINKER__q16_Debug CMakeFiles/q16.dir/kvalifikacisk
   TARGET_PDB = q16.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target q17
+
+
+#############################################
+# Order-only phony target for q17
+
+build cmake_object_order_depends_target_q17: phony || CMakeFiles/q17.dir
+
+build CMakeFiles/q17.dir/kvalifikaciski/zad17.cpp.obj: CXX_COMPILER__q17_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad17.cpp || cmake_object_order_depends_target_q17
+  DEP_FILE = CMakeFiles\q17.dir\kvalifikaciski\zad17.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q17.dir
+  OBJECT_FILE_DIR = CMakeFiles\q17.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q17
+
+
+#############################################
+# Link the executable q17.exe
+
+build q17.exe: CXX_EXECUTABLE_LINKER__q17_Debug CMakeFiles/q17.dir/kvalifikaciski/zad17.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q17.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q17.exe
+  TARGET_IMPLIB = libq17.dll.a
+  TARGET_PDB = q17.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q18
+
+
+#############################################
+# Order-only phony target for q18
+
+build cmake_object_order_depends_target_q18: phony || CMakeFiles/q18.dir
+
+build CMakeFiles/q18.dir/kvalifikaciski/zad18.cpp.obj: CXX_COMPILER__q18_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad18.cpp || cmake_object_order_depends_target_q18
+  DEP_FILE = CMakeFiles\q18.dir\kvalifikaciski\zad18.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q18.dir
+  OBJECT_FILE_DIR = CMakeFiles\q18.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q18
+
+
+#############################################
+# Link the executable q18.exe
+
+build q18.exe: CXX_EXECUTABLE_LINKER__q18_Debug CMakeFiles/q18.dir/kvalifikaciski/zad18.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q18.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q18.exe
+  TARGET_IMPLIB = libq18.dll.a
+  TARGET_PDB = q18.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q19
+
+
+#############################################
+# Order-only phony target for q19
+
+build cmake_object_order_depends_target_q19: phony || CMakeFiles/q19.dir
+
+build CMakeFiles/q19.dir/kvalifikaciski/zad19.cpp.obj: CXX_COMPILER__q19_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad19.cpp || cmake_object_order_depends_target_q19
+  DEP_FILE = CMakeFiles\q19.dir\kvalifikaciski\zad19.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q19.dir
+  OBJECT_FILE_DIR = CMakeFiles\q19.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q19
+
+
+#############################################
+# Link the executable q19.exe
+
+build q19.exe: CXX_EXECUTABLE_LINKER__q19_Debug CMakeFiles/q19.dir/kvalifikaciski/zad19.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q19.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q19.exe
+  TARGET_IMPLIB = libq19.dll.a
+  TARGET_PDB = q19.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q20
+
+
+#############################################
+# Order-only phony target for q20
+
+build cmake_object_order_depends_target_q20: phony || CMakeFiles/q20.dir
+
+build CMakeFiles/q20.dir/kvalifikaciski/zad20.cpp.obj: CXX_COMPILER__q20_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad20.cpp || cmake_object_order_depends_target_q20
+  DEP_FILE = CMakeFiles\q20.dir\kvalifikaciski\zad20.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q20.dir
+  OBJECT_FILE_DIR = CMakeFiles\q20.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q20
+
+
+#############################################
+# Link the executable q20.exe
+
+build q20.exe: CXX_EXECUTABLE_LINKER__q20_Debug CMakeFiles/q20.dir/kvalifikaciski/zad20.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q20.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q20.exe
+  TARGET_IMPLIB = libq20.dll.a
+  TARGET_PDB = q20.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q21
+
+
+#############################################
+# Order-only phony target for q21
+
+build cmake_object_order_depends_target_q21: phony || CMakeFiles/q21.dir
+
+build CMakeFiles/q21.dir/kvalifikaciski/zad21.cpp.obj: CXX_COMPILER__q21_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad21.cpp || cmake_object_order_depends_target_q21
+  DEP_FILE = CMakeFiles\q21.dir\kvalifikaciski\zad21.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q21.dir
+  OBJECT_FILE_DIR = CMakeFiles\q21.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q21
+
+
+#############################################
+# Link the executable q21.exe
+
+build q21.exe: CXX_EXECUTABLE_LINKER__q21_Debug CMakeFiles/q21.dir/kvalifikaciski/zad21.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q21.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q21.exe
+  TARGET_IMPLIB = libq21.dll.a
+  TARGET_PDB = q21.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q22
+
+
+#############################################
+# Order-only phony target for q22
+
+build cmake_object_order_depends_target_q22: phony || CMakeFiles/q22.dir
+
+build CMakeFiles/q22.dir/kvalifikaciski/zad22.cpp.obj: CXX_COMPILER__q22_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad22.cpp || cmake_object_order_depends_target_q22
+  DEP_FILE = CMakeFiles\q22.dir\kvalifikaciski\zad22.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q22.dir
+  OBJECT_FILE_DIR = CMakeFiles\q22.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q22
+
+
+#############################################
+# Link the executable q22.exe
+
+build q22.exe: CXX_EXECUTABLE_LINKER__q22_Debug CMakeFiles/q22.dir/kvalifikaciski/zad22.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q22.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q22.exe
+  TARGET_IMPLIB = libq22.dll.a
+  TARGET_PDB = q22.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q23
+
+
+#############################################
+# Order-only phony target for q23
+
+build cmake_object_order_depends_target_q23: phony || CMakeFiles/q23.dir
+
+build CMakeFiles/q23.dir/kvalifikaciski/zad23.cpp.obj: CXX_COMPILER__q23_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad23.cpp || cmake_object_order_depends_target_q23
+  DEP_FILE = CMakeFiles\q23.dir\kvalifikaciski\zad23.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q23.dir
+  OBJECT_FILE_DIR = CMakeFiles\q23.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q23
+
+
+#############################################
+# Link the executable q23.exe
+
+build q23.exe: CXX_EXECUTABLE_LINKER__q23_Debug CMakeFiles/q23.dir/kvalifikaciski/zad23.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q23.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q23.exe
+  TARGET_IMPLIB = libq23.dll.a
+  TARGET_PDB = q23.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q24
+
+
+#############################################
+# Order-only phony target for q24
+
+build cmake_object_order_depends_target_q24: phony || CMakeFiles/q24.dir
+
+build CMakeFiles/q24.dir/kvalifikaciski/zad24.cpp.obj: CXX_COMPILER__q24_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad24.cpp || cmake_object_order_depends_target_q24
+  DEP_FILE = CMakeFiles\q24.dir\kvalifikaciski\zad24.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q24.dir
+  OBJECT_FILE_DIR = CMakeFiles\q24.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q24
+
+
+#############################################
+# Link the executable q24.exe
+
+build q24.exe: CXX_EXECUTABLE_LINKER__q24_Debug CMakeFiles/q24.dir/kvalifikaciski/zad24.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q24.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q24.exe
+  TARGET_IMPLIB = libq24.dll.a
+  TARGET_PDB = q24.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target q25
+
+
+#############################################
+# Order-only phony target for q25
+
+build cmake_object_order_depends_target_q25: phony || CMakeFiles/q25.dir
+
+build CMakeFiles/q25.dir/kvalifikaciski/zad25.cpp.obj: CXX_COMPILER__q25_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kvalifikaciski/zad25.cpp || cmake_object_order_depends_target_q25
+  DEP_FILE = CMakeFiles\q25.dir\kvalifikaciski\zad25.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\q25.dir
+  OBJECT_FILE_DIR = CMakeFiles\q25.dir\kvalifikaciski
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target q25
+
+
+#############################################
+# Link the executable q25.exe
+
+build q25.exe: CXX_EXECUTABLE_LINKER__q25_Debug CMakeFiles/q25.dir/kvalifikaciski/zad25.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\q25.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = q25.exe
+  TARGET_IMPLIB = libq25.dll.a
+  TARGET_PDB = q25.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target k1
 
 
@@ -1822,6 +2152,39 @@ build kk2.exe: CXX_EXECUTABLE_LINKER__kk2_Debug CMakeFiles/kk2.dir/kolok1/k2.cpp
   TARGET_IMPLIB = libkk2.dll.a
   TARGET_PDB = kk2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target kk3
+
+
+#############################################
+# Order-only phony target for kk3
+
+build cmake_object_order_depends_target_kk3: phony || CMakeFiles/kk3.dir
+
+build CMakeFiles/kk3.dir/kolok1/k3.cpp.obj: CXX_COMPILER__kk3_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/kolok1/k3.cpp || cmake_object_order_depends_target_kk3
+  DEP_FILE = CMakeFiles\kk3.dir\kolok1\k3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\kk3.dir
+  OBJECT_FILE_DIR = CMakeFiles\kk3.dir\kolok1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target kk3
+
+
+#############################################
+# Link the executable kk3.exe
+
+build kk3.exe: CXX_EXECUTABLE_LINKER__kk3_Debug CMakeFiles/kk3.dir/kolok1/k3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\kk3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = kk3.exe
+  TARGET_IMPLIB = libkk3.dll.a
+  TARGET_PDB = kk3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1872,6 +2235,8 @@ build kk1: phony kk1.exe
 
 build kk2: phony kk2.exe
 
+build kk3: phony kk3.exe
+
 build lab1.1: phony lab1.1.exe
 
 build lab1.2: phony lab1.2.exe
@@ -1912,6 +2277,8 @@ build lab4.3: phony lab4.3.exe
 
 build lab4.4: phony lab4.4.exe
 
+build lab4.5: phony lab4.5.exe
+
 build m: phony m.exe
 
 build q1: phony q1.exe
@@ -1930,7 +2297,25 @@ build q15: phony q15.exe
 
 build q16: phony q16.exe
 
+build q17: phony q17.exe
+
+build q18: phony q18.exe
+
+build q19: phony q19.exe
+
 build q2: phony q2.exe
+
+build q20: phony q20.exe
+
+build q21: phony q21.exe
+
+build q22: phony q22.exe
+
+build q23: phony q23.exe
+
+build q24: phony q24.exe
+
+build q25: phony q25.exe
 
 build q3: phony q3.exe
 
@@ -1964,7 +2349,7 @@ build vezhbi1.5: phony vezhbi1.5.exe
 #############################################
 # Folder: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
 
-build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe
+build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe lab4.5.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe q17.exe q18.exe q19.exe q20.exe q21.exe q22.exe q23.exe q24.exe q25.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe kk3.exe
 
 # =============================================================================
 # Built-in targets

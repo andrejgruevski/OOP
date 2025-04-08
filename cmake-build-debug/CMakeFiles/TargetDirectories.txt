@@ -24,6 +24,7 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.3.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.4.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab4.5.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q3.dir
@@ -40,6 +41,15 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q13.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q14.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q15.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q16.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q17.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q18.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q19.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q20.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q21.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q22.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q23.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q24.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q25.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k3.dir
@@ -52,5 +62,6 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k10.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/k11.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kk1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kk2.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/kk3.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
