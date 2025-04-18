@@ -6,22 +6,21 @@ using namespace std;
 class Number{
 private:
     int num;
+
 public:
-     Number(int num=0){
+    explicit Number(int num=0)  {
         this->num=num;
     }
-    int get() const {
+    int get(){
         return num;
     }
-    void increaseNumber(int n){
-        if ((num + n) > 100){
-            num = 100;
+    void increaseNumber(int br){
+        num+=br;
+        if (num>100){
+            num=100;
             cout<<"Sum is greater than 100"<<endl;
-        }else{
-            num+=n;
         }
     }
-
 
 };
 

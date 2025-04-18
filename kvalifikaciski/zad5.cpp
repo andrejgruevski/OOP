@@ -6,25 +6,20 @@
 using namespace std;
 class Letter{
 private:
-    char c;
+    char ch;
 public:
-    explicit Letter(char c='a') {
-        this->c=c;
+    explicit Letter(char ch=0) {
+        this->ch=ch;
     }
-
     void upperLetter(){
-        if (isalpha(c)){
-            if (tolower(c)){
-                c = toupper(c);
-            }
+        if (isalpha(ch)){
+            ch = toupper(ch);
         }else{
             cout<<"Character is not a letter"<<endl;
         }
-
     }
-
-    char get() const {
-        return c;
+    char get(){
+        return ch;
     }
 };
 

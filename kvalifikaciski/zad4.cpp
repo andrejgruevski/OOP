@@ -8,17 +8,16 @@ class Temperature{
 private:
     float temp;
 public:
-    void set(float temp) {
-        Temperature::temp = temp;
-    }
-
     explicit Temperature(float temp=0) {
         this->temp=temp;
     }
-    double changeTemp(){
+    float set(float s){
+        temp = s;
+    }
+    void changeTemp(){
         if (temp < 0){
-            temp++;
-        }else if (temp>0){
+            temp ++;
+        }else if (temp > 0){
             temp--;
         }
     }

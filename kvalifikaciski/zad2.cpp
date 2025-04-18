@@ -8,19 +8,17 @@ class Number{
 private:
     int num;
 public:
-    explicit Number(int num=0)  {
+    explicit Number(int num=0) {
         this->num=num;
     }
-
-    void set(int num) {
-        Number::num = num;
+    int set(int s){
+        this->num=s;
     }
-    void decreaseNumber(int n){
-        if ((num - n) < 0) {
-            num = 0;
+    void decreaseNumber(int br){
+        num-=br;
+        if (num<0){
+            num=0;
             cout<<"Difference is less than 0"<<endl;
-        }else{
-            num -= n;
         }
     };
     void print(){

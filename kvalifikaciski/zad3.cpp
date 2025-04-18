@@ -8,18 +8,17 @@ class Temperature{
 private:
     float temp;
 public:
-    explicit Temperature(float temp=0){
+    explicit Temperature(float temp=0) {
         this->temp=temp;
     }
-    double changeTemp(){
+    void changeTemp(){
         if (temp >= 0){
             temp++;
         }else if (temp < 0){
             temp--;
         }
     }
-
-    float get() const {
+    float get(){
         return temp;
     }
 };

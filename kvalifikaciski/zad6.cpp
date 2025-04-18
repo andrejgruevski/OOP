@@ -4,31 +4,30 @@
 #include <iostream>
 
 using namespace std;
-class Letter{
+class Letter {
 private:
-    char c;
+    char ch;
 public:
-    void set(char c) {
-        Letter::c = c;
+    explicit Letter(char ch = 0) {
+        this->ch = ch;
     }
-
-    explicit Letter(char c='a') : c(c) {
-        this->c=c;
+    void set(char c){
+        ch = c;
     }
     void lowerLetter(){
-        if (isalpha(c)){
-            c= tolower(c);
+        if (isalpha(ch)){
+            ch = tolower(ch);
         }else{
             cout<<"Character is not a letter"<<endl;
         }
     }
-    void print(){
-        cout<<c<<endl;
+    void  print(){
+        cout<<ch<<endl;
     }
 
 };
 
-int main() {
+    int main() {
     Letter obj;
     int n;
     cin >> n;

@@ -41,6 +41,14 @@ add_executable(lab4.3 lab4/zad3.cpp)
 add_executable(lab4.4 lab4/zad4.cpp)
 add_executable(lab4.5 lab4/zad5.cpp)
 
+add_executable( lab5.1 lab5/zad1.cpp)
+add_executable( lab5.2 lab5/zad2.cpp)
+add_executable( lab5.3 lab5/zad3.cpp)
+
+add_executable(lab6.1 lab6/zad1.cpp)
+add_executable(lab6.2 lab6/zad2.cpp)
+add_executable(lab6.3 lab6/zad3.cpp)
+
 
 add_executable(q1 kvalifikaciski/zad1.cpp)
 add_executable(q2 kvalifikaciski/zad2.cpp)
@@ -67,6 +75,13 @@ add_executable(q22 kvalifikaciski/zad22.cpp)
 add_executable(q23 kvalifikaciski/zad23.cpp)
 add_executable(q24 kvalifikaciski/zad24.cpp)
 add_executable(q25 kvalifikaciski/zad25.cpp)
+add_executable(q26 kvalifikaciski/zad26.cpp)
+add_executable(q27 kvalifikaciski/zad27.cpp)
+add_executable(q28 kvalifikaciski/zad28.cpp)
+add_executable(q29 kvalifikaciski/zad29.cpp)
+add_executable(q30 kvalifikaciski/zad30.cpp)
+
+
 
 
 
@@ -84,4 +99,5 @@ add_executable(k11 kolok1/zad11.cpp)
 add_executable(kk1 kolok1/k1.cpp)
 add_executable(kk2 kolok1/k2.cpp)
 add_executable(kk3 kolok1/k3.cpp)
+
 
