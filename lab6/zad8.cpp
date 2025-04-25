@@ -2,28 +2,41 @@
 // Created by Huhe on 4/22/2025.
 //
 //Да се напише класа Ingredient која ги содржи следните податоци за една состојка:
+//
 //name - име на состојката, динамички алоцирана низа од карактери;
 //quantity - количина
 //        calories - колку калории содржи состојката
+//
+//
 //За класата да се напишат default конструктор, конструктор со аргументи, copy конструктор и десктруктор.
+//
 //Метод кој што ќе го враќа бројот на калории на состојката: quantity*calories
+//
 //Да се преоптовари операторот << за да ги печати објектите од класата во следниот формат: [name] [quantity]
+//
 //Да се преоптовари операторот = .
+//
+//
+//
 //Потоа да се дефинира класата Dish, која ги содржи следните податоци:
+//
 //ingredients - динамички алоцирана низа од Ingredient објекти
 //dishName - динамички алоцирана низа од цели karakteri
 //ingredientCount - број на состојки во јадењето
 //        За класата да се дефинираат конструктор со параметри, copy конструктор, деструктор, како и следните методи:
+//
 //Метод getTotalCaloreis кој што ќе го враќа бројот на калории на специјалитетот за сите состојки
 //        оператор + кој како резултат дава ново јадење со состојки од двете јадења
 //        оператор += кој во јадењето ќе додава нови состојки
 //        оператор == кој ќе проверува дали две јадења имаат ист број на калории
 //        оператор << за печатење на објектот во следниот формат:
 //Dish: Pizza
-//        Tomato: 200g/ml
-//        Cheese: 50g/ml
+//
+//- Tomato: 200g/ml
+//
+//- Cheese: 50g/ml
+//
 //        Total Calories: 6500
-//Да не се менува main функцијата. Се признаваат и решенија без динамичка алокација на меморија.
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -62,7 +75,7 @@ public:
         return calories*quantity;
     }
     friend ostream &operator<<(ostream &os, const Ingredient &i) {
-        os << i.name << " " << i.quantity << endl;
+        os<<"- " << i.name << " " << i.quantity <<"g/ml"<< endl;
         return os;
     }
 };
@@ -146,7 +159,61 @@ public:
         for (int i=0;i<d.n;i++) {
             os<<d.ingredients[i];
         }
-        os<<"Total calories: "<<d.getTotalCalories()<<endl;
+        os<<"Total Calories: "<<d.getTotalCalories()<<endl;
         return os;
     }
 };
+int main() {
+
+    char name [50];
+    cin>>name;
+    // Create Ingredients
+    Ingredient tomato(name, 200, 20);
+    cin>>name;
+    Ingredient onion(name, 100, 30);
+    cin>>name;
+    Ingredient cheese(name, 50, 50);
+
+
+    cin>>name;
+    // Create Dishes
+    Dish salad(name);
+    salad += tomato;
+    salad += onion;
+
+    cin>>name;
+    Dish pizza(name);
+    pizza += tomato;
+    pizza += cheese;
+
+    // Test + operator
+    Dish combinedDish = salad + pizza;
+    cout<<combinedDish;
+
+    cout<<"---------------------"<<endl;
+
+    //Test = operator
+    Ingredient ingredient = tomato;
+    cout<<ingredient;
+    cout<<endl;
+
+    cout<<"---------------------"<<endl;
+
+    // Test == operator
+    if (salad == pizza) {
+        cout << "Salad and Pizza have the same calories." << endl;
+    } else {
+        cout << "Salad and Pizza do not have the same calories." << endl;
+    }
+
+    cout<<"---------------------"<<endl;
+
+    //Test << operator
+    cout << "Salad:" << endl;
+    cout << salad;
+
+    cout << "Pizza:" << endl;
+    cout << pizza;
+
+    return 0;
+}
