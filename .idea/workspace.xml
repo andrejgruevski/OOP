@@ -103,8 +103,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab6/zad8.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab6/zad8.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -744,7 +744,8 @@
       <workItem from="1745518031820" duration="915000" />
       <workItem from="1745571303774" duration="629000" />
       <workItem from="1745576829093" duration="596000" />
-      <workItem from="1745597766519" duration="568000" />
+      <workItem from="1745597766519" duration="809000" />
+      <workItem from="1745667616461" duration="5035000" />
     </task>
     <servers />
   </component>

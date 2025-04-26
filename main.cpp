@@ -1,178 +1,182 @@
 #include <iostream>
 #include <cstring>
-
 using namespace std;
-
-class Student {
+class Ingredient {
 private:
-    char* name;
-    int age;
-    char* major;
-
+    char *name;
+    int quantity;
+    double calories;
+    void copy(const Ingredient &i) {
+        name=new char[strlen(i.name)+1];
+        strcpy(name,i.name);
+        quantity=i.quantity;
+        calories=i.calories;
+    }
 public:
-    Student(){}
-    Student(const char* name, int age, const char* major) {
-        this->name = new char[strlen(name) + 1];
+    Ingredient(const char *name="", int quantity=0, double calories=0.0) {
+        this->name = new char[strlen(name)+1];
         strcpy(this->name, name);
-        this->age = age;
-        this->major = new char[strlen(major) + 1];
-        strcpy(this->major, major);
+        this->quantity = quantity;
+        this->calories = calories;
     }
-    Student(const Student& other) {
-        name = new char[strlen(other.name) + 1];
-        strcpy(name, other.name);
-        age = other.age;
-        major = new char[strlen(other.major) + 1];
-        strcpy(major, other.major);
+    Ingredient(const Ingredient &i) {
+        copy(i);
     }
-    ~Student() {}
-    void print() {
-        cout<<name<<" "<<"("<<age<<", "<<major<<")"<<endl;
-
+    Ingredient &operator=(const Ingredient &i) {
+        if (this!=&i) {
+            delete [] name;
+            copy(i);
+        }
+        return *this;
     }
-    char* getName() {
-        return name;
+    ~Ingredient() {
+        delete [] name;
     }
-    int getAge() {
-        return age;
+    double Calories() const {
+        return calories*quantity;
     }
-
+    friend ostream &operator<<(ostream &os, const Ingredient &i) {
+        os << i.name << " " << i.quantity << endl;
+        return os;
+    }
 };
-
-
-class Classroom {
+class Dish{
 private:
-    Student* students;
+    Ingredient *ingredients;
+    char *dishName;
     int n;
-    int capacity;
-
+    void copy(const Dish &d) {
+        n=d.n;
+        ingredients = new Ingredient[d.n];
+        for (int i=0;i<d.n;i++) {
+            ingredients[i]=d.ingredients[i];
+        }
+        dishName = new char[strlen(d.dishName)+1];
+        strcpy(dishName,d.dishName);
+    }
 public:
-    Classroom() {
-        students = nullptr;
-        n = 0;
-        capacity = 0;
-    }
-
-    Classroom(const Classroom &s) {
-        n = s.n;
-        capacity = s.capacity;
-        students = new Student[capacity];
-        for (int i = 0; i < n; i++) {
-            students[i] = s.students[i];
+    Dish(const char *dishName="", Ingredient *ingredients=nullptr, int n=0) {
+        this->dishName=new char[strlen(dishName)+1];
+        strcpy(this->dishName,dishName);
+        this->n=n;
+        this->ingredients = new Ingredient[n];
+        for (int i=0;i<n;i++) {
+            this->ingredients[i]=ingredients[i];
         }
     }
-
-
-    void add(const Student& student) {
-        if (n == capacity) {
-            int newCapacity = capacity + 5;
-            Student* temp = new Student[newCapacity];
-            for (int i = 0; i < n; i++) {
-                temp[i] = students[i];
-            }
-            delete[] students;
-            students = temp;
-            capacity = newCapacity;
-        }
-
-        students[n] = student;
-        n++;
+    Dish(const Dish &d) {
+        copy(d);
     }
-    void remove(const char* name) {
-        int ind = -1;
-        for (int i = 0; i < n; i++) {
-            if (strcmp(students[i].getName(), name) == 0) {
-                ind = i;
-                break;
-            }
+    Dish &operator=(const Dish &d) {
+        if (this!=&d) {
+            delete [] ingredients;
+            delete [] dishName;
+            copy(d);
         }
-        if (ind != -1) {
-            for (int i = ind; i < n - 1; i++) {
-                students[i] = students[i+1];
-            }
-            n--;
+        return *this;
+    }
+    ~Dish() {
+        delete [] ingredients;
+        delete [] dishName;
+    }
+    double getTotalCalories() const {
+        double total=0.0;
+        for (int i=0;i<n;i++) {
+            total+=ingredients[i].Calories();
         }
+        return total;
     }
-    void printStudents() {
-        for (int i = 0; i < n; i++) {
-            students[i].print();
+    Dish operator+(const Dish &other) {
+        Ingredient *res = new Ingredient[n+other.n];
+        for (int i=0;i<n;i++) {
+            res[i]=ingredients[i];
         }
-        cout<<endl;
+        for (int i=0;i<other.n;i++) {
+            res[n+i]=other.ingredients[i];
+        }
+        char * name = new char[strlen(dishName)+strlen(other.dishName)+6];
+        name[0]='\0';
+        strcat(name,dishName);
+        strcat(name," and ");
+        strcat(name,other.dishName);
+        Dish d(name,res,n+other.n);
+        return d;
     }
-
-    Student *getS() const{
-        return students;
+    Dish &operator+=(const Ingredient &i) {
+        Ingredient *res = new Ingredient[n+1];
+        for (int i=0;i<n;i++) {
+            res[i]=ingredients[i];
+        }
+        res[n++]=i;
+        delete [] ingredients;
+        ingredients=res;
+        return *this;
     }
-
-    int getN() const{
-        return n;
+    bool operator==(const Dish &other) {
+        return getTotalCalories()==other.getTotalCalories();
+    }
+    friend ostream &operator<<(ostream &os, const Dish &d) {
+        os<<"Dish: "<<d.dishName<<endl;
+        for (int i=0;i<d.n;i++) {
+            os<<d.ingredients[i];
+        }
+        os<<"Total calories: "<<d.getTotalCalories()<<endl;
+        return os;
     }
 };
-double findMedianAge(const Classroom &c) {
-    Student  *students = c.getS();
-    int N = c.getN();
-    double medijana = 0.0;
-    if (N > 0) {
-        for (int i = 0; i < N-1; i++) {
-            for (int j = i+1; j < N; j++) {
-                if (students[i].getAge() > students[j].getAge()) {
-                    Student temp = students[i];
-                    students[i] = students[j];
-                    students[j] = temp;
-                }
-            }
-        }
-
-        if (N % 2 == 0) {
-            medijana = (students[N/2-1].getAge() + students[N/2].getAge()) / 2.0;
-        } else {
-            medijana = students[N/2].getAge();
-        }
-    }
-    return medijana;
-}
 
 int main() {
-    int numClassrooms, numStudents;
-    cin >> numClassrooms;
-    Classroom classrooms[100];
-    Student students[100];
 
-    // Testing add method
-    for (int i = 0; i < numClassrooms; i++) {
-        cin >> numStudents;
-        for (int j = 0; j < numStudents; j++) {
-            char name[100], major[100];
-            int age;
-            cin >> name >> age >> major;
-            Student student(name, age, major);
-            classrooms[i].add(student);
-            students[i*numStudents + j] = student;
-        }
-        cout<<"Classroom "<<i<<endl;
-        classrooms[i].printStudents();
-    }
+    char name [50];
+    cin>>name;
+    // Create Ingredients
+    Ingredient tomato(name, 200, 20);
+    cin>>name;
+    Ingredient onion(name, 100, 30);
+    cin>>name;
+    Ingredient cheese(name, 50, 50);
 
 
-    // Testing findMedianAge method
-    int targetClassroom;
-    cin >> targetClassroom;
-    double medianAge = findMedianAge(classrooms[targetClassroom]);
-    cout << "The median age in classroom " << targetClassroom << " is: " << medianAge << endl;
-    cout<<"After removing the elements:"<<endl; /// Added
-    // Testing remove method
-    cin >> numStudents;
-    for (int j = 0; j < numStudents; j++) {
-        char name[100];
-        cin >> name;
-        for (int i = 0; i < numClassrooms; i++) {
-            classrooms[i].remove(name);
-        }
+    cin>>name;
+    // Create Dishes
+    Dish salad(name);
+    salad += tomato;
+    salad += onion;
+
+    cin>>name;
+    Dish pizza(name);
+    pizza += tomato;
+    pizza += cheese;
+
+    // Test + operator
+//    Dish combinedDish = salad + pizza;
+//    cout<<combinedDish;
+
+    cout<<"---------------------"<<endl;
+
+    //Test = operator
+    Ingredient ingredient = tomato;
+    cout<<ingredient;
+    cout<<endl;
+
+    cout<<"---------------------"<<endl;
+
+    // Test == operator
+    if (salad == pizza) {
+        cout << "Salad and Pizza have the same calories." << endl;
+    } else {
+        cout << "Salad and Pizza do not have the same calories." << endl;
     }
-    for (int i = 0; i < numClassrooms; i++) {
-        cout<<"Classroom "<<i<<endl;
-        classrooms[i].printStudents();
-    }
+
+    cout<<"---------------------"<<endl;
+
+    //Test << operator
+    cout << "Salad:" << endl;
+    cout << salad;
+
+    cout << "Pizza:" << endl;
+    cout << pizza;
 
     return 0;
 }
+

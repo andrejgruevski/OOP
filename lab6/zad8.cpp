@@ -40,164 +40,188 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
 class Ingredient {
 private:
     char *name;
     int quantity;
     double calories;
-    void copy(const Ingredient &i) {
-        name=new char[strlen(i.name)+1];
-        strcpy(name,i.name);
-        quantity=i.quantity;
-        calories=i.calories;
-    }
 public:
-    Ingredient(const char *name="", int quantity=0, double calories=0.0) {
-        this->name = new char[strlen(name)+1];
+    Ingredient() {
+        this->name = new char[1];
+        name[0] = '\0';
+        quantity = 0;
+        calories = 0;
+    }
+
+    Ingredient(const char *name, int quantity, double calories) {
+        this->name = new char[strlen(name) + 1];
         strcpy(this->name, name);
         this->quantity = quantity;
         this->calories = calories;
     }
+
     Ingredient(const Ingredient &i) {
-        copy(i);
+        this->name = new char[strlen(i.name) + 1];
+        strcpy(this->name, i.name);
+        this->quantity = i.quantity;
+        this->calories = i.calories;
     }
+
     Ingredient &operator=(const Ingredient &i) {
-        if (this!=&i) {
-            delete [] name;
-            copy(i);
+        if (this != &i) {
+            delete[] name;
+            this->name = new char[strlen(i.name) + 1];
+            strcpy(this->name, i.name);
+            this->quantity = i.quantity;
+            this->calories = i.calories;
         }
         return *this;
     }
+
     ~Ingredient() {
-        delete [] name;
+        delete[] name;
     }
-    double Calories() const {
-        return calories*quantity;
+
+    double total() const {
+        return quantity * calories;
     }
+
     friend ostream &operator<<(ostream &os, const Ingredient &i) {
-        os<<"- " << i.name << " " << i.quantity <<"g/ml"<< endl;
+        os << "- " << i.name << ": " << i.quantity << "g/ml" << endl;
         return os;
     }
 };
-class Dish{
+
+class Dish {
 private:
     Ingredient *ingredients;
     char *dishName;
-    int n;
-    void copy(const Dish &d) {
-        n=d.n;
-        ingredients = new Ingredient[d.n];
-        for (int i=0;i<d.n;i++) {
-            ingredients[i]=d.ingredients[i];
-        }
-        dishName = new char[strlen(d.dishName)+1];
-        strcpy(dishName,d.dishName);
-    }
+    int ingredientCount;
 public:
-    Dish(const char *dishName="", Ingredient *ingredients=nullptr, int n=0) {
-        this->dishName=new char[strlen(dishName)+1];
-        strcpy(this->dishName,dishName);
-        this->n=n;
-        this->ingredients = new Ingredient[n];
-        for (int i=0;i<n;i++) {
-            this->ingredients[i]=ingredients[i];
-        }
+    Dish() {
+        this->ingredients = new Ingredient[0];
+        this->dishName = new char[1];
+        dishName[0] = '\0';
+        ingredientCount = 0;
     }
+
+    Dish(const char *dishName) {
+        this->dishName = new char[strlen(dishName) + 1];
+        strcpy(this->dishName, dishName);
+        this->ingredients = new Ingredient[0];
+        this->ingredientCount = 0;
+    }
+
     Dish(const Dish &d) {
-        copy(d);
+        this->dishName = new char[strlen(d.dishName) + 1];
+        strcpy(this->dishName, d.dishName);
+        this->ingredientCount = d.ingredientCount;
+        this->ingredients = new Ingredient[ingredientCount];
+        for (int i = 0; i < ingredientCount; i++) {
+            this->ingredients[i] = d.ingredients[i];
+        }
     }
+
     Dish &operator=(const Dish &d) {
-        if (this!=&d) {
-            delete [] ingredients;
-            delete [] dishName;
-            copy(d);
+        if (this != &d) {
+            delete[] dishName;
+            delete[] ingredients;
+            this->dishName = new char[strlen(d.dishName) + 1];
+            strcpy(this->dishName, d.dishName);
+            this->ingredientCount = d.ingredientCount;
+            this->ingredients = new Ingredient[ingredientCount];
+            for (int i = 0; i < ingredientCount; i++) {
+                this->ingredients[i] = d.ingredients[i];
+            }
         }
         return *this;
     }
+
     ~Dish() {
-        delete [] ingredients;
-        delete [] dishName;
+        delete[] ingredients;
+        delete[] dishName;
     }
+
     double getTotalCalories() const {
-        double total=0.0;
-        for (int i=0;i<n;i++) {
-            total+=ingredients[i].Calories();
+        double sum = 0;
+        for (int i = 0; i < ingredientCount; i++) {
+            sum += ingredients[i].total();
         }
-        return total;
+        return sum;
     }
-    Dish operator+(const Dish &other) {
-        Ingredient *res = new Ingredient[n+other.n];
-        for (int i=0;i<n;i++) {
-            res[i]=ingredients[i];
-        }
-        for (int i=0;i<other.n;i++) {
-            res[n+i]=other.ingredients[i];
-        }
-        char * name = new char[strlen(dishName)+strlen(other.dishName)+6];
-        name[0]='\0';
-        strcat(name,dishName);
-        strcat(name," and ");
-        strcat(name,other.dishName);
-        Dish d(name,res,n+other.n);
-        return d;
-    }
+
     Dish &operator+=(const Ingredient &i) {
-        Ingredient *res = new Ingredient[n+1];
-        for (int i=0;i<n;i++) {
-            res[i]=ingredients[i];
+        Ingredient *tmp = new Ingredient[ingredientCount + 1];
+        for (int j = 0; j < ingredientCount; j++) {
+            tmp[j] = ingredients[j];
         }
-        res[n++]=i;
-        delete [] ingredients;
-        ingredients=res;
+        tmp[ingredientCount++] = i;
+        delete[] ingredients;
+        ingredients = tmp;
         return *this;
     }
-    bool operator==(const Dish &other) {
-        return getTotalCalories()==other.getTotalCalories();
-    }
-    friend ostream &operator<<(ostream &os, const Dish &d) {
-        os<<"Dish: "<<d.dishName<<endl;
-        for (int i=0;i<d.n;i++) {
-            os<<d.ingredients[i];
+
+    Dish operator+(const Dish &other) const {
+        Dish result(dishName);
+        delete[] result.ingredients; // бидејќи по default има празна низа
+        result.ingredientCount = this->ingredientCount + other.ingredientCount;
+        result.ingredients = new Ingredient[result.ingredientCount];
+        for (int i = 0; i < this->ingredientCount; i++) {
+            result.ingredients[i] = this->ingredients[i];
         }
-        os<<"Total Calories: "<<d.getTotalCalories()<<endl;
+        for (int i = 0; i < other.ingredientCount; i++) {
+            result.ingredients[i + this->ingredientCount] = other.ingredients[i];
+        }
+        return result;
+    }
+
+    bool operator==(const Dish &other) const {
+        return this->getTotalCalories() == other.getTotalCalories();
+    }
+
+    friend ostream &operator<<(ostream &os, const Dish &d) {
+        os << "Dish: " << d.dishName << endl;
+        for (int i = 0; i < d.ingredientCount; i++) {
+            os << d.ingredients[i];
+        }
+        os << "Total Calories: " << d.getTotalCalories() << endl;
         return os;
     }
 };
-int main() {
 
-    char name [50];
-    cin>>name;
-    // Create Ingredients
+int main() {
+    char name[50];
+    cin >> name;
     Ingredient tomato(name, 200, 20);
-    cin>>name;
+
+    cin >> name;
     Ingredient onion(name, 100, 30);
-    cin>>name;
+
+    cin >> name;
     Ingredient cheese(name, 50, 50);
 
-
-    cin>>name;
-    // Create Dishes
+    cin >> name;
     Dish salad(name);
     salad += tomato;
     salad += onion;
 
-    cin>>name;
+    cin >> name;
     Dish pizza(name);
     pizza += tomato;
     pizza += cheese;
 
     // Test + operator
     Dish combinedDish = salad + pizza;
-    cout<<combinedDish;
+    cout << combinedDish;
 
-    cout<<"---------------------"<<endl;
+    cout << "---------------------" << endl;
 
-    //Test = operator
+    // Test = operator
     Ingredient ingredient = tomato;
-    cout<<ingredient;
-    cout<<endl;
+    cout << ingredient;
 
-    cout<<"---------------------"<<endl;
+    cout << "---------------------" << endl;
 
     // Test == operator
     if (salad == pizza) {
@@ -206,9 +230,9 @@ int main() {
         cout << "Salad and Pizza do not have the same calories." << endl;
     }
 
-    cout<<"---------------------"<<endl;
+    cout << "---------------------" << endl;
 
-    //Test << operator
+    // Test << operator
     cout << "Salad:" << endl;
     cout << salad;
 
