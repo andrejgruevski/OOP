@@ -37,6 +37,7 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab6.6.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab6.7.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab6.8.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab6.9.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab7.1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q3.dir
