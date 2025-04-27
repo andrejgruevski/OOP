@@ -60,6 +60,7 @@ add_executable(lab7.2 lab7/zad2.cpp)
 add_executable(lab7.3 lab7/zad3.cpp)
 add_executable(lab7.4 lab7/zad4.cpp)
 add_executable(lab7.5 lab7/zad5.cpp)
+add_executable(lab7.6 lab7/zad6.cpp)
 
 
 
