@@ -11,6 +11,7 @@ add_executable(vezhbi1.2 vezhbiLabs/zad2.cpp)
 add_executable(vezhbi1.3 vezhbiLabs/zad3.cpp)
 add_executable(vezhbi1.4 vezhbiLabs/zad4.cpp)
 add_executable(vezhbi1.5 vezhbiLabs/zad5.cpp)
+add_executable(vezhbi1.12 vezhbiLabs/zad12.cpp)
 
 
 
@@ -62,6 +63,8 @@ add_executable(lab7.4 lab7/zad4.cpp)
 add_executable(lab7.5 lab7/zad5.cpp)
 add_executable(lab7.6 lab7/zad6.cpp)
 
+add_executable(lab8.1 lab8/zad1.cpp)
+
 
 
 add_executable(q1 kvalifikaciski/zad1.cpp)
@@ -109,5 +112,9 @@ add_executable(k11 kolok1/zad11.cpp)
 add_executable(kk1 kolok1/k1.cpp)
 add_executable(kk2 kolok1/k2.cpp)
 add_executable(kk3 kolok1/k3.cpp)
+
+add_executable(kolok2 kolok2/zad1.cpp)
+add_executable(kolok2.2 kolok2/zad2.cpp)
+
 
 
