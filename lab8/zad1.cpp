@@ -1,6 +1,27 @@
 //
 // Created by Huhe on 5/2/2025.
 //
+//Дизајнирате програма за систем за хотелски резервации. За ова ќе треба да креирате базична класа наречена Room што претставува генеричка хотелска соба и ги има овие две чисти виртуелни функции:
+//
+//displayRoomInfo()
+//displayRoomPrice()
+//Понатаму, треба да креирате 2 подкласи на Room наречени:
+//
+//StandardRoom
+//        DeluxeRoom
+//Класата StandardRoom треба да ги има овие информации:
+//
+//hasBathroom - bool променлива
+//и имплементирајте ги двете функции погоре со овие имплементации:
+//За displayRoomInfo() треба да се печати This is a standard room with a queen-sized bed. Ако собата има и бања, треба да додадете `and a bathroom` на крајот од пораката.
+//За displayRoomPrice() треба да се печати The price for a standard room is [price] per night. каде што цената се пресметува врз основа на тоа дали собата има бања или не. Ако има бања е 100$ а ако не е 80$.
+//Класата DeluxeRoom треба да ги има овие информации:
+//
+//hasBalcony - bool променлива
+//и имплементирајте ги двете функции погоре со овие имплементации:
+//
+//За displayRoomInfo() треба да печати This is a deluxe room with a king-sized bed, a bathroom, a mini-fridge. Доколку собата дополнително има и балкон, додадете `and a balcony` на крајот од пораката.
+//За displayRoomPrice() треба да се печати The price for a deluxe room is [price] per night. каде цената се пресметува врз основа на тоа дали собата има балкон или не. Ако има балкон е 200$ а ако не е 160$.
 #include "iostream"
 using namespace std;
 class Room{
