@@ -1,4 +1,13 @@
 "D:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "D:\Huhe's New Folder 2023\FAx\OOP" -B "D:\Huhe's New Folder 2023\FAx\OOP\cmake-build-debug"
--- Configuring done (1.5s)
--- Generating done (0.1s)
--- Build files have been written to: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
+-- Configuring done (1.0s)
+CMake Error at CMakeLists.txt:74 (add_executable):
+  Cannot find source file:
+
+    lab8/zad9.cpp
+
+
+CMake Error at CMakeLists.txt:74 (add_executable):
+  No SOURCES given to target: lab8.9
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

@@ -50,6 +50,8 @@ D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.3.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.4.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.5.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.6.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.7.dir
+D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/lab8.8.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q1.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q2.dir
 D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug/CMakeFiles/q3.dir

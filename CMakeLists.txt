@@ -69,6 +69,10 @@ add_executable(lab8.3 lab8/zad3.cpp)
 add_executable(lab8.4 lab8/zad4.cpp)
 add_executable(lab8.5 lab8/zad5.cpp)
 add_executable(lab8.6 lab8/zad6.cpp)
+add_executable(lab8.7 lab8/zad7.cpp)
+add_executable(lab8.8 lab8/zad8.cpp)
+add_executable(lab8.9 lab8/zad9.cpp)
+
 
 
 

@@ -11,25 +11,14 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="OOP" targetName="kolok2.2" />
-      <config projectName="OOP" targetName="lab6.9" />
+      <config projectName="OOP" targetName="lab8.7" />
       <config projectName="OOP" targetName="lab3.11" />
-      <config projectName="OOP" targetName="k2" />
-      <config projectName="OOP" targetName="k1" />
-      <config projectName="OOP" targetName="lab6.5" />
+      <config projectName="OOP" targetName="lab8.8" />
       <config projectName="OOP" targetName="lab8.3" />
-      <config projectName="OOP" targetName="lab6.6" />
       <config projectName="OOP" targetName="lab8.4" />
-      <config projectName="OOP" targetName="lab6.7" />
       <config projectName="OOP" targetName="lab8.5" />
-      <config projectName="OOP" targetName="lab6.8" />
-      <config projectName="OOP" targetName="k8" />
-      <config projectName="OOP" targetName="k7" />
-      <config projectName="OOP" targetName="k4" />
-      <config projectName="OOP" targetName="k3" />
-      <config projectName="OOP" targetName="k6" />
+      <config projectName="OOP" targetName="lab8.6" />
       <config projectName="OOP" targetName="lab3.10" />
-      <config projectName="OOP" targetName="k5" />
       <config projectName="OOP" targetName="q27" />
       <config projectName="OOP" targetName="q28" />
       <config projectName="OOP" targetName="q25" />
@@ -39,74 +28,88 @@
       <config projectName="OOP" targetName="q21" />
       <config projectName="OOP" targetName="q22" />
       <config projectName="OOP" targetName="lab4.3" />
-      <config projectName="OOP" targetName="lab6.1" />
       <config projectName="OOP" targetName="lab4.4" />
-      <config projectName="OOP" targetName="lab6.2" />
       <config projectName="OOP" targetName="lab4.5" />
-      <config projectName="OOP" targetName="lab6.3" />
       <config projectName="OOP" targetName="lab8.1" />
-      <config projectName="OOP" targetName="lab6.4" />
       <config projectName="OOP" targetName="lab8.2" />
-      <config projectName="OOP" targetName="lab2.1" />
-      <config projectName="OOP" targetName="lab2.2" />
       <config projectName="OOP" targetName="lab4.1" />
       <config projectName="OOP" targetName="q29" />
       <config projectName="OOP" targetName="lab4.2" />
       <config projectName="OOP" targetName="q30" />
-      <config projectName="OOP" targetName="q16" />
-      <config projectName="OOP" targetName="q17" />
-      <config projectName="OOP" targetName="q14" />
       <config projectName="OOP" targetName="vezhbi1.12" />
-      <config projectName="OOP" targetName="q15" />
-      <config projectName="OOP" targetName="q12" />
       <config projectName="OOP" targetName="kk2" />
-      <config projectName="OOP" targetName="q13" />
       <config projectName="OOP" targetName="kk3" />
-      <config projectName="OOP" targetName="q10" />
       <config projectName="OOP" targetName="kk1" />
-      <config projectName="OOP" targetName="q11" />
-      <config projectName="OOP" targetName="q18" />
-      <config projectName="OOP" targetName="q19" />
       <config projectName="OOP" targetName="q6" />
       <config projectName="OOP" targetName="q5" />
       <config projectName="OOP" targetName="q8" />
       <config projectName="OOP" targetName="q7" />
-      <config projectName="OOP" targetName="lab3.8" />
       <config projectName="OOP" targetName="q2" />
+      <config projectName="OOP" targetName="q1" />
+      <config projectName="OOP" targetName="q4" />
+      <config projectName="OOP" targetName="q3" />
+      <config projectName="OOP" targetName="q9" />
+      <config projectName="OOP" targetName="lab1.1" />
+      <config projectName="OOP" targetName="lab5.2" />
+      <config projectName="OOP" targetName="lab5.3" />
+      <config projectName="OOP" targetName="lab1.2" />
+      <config projectName="OOP" targetName="lab1.3" />
+      <config projectName="OOP" targetName="lab5.1" />
+      <config projectName="OOP" targetName="k10" />
+      <config projectName="OOP" targetName="k11" />
+      <config projectName="OOP" targetName="kolok2.2" />
+      <config projectName="OOP" targetName="lab6.9" />
+      <config projectName="OOP" targetName="k2" />
+      <config projectName="OOP" targetName="k1" />
+      <config projectName="OOP" targetName="lab6.5" />
+      <config projectName="OOP" targetName="lab6.6" />
+      <config projectName="OOP" targetName="lab6.7" />
+      <config projectName="OOP" targetName="lab6.8" />
+      <config projectName="OOP" targetName="k8" />
+      <config projectName="OOP" targetName="k7" />
+      <config projectName="OOP" targetName="k4" />
+      <config projectName="OOP" targetName="k3" />
+      <config projectName="OOP" targetName="k6" />
+      <config projectName="OOP" targetName="k5" />
+      <config projectName="OOP" targetName="lab6.1" />
+      <config projectName="OOP" targetName="lab6.2" />
+      <config projectName="OOP" targetName="lab6.3" />
+      <config projectName="OOP" targetName="lab6.4" />
+      <config projectName="OOP" targetName="lab2.1" />
+      <config projectName="OOP" targetName="lab2.2" />
+      <config projectName="OOP" targetName="q16" />
+      <config projectName="OOP" targetName="q17" />
+      <config projectName="OOP" targetName="q14" />
+      <config projectName="OOP" targetName="q15" />
+      <config projectName="OOP" targetName="q12" />
+      <config projectName="OOP" targetName="q13" />
+      <config projectName="OOP" targetName="q10" />
+      <config projectName="OOP" targetName="q11" />
+      <config projectName="OOP" targetName="q18" />
+      <config projectName="OOP" targetName="q19" />
+      <config projectName="OOP" targetName="lab3.8" />
       <config projectName="OOP" targetName="lab7.4" />
       <config projectName="OOP" targetName="kolok2" />
       <config projectName="OOP" targetName="lab3.9" />
-      <config projectName="OOP" targetName="q1" />
       <config projectName="OOP" targetName="lab7.5" />
-      <config projectName="OOP" targetName="q4" />
       <config projectName="OOP" targetName="lab7.6" />
-      <config projectName="OOP" targetName="q3" />
       <config projectName="OOP" targetName="m" />
       <config projectName="OOP" targetName="q20" />
-      <config projectName="OOP" targetName="q9" />
-      <config projectName="OOP" targetName="lab1.1" />
       <config projectName="OOP" targetName="lab3.4" />
       <config projectName="OOP" targetName="vezhbi1.5" />
-      <config projectName="OOP" targetName="lab5.2" />
       <config projectName="OOP" targetName="lab3.5" />
-      <config projectName="OOP" targetName="lab5.3" />
       <config projectName="OOP" targetName="lab7.1" />
       <config projectName="OOP" targetName="lab3.6" />
       <config projectName="OOP" targetName="lab7.2" />
       <config projectName="OOP" targetName="lab3.7" />
       <config projectName="OOP" targetName="lab7.3" />
-      <config projectName="OOP" targetName="lab1.2" />
       <config projectName="OOP" targetName="vezhbi1.1" />
-      <config projectName="OOP" targetName="lab1.3" />
       <config projectName="OOP" targetName="lab3.1" />
       <config projectName="OOP" targetName="vezhbi1.2" />
       <config projectName="OOP" targetName="lab3.2" />
       <config projectName="OOP" targetName="vezhbi1.3" />
       <config projectName="OOP" targetName="lab3.3" />
       <config projectName="OOP" targetName="vezhbi1.4" />
-      <config projectName="OOP" targetName="lab5.1" />
-      <config projectName="OOP" targetName="k10" />
-      <config projectName="OOP" targetName="k11" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -116,63 +119,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/lab8/zad6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/zad7.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/zad8.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab8/zad9.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3d49bb8d17847c53592c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-05T19-09-03-0683.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k1-Debug-45c3a32db29d295a198f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k10-Debug-8db291ffec546daa017a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k11-Debug-6d04e0dad5f5dba3d0d2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k2-Debug-abbfa3d681304288f25c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k3-Debug-953a56b03176234e3ca0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k4-Debug-72857b6e57ae33f7883f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k5-Debug-b4160baeaf18e9438f19.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k6-Debug-fac30879bbddc647bb9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k7-Debug-3baa5eb83932364074d8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k8-Debug-3e865caa963d4da7576f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk1-Debug-448c9305eb2963d668b9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk2-Debug-612a7da20aaf6a921a95.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk3-Debug-deef28e673543ffecb51.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2-Debug-8a95f948699276d26f76.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2.2-Debug-57e03b0416daa44cedc5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q1-Debug-cf19fc55744e6343eaac.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q10-Debug-e8cd811bd95b24c56357.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q11-Debug-2bf6858b420387ad6c8e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q12-Debug-c69fc17ade650416a509.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q13-Debug-01a37be22dad0f774517.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q14-Debug-ea9bedf049764164ce38.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q15-Debug-556aa5a353a79a7a5b57.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q16-Debug-87177a18f96a31504deb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q17-Debug-e2090e4fb1ff11c1902d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q18-Debug-b33fd184dc2c1fb32075.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q19-Debug-de6d5168be10bd16a9ac.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q2-Debug-194f38979ea1ac8ee6fe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q20-Debug-a660b7c2e25d691ecd39.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q21-Debug-8ecd414ecb3728cd8abb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q22-Debug-a4648fb842ab1ec6005f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q23-Debug-d8adef92299de885cd7f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q24-Debug-4a7cc9da3a44c42b140c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q25-Debug-d85ab1c255fa000c92b1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q26-Debug-3d896cf20012920cd02f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q27-Debug-8b7cf6594ce27b940c2b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q28-Debug-f1ba1513283acff19155.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q29-Debug-d91257ab35b1d7dec1fb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q3-Debug-5ae589018575f799d8c3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q30-Debug-056a4c97433d33b69de6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q4-Debug-6eba82cf485cb038d71e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q5-Debug-dab3dcaaa4c0bfbed091.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q6-Debug-e3bcc1d2cad3f0bf60f3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q7-Debug-7e36f94716abbbf24137.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q8-Debug-23e1c2274ab9086b4f2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q9-Debug-aeb3eb23e0407019abd1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d042157567811f5b27f2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-06T22-06-46-0405.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k1-Debug-e4a389f7fc3fec67fa9a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k10-Debug-fa361cebe1b5bcd763fa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k11-Debug-afa88baab9303997aaf1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k2-Debug-d0830e85e321c078bb6c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k3-Debug-a44923d8971109c5601c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k4-Debug-d68ae2e5c8ae1e199b36.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k5-Debug-decfdf3e1b9d4361dbad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k6-Debug-63151244c1fc788710b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k7-Debug-116f8c98e0280bc18915.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-k8-Debug-e5638f0ab656a3e3a396.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk1-Debug-164b284ccdada3ff0cfa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk2-Debug-b9e67d2928449a7d223e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kk3-Debug-615f29aee3578c90e54c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2-Debug-f349353c128ea39c81ff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-kolok2.2-Debug-db93626123ccb7fd27a0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q1-Debug-05f6b9e4a4d0dcd5e202.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q10-Debug-0db1fb154c5fda1fd72f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q11-Debug-282924dab2d2ac41b3d1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q12-Debug-823be2590691ce4a02b8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q13-Debug-10242f22ddcf624bb6fe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q14-Debug-02575cfe950c29a930af.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q15-Debug-a5ddbd92e44934213cf2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q16-Debug-0c1de4a8d289451532dc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q17-Debug-1b93fa913d8068d76acb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q18-Debug-ec7f2db3f05f5d93a969.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q19-Debug-bc63de78ff9074edddc6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q2-Debug-3c9dfb606e6adc132e4f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q20-Debug-6286509c066256d20b1b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q21-Debug-9de5303271b388994ee8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q22-Debug-6521e5ebb1b02b184049.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q23-Debug-80b79507e45ab0aff525.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q24-Debug-d4f25cd5293ce4b385c4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q25-Debug-ace6c69d405e60e61e91.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q26-Debug-530f0074e0eea9d3dc02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q27-Debug-0f924840239e6e7012dd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q28-Debug-5c65189058501bdebb8e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q29-Debug-280a59abe5ca69ab14bb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q3-Debug-e2423661318e4d963fc5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q30-Debug-7bdfdd36a738d2530033.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q4-Debug-caa74376ca5f7bf8366a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q5-Debug-ab4b2a52b2e1f8ab46df.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q6-Debug-72716eb4b531a4bab540.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q7-Debug-124a7dde9eb6f105f2f2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q8-Debug-d24378d415d8189ab656.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-q9-Debug-45f2bf852cc0770af1f9.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8/zad5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/zad5.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -559,6 +563,21 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lab8.6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab8.6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab8.6">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab8.7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab8.7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab8.7">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab8.8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab8.8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab8.8">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="m" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="m" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="m">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -804,6 +823,9 @@
       <item itemvalue="CMake Application.lab8.3" />
       <item itemvalue="CMake Application.lab8.4" />
       <item itemvalue="CMake Application.lab8.5" />
+      <item itemvalue="CMake Application.lab8.6" />
+      <item itemvalue="CMake Application.lab8.7" />
+      <item itemvalue="CMake Application.lab8.8" />
       <item itemvalue="CMake Application.m" />
       <item itemvalue="CMake Application.q10" />
       <item itemvalue="CMake Application.q11" />
@@ -913,7 +935,9 @@
       <workItem from="1746178516034" duration="2406000" />
       <workItem from="1746471677556" duration="4526000" />
       <workItem from="1746543152339" duration="118000" />
-      <workItem from="1746568953835" duration="248000" />
+      <workItem from="1746568953835" duration="871000" />
+      <workItem from="1746697057246" duration="618000" />
+      <workItem from="1746729084395" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
