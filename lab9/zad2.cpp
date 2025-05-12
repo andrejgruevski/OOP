@@ -28,9 +28,90 @@
 //Функцијата displayInfo() печати вклучувајќи го и нивото на стамина.
 //
 //Да се направи глобална функцијаAthlete* findAthleteWithMaxValue(Athlete** athletes, int n) - најголема вредност за тркачите се одредува според брзина, додека кај скокачите според висина, треба да се најде играчот кој ќе има најголема вредност и да се врати покажувач кон него.
-#include "iostream"
-using namespace std;
+#include <iostream>
+#include <cstring>
 
+using namespace std;
+class Athlete{
+protected:
+    char name[50];
+    int age;
+public:
+    Athlete(char *name,int age){
+        strcpy(this->name,name);
+        this->age=age;
+    }
+    virtual void displayInfo(){
+        cout<<"Athlete: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+    }
+};
+class Runner:public Athlete{
+protected:
+    double speed;
+public:
+    Runner(char *name,int age,double speed): Athlete(name,age){
+        this->speed=speed;
+    }
+    void displayInfo(){
+        Athlete::displayInfo();
+        cout<<"Speed: "<<speed<<" mph "<<endl;
+    }
+    double getSpeed(){
+        return speed;
+    }
+};
+class Jumper:public Athlete{
+protected:
+    double height;
+public:
+    Jumper(char *name,int age,double height): Athlete(name,age){
+        this->height=height;
+    }
+    void displayInfo(){
+        Athlete::displayInfo();
+        cout<<"Height: "<<height<<"m "<<endl;
+    }
+    double getHeight(){
+        return height;
+    }
+};
+class AllRoundAthlete:public Runner,public Jumper{
+private:
+    int stamina;
+public:
+    AllRoundAthlete(char *name,int age,double speed,double height,int stamina)
+            : Runner(name,age,speed), Jumper(name,age,height){
+        this->stamina=stamina;
+    }
+    void displayInfo(){
+        Runner::displayInfo();
+        cout<<"Height: "<<height<<"m "<<endl;
+        cout<<"Stamina: "<<stamina<<endl;
+    }
+};
+Athlete *findAthleteWithMaxValue(Athlete** athletes, int n){
+    Athlete *maxAthlete=athletes[0];
+    double max=0.0;
+    for(int i=0;i<n;i++) {
+        Runner *r = dynamic_cast<Runner *>(athletes[i]);
+        if (r != 0) {
+            if (r->getSpeed() > max) {
+                max = r->getSpeed();
+                maxAthlete = r;
+            }
+        } else {
+            Jumper *j = dynamic_cast<Jumper *>(athletes[i]);
+            if (j != 0) {
+                if (j->getHeight() > max) {
+                    max = j->getHeight();
+                    maxAthlete = j;
+                }
+            }
+        }
+    }
+    return maxAthlete;
+}
 int main() {
     char name[50];
     int age;
@@ -70,4 +151,7 @@ int main() {
 
     }
 }
+
+
+
 
