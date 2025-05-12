@@ -56,3 +56,78 @@
 //        Screen Height: висина на екранор
 //        Is 3D: дали е 3Д
 //Да се имплементира глобалната функција MostExpensiveTheater() - прима низа од покажувачи од класата Theater (објектите можат да бидат и Theater и MovieTheater и број на елементи). Како резултат се печатат информациите за најскапиот елемент во низата (без разлика дали е Theater или MovieTheater)
+#include "iostream"
+#include "cstring"
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    char name[100];
+    char city[100];
+    int capacity;
+    double reviews[10];
+    double baseTicketPrice;
+    int discount;
+    double screenWidth, screenHeight;
+    bool is3D;
+
+    if (n == 1) {
+        cout << "TESTING CLASS THEATER:" << endl;
+        cout << "==============================" << endl;
+        for (int i = 0; i < 3; ++i) {
+            cin >> name >> city >> capacity;
+            for (int j = 0; j < 10; ++j)
+                cin >> reviews[j];
+            cin >> baseTicketPrice >> discount;
+
+            Theater t(name, city, capacity, reviews, baseTicketPrice, discount);
+            t.print();
+            cout << "------------------------------";
+        }
+    } else if (n == 2) {
+        cout << "TESTING CLASS MOVIE THEATERS:" << endl;
+        cout << "==============================" << endl;
+        for (int i = 0; i < 3; ++i) {
+            cin >> name >> city >> capacity;
+            for (int j = 0; j < 10; ++j)
+                cin >> reviews[j];
+            cin >> baseTicketPrice >> discount >> screenWidth >> screenHeight >> is3D;
+
+            MovieTheater mt(name, city, capacity, reviews, baseTicketPrice, discount, screenWidth, screenHeight, is3D);
+            mt.print();
+            cout << "------------------------------";
+        }
+    } else if (n == 3) {
+        cout << "TESTING MostExpensiveTheater FUNCTION:" << endl;
+        cout << "==============================" << endl;
+
+        Theater *theaters[6];
+        int type;
+        for (int i = 0; i < 5; ++i) {
+            cin >> type;
+
+            if (type == 1) { // Theater
+                cin >> name >> city >> capacity;
+                for (int j = 0; j < 10; ++j)
+                    cin >> reviews[j];
+                cin >> baseTicketPrice >> discount;
+                theaters[i] = new Theater(name, city, capacity, reviews, baseTicketPrice, discount);
+            } else { // MovieTheater
+                cin >> name >> city >> capacity;
+                for (int j = 0; j < 10; ++j)
+                    cin >> reviews[j];
+                cin >> baseTicketPrice >> discount;
+                cin >> screenWidth >> screenHeight >> is3D;
+                theaters[i] = new MovieTheater(name, city, capacity, reviews, baseTicketPrice, discount,
+                                               screenWidth, screenHeight, is3D);
+            }
+        }
+
+        MostExpensiveTheater(5, theaters);
+
+        for (int i = 0; i < 5; ++i) {
+            delete theaters[i];
+        }
+    }
