@@ -1,14 +1,76 @@
+//
+// Created by Huhe on 5/13/2025.
+//
+//Да се креира класа Game за опишување на видеоигра. Класата треба да содржи:
+//
+//name (низа од максимум 50 знаци),
+//конструктор со аргументи,
+//оператор == за споредба на две игри (споредба по име)
+//гетер getName()
+//Потоа да се креира апстрактна класа Gamer која содржи информации за гејмер и тоа:
+//
+//username (динамички алоцирана низа од знаци)
+//games (низа од максимум 50 игри)
+//numGames (цел број)
+//hoursPerWeek (цел број)
+//Класата треба да содржи:
+//Конструктор со аргументи
+//        Copy конструктор
+//        Оператор=
+//        Деструктор
+//Функција bool playsGame(const Game &game) која враќа дали гејмерот ја игра дадената игра
+//Дополнително класата треба да содржи два чисто виртуелни (апстрактни) методи:
+//
+//const char* calculateSkillLevel() - за пресметување на нивото на вештина на гејмерот.
+//void printInfo() - за печатење на информациите за гејмерот
+//Од оваа класа да се изведат класите PCGamer и ConsoleGamer кои го специфицираат типот на гејмерот.
+//
+//За секој PCGamer дополнително се чуваат следните информации:
+//
+//streamHours (цел број)
+//Класата треба да содржи:
+//
+//Конструктор со аргументи
+//        Copy конструктор
+//        Оператор=
+//        Деструктор
+//Имплементација на чисто виртуелните методи од Gamer
+//        Нивото на вештина (calculateSkillLevel()) за PCGamer се одредува според следниве правила:
+//
+//Доколку гејмерот игра повеќе од 30 часа неделно и стримува повеќе од 20 часа, се смета за „Pro PCGamer“.
+//Во спротивно, се смета за „Casual PCGamer“.
+//Функцијата за печатење (printInfo()) на податоци треба да биде во следниов формат:
+//PCGamer : [име], Hours Per Week: [часови]h, Skill Level: [ниво]
+//
+//За секој ConsoleGamer дополнително се чуваат следните информации:
+//
+//isProPlayer (bool вредност)
+//Класата треба да содржи:
+//
+//Конструктор со аргументи
+//        Copy конструктор
+//        Оператор=
+//        Деструктор
+//Имплементација на чисто виртуелните методи од Gamer
+//        Нивото на вештина (calculateSkillLevel()) за ConsoleGamer се одредува според следниве правила:
+//
+//Доколку е означен како професионален играч, се смета за „Pro ConsoleGamer“.
+//Во спротивно, се смета за „Casual ConsoleGamer“.
+//Функцијата за печатење (printInfo()) на податоци треба да биде во следниов формат:
+//
+//
+//ConsoleGamer: [име], Hours Per Week: [часови]h, Skill Level: [ниво]
+//
+//Да се дефинира глобална функција void printGamersThatPlayGame(Gamer *gamers[], int n, const Game &game) што на влез прима низа од покажувачи кон објекти од класата Gamer, нивниот број и игра, а како резултат ги печати информациите за сите играчи кои ја играат дадената игра и дополнително имаат hoursPerWeek поголем од просечниот на играчите кои ја играат дадената игра.
 #include <iostream>
 #include <cstring>
 using namespace std;
 
 class Game {
-private:
     char name[50];
 public:
-    Game(const char *name = "") {
-        strncpy(this->name, name, 49);
-        this->name[49] = '\0';
+    Game(const char *n = "") {
+        strcpy(this->name,name);
     }
 
     bool operator==(const Game &g) const {
@@ -28,24 +90,24 @@ protected:
     int hoursPerWeek;
 
 public:
-    Gamer(const char *username = "", Game *games = nullptr, int numGames = 0, int hoursPerWeek = 0) {
-        this->username = new char[strlen(username) + 1];
-        strcpy(this->username, username);
-        this->numGames = numGames;
-        for (int i = 0; i < numGames; ++i) {
-            this->games[i] = games[i];
+    Gamer(const char *uname, Game *g, int ng, int hpw) {
+        username = new char[strlen(uname) + 1];
+        strcpy(username, uname);
+        numGames = ng;
+        hoursPerWeek = hpw;
+        for (int i = 0; i < ng; ++i) {
+            games[i] = g[i];
         }
-        this->hoursPerWeek = hoursPerWeek;
     }
 
     Gamer(const Gamer &g) {
         username = new char[strlen(g.username) + 1];
         strcpy(username, g.username);
         numGames = g.numGames;
+        hoursPerWeek = g.hoursPerWeek;
         for (int i = 0; i < numGames; ++i) {
             games[i] = g.games[i];
         }
-        hoursPerWeek = g.hoursPerWeek;
     }
 
     Gamer& operator=(const Gamer &g) {
@@ -54,10 +116,10 @@ public:
             username = new char[strlen(g.username) + 1];
             strcpy(username, g.username);
             numGames = g.numGames;
+            hoursPerWeek = g.hoursPerWeek;
             for (int i = 0; i < numGames; ++i) {
                 games[i] = g.games[i];
             }
-            hoursPerWeek = g.hoursPerWeek;
         }
         return *this;
     }
@@ -73,26 +135,21 @@ public:
         return false;
     }
 
+    virtual const char* calculateSkillLevel() const = 0;
+    virtual void printInfo() const = 0;
+
     int getHoursPerWeek() const {
         return hoursPerWeek;
     }
-
-    virtual const char* calculateSkillLevel() const = 0;
-    virtual void printInfo() const = 0;
 };
 
 class PCGamer : public Gamer {
-private:
     int streamHours;
 public:
-    PCGamer(const char *username, Game *games, int numGames, int hoursPerWeek, int streamHours)
-            : Gamer(username, games, numGames, hoursPerWeek) {
-        this->streamHours = streamHours;
-    }
+    PCGamer(const char *uname, Game g[], int ng, int hpw, int sh)
+            : Gamer(uname, g, ng, hpw), streamHours(sh) {}
 
-    PCGamer(const PCGamer &pg) : Gamer(pg) {
-        this->streamHours = pg.streamHours;
-    }
+    PCGamer(const PCGamer &pg) : Gamer(pg), streamHours(pg.streamHours) {}
 
     PCGamer& operator=(const PCGamer &pg) {
         if (this != &pg) {
@@ -102,7 +159,7 @@ public:
         return *this;
     }
 
-    ~PCGamer() override = default;
+    ~PCGamer() override {}
 
     const char* calculateSkillLevel() const override {
         if (hoursPerWeek > 30 && streamHours > 20)
@@ -111,24 +168,17 @@ public:
     }
 
     void printInfo() const override {
-        cout << "PCGamer : " << username
-             << ", Hours Per Week: " << hoursPerWeek << "h"
-             << ", Skill Level: " << calculateSkillLevel() << endl;
+        cout << "PCGamer: " << username << ", Hours Per Week: " << hoursPerWeek << "h, Skill Level: " << calculateSkillLevel() << endl;
     }
 };
 
 class ConsoleGamer : public Gamer {
-private:
     bool isProPlayer;
 public:
-    ConsoleGamer(const char *username, Game *games, int numGames, int hoursPerWeek, bool isProPlayer)
-            : Gamer(username, games, numGames, hoursPerWeek) {
-        this->isProPlayer = isProPlayer;
-    }
+    ConsoleGamer(const char *uname, Game g[], int ng, int hpw, bool isPro)
+            : Gamer(uname, g, ng, hpw), isProPlayer(isPro) {}
 
-    ConsoleGamer(const ConsoleGamer &cg) : Gamer(cg) {
-        this->isProPlayer = cg.isProPlayer;
-    }
+    ConsoleGamer(const ConsoleGamer &cg) : Gamer(cg), isProPlayer(cg.isProPlayer) {}
 
     ConsoleGamer& operator=(const ConsoleGamer &cg) {
         if (this != &cg) {
@@ -138,38 +188,35 @@ public:
         return *this;
     }
 
-    ~ConsoleGamer() override = default;
+    ~ConsoleGamer() override {}
 
     const char* calculateSkillLevel() const override {
         return isProPlayer ? "Pro ConsoleGamer" : "Casual ConsoleGamer";
     }
 
     void printInfo() const override {
-        cout << "ConsoleGamer: " << username
-             << ", Hours Per Week: " << hoursPerWeek << "h"
-             << ", Skill Level: " << calculateSkillLevel() << endl;
+        cout << "ConsoleGamer: " << username << ", Hours Per Week: " << hoursPerWeek << "h, Skill Level: " << calculateSkillLevel() << endl;
     }
 };
 
 void printGamersThatPlayGame(Gamer *gamers[], int n, const Game &game) {
-    int count = 0, totalHours = 0;
+    int totalHours = 0, count = 0;
     for (int i = 0; i < n; ++i) {
         if (gamers[i]->playsGame(game)) {
             totalHours += gamers[i]->getHoursPerWeek();
-            count++;
+            ++count;
         }
     }
-
     if (count == 0) return;
+    double avg = totalHours / (double)count;
 
-    double avgHours = totalHours / (double)count;
+    cout << "Top Gamers that play " << game.getName() << ":" << endl;
     for (int i = 0; i < n; ++i) {
-        if (gamers[i]->playsGame(game) && gamers[i]->getHoursPerWeek() > avgHours) {
+        if (gamers[i]->playsGame(game) && gamers[i]->getHoursPerWeek() > avg) {
             gamers[i]->printInfo();
         }
     }
 }
-
 
 int main() {
     int n;
