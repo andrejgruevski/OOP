@@ -1922,6 +1922,72 @@ build lab9.2.exe: CXX_EXECUTABLE_LINKER__lab9.2e2_Debug CMakeFiles/lab9.2.dir/la
   TARGET_PDB = lab9.2.exe.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target lab9.3
+
+
+#############################################
+# Order-only phony target for lab9.3
+
+build cmake_object_order_depends_target_lab9.3: phony || CMakeFiles/lab9.3.dir
+
+build CMakeFiles/lab9.3.dir/lab9/zad3.cpp.obj: CXX_COMPILER__lab9.2e3_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab9/zad3.cpp || cmake_object_order_depends_target_lab9.3
+  DEP_FILE = CMakeFiles\lab9.3.dir\lab9\zad3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab9.3.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab9.3.dir\lab9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab9.3
+
+
+#############################################
+# Link the executable lab9.3.exe
+
+build lab9.3.exe: CXX_EXECUTABLE_LINKER__lab9.2e3_Debug CMakeFiles/lab9.3.dir/lab9/zad3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab9.3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab9.3.exe
+  TARGET_IMPLIB = liblab9.3.dll.a
+  TARGET_PDB = lab9.3.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target lab9.4
+
+
+#############################################
+# Order-only phony target for lab9.4
+
+build cmake_object_order_depends_target_lab9.4: phony || CMakeFiles/lab9.4.dir
+
+build CMakeFiles/lab9.4.dir/lab9/zad4.cpp.obj: CXX_COMPILER__lab9.2e4_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/lab9/zad4.cpp || cmake_object_order_depends_target_lab9.4
+  DEP_FILE = CMakeFiles\lab9.4.dir\lab9\zad4.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\lab9.4.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab9.4.dir\lab9
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target lab9.4
+
+
+#############################################
+# Link the executable lab9.4.exe
+
+build lab9.4.exe: CXX_EXECUTABLE_LINKER__lab9.2e4_Debug CMakeFiles/lab9.4.dir/lab9/zad4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\lab9.4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = lab9.4.exe
+  TARGET_IMPLIB = liblab9.4.dll.a
+  TARGET_PDB = lab9.4.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target q1
 
 
@@ -3562,6 +3628,10 @@ build lab9.1: phony lab9.1.exe
 
 build lab9.2: phony lab9.2.exe
 
+build lab9.3: phony lab9.3.exe
+
+build lab9.4: phony lab9.4.exe
+
 build m: phony m.exe
 
 build q1: phony q1.exe
@@ -3644,7 +3714,7 @@ build vezhbi1.5: phony vezhbi1.5.exe
 #############################################
 # Folder: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
 
-build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe vezhbi1.12.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe lab4.5.exe lab5.1.exe lab5.2.exe lab5.3.exe lab6.1.exe lab6.2.exe lab6.3.exe lab6.4.exe lab6.5.exe lab6.6.exe lab6.7.exe lab6.8.exe lab6.9.exe lab7.1.exe lab7.2.exe lab7.3.exe lab7.4.exe lab7.5.exe lab7.6.exe lab8.1.exe lab8.2.exe lab8.3.exe lab8.4.exe lab8.5.exe lab8.6.exe lab8.7.exe lab8.8.exe lab8.9.exe lab9.1.exe lab9.2.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe q17.exe q18.exe q19.exe q20.exe q21.exe q22.exe q23.exe q24.exe q25.exe q26.exe q27.exe q28.exe q29.exe q30.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe kk3.exe kolok2.exe kolok2.2.exe
+build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe vezhbi1.12.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe lab4.5.exe lab5.1.exe lab5.2.exe lab5.3.exe lab6.1.exe lab6.2.exe lab6.3.exe lab6.4.exe lab6.5.exe lab6.6.exe lab6.7.exe lab6.8.exe lab6.9.exe lab7.1.exe lab7.2.exe lab7.3.exe lab7.4.exe lab7.5.exe lab7.6.exe lab8.1.exe lab8.2.exe lab8.3.exe lab8.4.exe lab8.5.exe lab8.6.exe lab8.7.exe lab8.8.exe lab8.9.exe lab9.1.exe lab9.2.exe lab9.3.exe lab9.4.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe q17.exe q18.exe q19.exe q20.exe q21.exe q22.exe q23.exe q24.exe q25.exe q26.exe q27.exe q28.exe q29.exe q30.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe kk3.exe kolok2.exe kolok2.2.exe
 
 # =============================================================================
 # Built-in targets
