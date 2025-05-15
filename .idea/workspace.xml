@@ -124,10 +124,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/lab9/zad5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab9/zad6.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/zad3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/zad3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab9/zad4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lab9/zad4.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +215,11 @@
   }
 }</component>
   <component name="RunManager" selected="CMake Application.lab6.2">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="k1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="k1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="k1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -549,6 +555,16 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lab9.5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab9.5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab9.5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab9.6" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="lab9.6" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="lab9.6">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="m" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="m" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="m">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -802,6 +818,8 @@
       <item itemvalue="CMake Application.lab9.2" />
       <item itemvalue="CMake Application.lab9.3" />
       <item itemvalue="CMake Application.lab9.4" />
+      <item itemvalue="CMake Application.lab9.5" />
+      <item itemvalue="CMake Application.lab9.6" />
       <item itemvalue="CMake Application.m" />
       <item itemvalue="CMake Application.q10" />
       <item itemvalue="CMake Application.q11" />
@@ -917,7 +935,8 @@
       <workItem from="1746902800731" duration="731000" />
       <workItem from="1747072649602" duration="4669000" />
       <workItem from="1747124533136" duration="3533000" />
-      <workItem from="1747148477683" duration="863000" />
+      <workItem from="1747148477683" duration="1212000" />
+      <workItem from="1747309617250" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
