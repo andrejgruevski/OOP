@@ -42,6 +42,7 @@
       <config projectName="OOP" targetName="kk3" />
       <config projectName="OOP" targetName="kk1" />
       <config projectName="OOP" targetName="q6" />
+      <config projectName="OOP" targetName="lab9.6" />
       <config projectName="OOP" targetName="q5" />
       <config projectName="OOP" targetName="q8" />
       <config projectName="OOP" targetName="q7" />
@@ -52,6 +53,7 @@
       <config projectName="OOP" targetName="q4" />
       <config projectName="OOP" targetName="lab9.4" />
       <config projectName="OOP" targetName="q3" />
+      <config projectName="OOP" targetName="lab9.5" />
       <config projectName="OOP" targetName="q9" />
       <config projectName="OOP" targetName="lab1.1" />
       <config projectName="OOP" targetName="lab5.2" />
@@ -62,6 +64,8 @@
       <config projectName="OOP" targetName="lab5.1" />
       <config projectName="OOP" targetName="k10" />
       <config projectName="OOP" targetName="k11" />
+      <config projectName="OOP" targetName="kolok2.5" />
+      <config projectName="OOP" targetName="kolok2.4" />
       <config projectName="OOP" targetName="kolok2.2" />
       <config projectName="OOP" targetName="lab6.9" />
       <config projectName="OOP" targetName="k2" />
@@ -124,11 +128,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/lab9/zad5.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab9/zad6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kolok2/zad4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kolok2/zad5.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-32ced09383000f20e4d9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-15T11-48-12-0408.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kolok2/zad1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kolok2/zad1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kolok2/zad2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kolok2/zad2.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,11 +228,6 @@
   }
 }</component>
   <component name="RunManager" selected="CMake Application.lab6.2">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="k1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="k1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="k1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -291,6 +299,16 @@
       </method>
     </configuration>
     <configuration name="kolok2.2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kolok2.4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kolok2.5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.5">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -766,6 +784,8 @@
       <item itemvalue="CMake Application.kk3" />
       <item itemvalue="CMake Application.kolok2" />
       <item itemvalue="CMake Application.kolok2.2" />
+      <item itemvalue="CMake Application.kolok2.4" />
+      <item itemvalue="CMake Application.kolok2.5" />
       <item itemvalue="CMake Application.lab1.1" />
       <item itemvalue="CMake Application.lab1.2" />
       <item itemvalue="CMake Application.lab1.3" />
@@ -851,8 +871,8 @@
       <item itemvalue="CMake Application.q7" />
       <item itemvalue="CMake Application.q8" />
       <item itemvalue="CMake Application.q9" />
-      <item itemvalue="CMake Application.vezhbi1.1" />
       <item itemvalue="CMake Application.vezhbi1.12" />
+      <item itemvalue="CMake Application.vezhbi1.1" />
       <item itemvalue="CMake Application.vezhbi1.2" />
       <item itemvalue="CMake Application.vezhbi1.3" />
       <item itemvalue="CMake Application.vezhbi1.4" />
@@ -936,7 +956,10 @@
       <workItem from="1747072649602" duration="4669000" />
       <workItem from="1747124533136" duration="3533000" />
       <workItem from="1747148477683" duration="1212000" />
-      <workItem from="1747309617250" duration="72000" />
+      <workItem from="1747309617250" duration="849000" />
+      <workItem from="1747393225564" duration="338000" />
+      <workItem from="1747393596154" duration="4522000" />
+      <workItem from="1747398158121" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
