@@ -122,7 +122,9 @@
 						104,
 						105,
 						106,
-						107
+						107,
+						108,
+						109
 					]
 				}
 			],
@@ -244,7 +246,9 @@
 						104,
 						105,
 						106,
-						107
+						107,
+						108,
+						109
 					]
 				}
 			],
@@ -367,6 +371,20 @@
 					"id" : "kolok2.5::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-kolok2.5-Debug-88fe584d25b509d4ca71.json",
 					"name" : "kolok2.5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kolok2.6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kolok2.6-Debug-6307d264f39c4fbb5421.json",
+					"name" : "kolok2.6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kolok2.7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kolok2.7-Debug-ddd0ce20a12dde7198ac.json",
+					"name" : "kolok2.7",
 					"projectIndex" : 0
 				},
 				{
