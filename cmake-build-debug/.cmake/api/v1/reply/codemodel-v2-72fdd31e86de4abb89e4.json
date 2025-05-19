@@ -126,7 +126,8 @@
 						108,
 						109,
 						110,
-						111
+						111,
+						112
 					]
 				}
 			],
@@ -252,7 +253,8 @@
 						108,
 						109,
 						110,
-						111
+						111,
+						112
 					]
 				}
 			],
@@ -389,6 +391,13 @@
 					"id" : "kolok2.7::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-kolok2.7-Debug-4dd0eb4c371be6f0aca1.json",
 					"name" : "kolok2.7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kolok2.8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kolok2.8-Debug-63fb6c2a3e2d835b0a51.json",
+					"name" : "kolok2.8",
 					"projectIndex" : 0
 				},
 				{
