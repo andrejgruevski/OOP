@@ -80,6 +80,9 @@ add_executable(lab9.4 lab9/zad4.cpp)
 add_executable(lab9.5 lab9/zad5.cpp)
 add_executable(lab9.6 lab9/zad6.cpp)
 
+add_executable(lab10.1 lab10/zad1.cpp)
+add_executable(lab10.2 lab10/zad2.cpp)
+
 
 
 add_executable(q1 kvalifikaciski/zad1.cpp)
