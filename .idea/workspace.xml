@@ -64,6 +64,7 @@
       <config projectName="OOP" targetName="lab5.1" />
       <config projectName="OOP" targetName="k10" />
       <config projectName="OOP" targetName="k11" />
+      <config projectName="OOP" targetName="kolok2.8" />
       <config projectName="OOP" targetName="kolok2.7" />
       <config projectName="OOP" targetName="lab10.2" />
       <config projectName="OOP" targetName="kolok2.6" />
@@ -132,9 +133,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/kolok2/zad8.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kolok2/zad8.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/kolok2/zad8.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,6 +320,11 @@
       </method>
     </configuration>
     <configuration name="kolok2.7" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.7" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.7">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kolok2.8" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.8" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.8">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -809,6 +814,7 @@
       <item itemvalue="CMake Application.kolok2.5" />
       <item itemvalue="CMake Application.kolok2.6" />
       <item itemvalue="CMake Application.kolok2.7" />
+      <item itemvalue="CMake Application.kolok2.8" />
       <item itemvalue="CMake Application.lab1.1" />
       <item itemvalue="CMake Application.lab1.2" />
       <item itemvalue="CMake Application.lab1.3" />
@@ -987,7 +993,7 @@
       <workItem from="1747398158121" duration="33000" />
       <workItem from="1747522901492" duration="3338000" />
       <workItem from="1747608876672" duration="1108000" />
-      <workItem from="1747642501639" duration="10672000" />
+      <workItem from="1747642501639" duration="14563000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
