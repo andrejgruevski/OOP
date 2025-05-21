@@ -84,7 +84,7 @@ public:
         }
     }
     const string getUsername() const {
-        return name;
+        return email;
     }
     int *getAccessLevels()  {
         return lvl;
