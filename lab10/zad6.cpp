@@ -32,17 +32,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <cctype>
 using namespace std;
-
-void writeToFile() {
-    ofstream file("text.txt");
-    char c;
-    while ((c = cin.get()) != '#') {
-        file.put(c);
-    }
-    file.close();
-}
 
 class VehicleRegistration {
 private:
@@ -54,11 +44,95 @@ private:
     double emission_level;
 
 public:
+    VehicleRegistration() {
+        registration_number = "";
+        manufacture_date = "";
+        mileage = 0;
+        engine_power = 0;
+        vehicle_age = 0;
+        emission_level = 0.0;
+    }
+
+    VehicleRegistration(string reg, string date, int mil, int power, int age, double emission) {
+        registration_number = reg;
+        manufacture_date = date;
+        mileage = mil;
+        engine_power = power;
+        vehicle_age = age;
+        emission_level = emission;
+    }
+
+    VehicleRegistration(const VehicleRegistration& other) {
+        registration_number = other.registration_number;
+        manufacture_date = other.manufacture_date;
+        mileage = other.mileage;
+        engine_power = other.engine_power;
+        vehicle_age = other.vehicle_age;
+        emission_level = other.emission_level;
+    }
+
+    VehicleRegistration& operator=(const VehicleRegistration& other) {
+        if (this != &other) {
+            registration_number = other.registration_number;
+            manufacture_date = other.manufacture_date;
+            mileage = other.mileage;
+            engine_power = other.engine_power;
+            vehicle_age = other.vehicle_age;
+            emission_level = other.emission_level;
+        }
+        return *this;
+    }
+
+    friend istream& operator>>(istream& in, VehicleRegistration& v) {
+        in >> v.registration_number >> v.manufacture_date >> v.mileage >> v.engine_power >> v.vehicle_age >> v.emission_level;
+        return in;
+    }
 
 
+    friend ostream& operator<<(ostream& out, const VehicleRegistration& v) {
+        out << "Vehicle Reg: " << v.registration_number << " " << v.manufacture_date
+            << " | Mileage " << v.mileage << "km Power " << v.engine_power << "hp Age "
+            << v.vehicle_age << "y Emission " << v.emission_level << "g/km" << endl;
+        return out;
+    }
 
-
+    string VehicleCategory() const {
+        if (mileage > 250000 || vehicle_age > 20 || emission_level > 120.0 || engine_power < 60)
+            return "Restricted";
+        else if (mileage > 150000 || vehicle_age > 15 || emission_level > 90.0 || engine_power < 80)
+            return "Limited";
+        else
+            return "Approved";
+    }
 };
+VehicleRegistration* FilterByVehicleCategory(VehicleRegistration* arr, int n, string category) {
+    int count = 0;
+
+    for (int i = 0; i < n; ++i) {
+        if (arr[i].VehicleCategory() == category) {
+            ++count;
+        }
+    }
+
+    VehicleRegistration* result = new VehicleRegistration[count];
+    int index = 0;
+    for (int i = 0; i < n; ++i) {
+        if (arr[i].VehicleCategory() == category) {
+            result[index++] = arr[i];
+        }
+    }
+
+    return result;
+}
+
+void writeToFile() {
+    ofstream file("text.txt");
+    char c;
+    while ((c = cin.get()) != '#') {
+        file.put(c);
+    }
+    file.close();
+}
 
 int main() {
     writeToFile();

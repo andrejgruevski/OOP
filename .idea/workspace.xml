@@ -73,6 +73,8 @@
       <config projectName="OOP" targetName="kolok2.5" />
       <config projectName="OOP" targetName="lab10.4" />
       <config projectName="OOP" targetName="kolok2.4" />
+      <config projectName="OOP" targetName="lab10.5" />
+      <config projectName="OOP" targetName="lab10.6" />
       <config projectName="OOP" targetName="kolok2.2" />
       <config projectName="OOP" targetName="lab6.9" />
       <config projectName="OOP" targetName="k2" />
@@ -136,13 +138,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/lab10/zad5.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab10/zad6.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-    </list>
+    <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1039,7 +1035,7 @@
       <workItem from="1747642501639" duration="15751000" />
       <workItem from="1747727613637" duration="4984000" />
       <workItem from="1747761382065" duration="1023000" />
-      <workItem from="1747843166317" duration="334000" />
+      <workItem from="1747843166317" duration="1121000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
