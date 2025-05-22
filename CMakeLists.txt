@@ -143,6 +143,7 @@ add_executable(kolok2.7 kolok2/zad7.cpp)
 add_executable(kolok2.8 kolok2/zad8.cpp)
 add_executable(kolok2.9 kolok2/zad9.cpp)
 add_executable(kolok2.10 kolok2/zad10.cpp)
+add_executable(kolok2.11 kolok2/zad11.cpp)
 
 
 
