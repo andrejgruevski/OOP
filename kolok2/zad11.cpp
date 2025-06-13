@@ -28,8 +28,8 @@ public:
     int getGodina()const{
         return godina;
     }
-    char getIme()const {
-        return *ime;
+    char *getIme() {
+        return ime;
     }
 };
 class Pretstava{
@@ -48,22 +48,42 @@ public:
         strcpy(this->data,data);
     }
     double cena(){
-        double price;
-        double n,m;
-        if (delo.getGodina() > 1901 && delo.getGodina() < 2000 ||
-        delo.getGodina() > 2001 && delo.getGodina() < 2100 ){
+        int n,m;
+        if (delo.getGodina() > 1900){
             m = 50;
+        }else if (delo.getGodina() > 1800){
+            n = 75;
+        }else{
+            n = 100;
         }
-        if (delo.getGodina() > 1801 && delo.getGodina() < 1900){
-            m = 75;
-        }
-        if (delo.getGodina() < 1800){
+
+        if (strcmp(delo.getIme(),"Italija")==0){
             m = 100;
         }
+        else if (strcmp(delo.getIme(),"Rusija")==0){
+            m = 150;
+        }else{
+            m = 80;
+        }
+
+        return n+m;
+    }
+    
+};
+class Balet : public Pretstava{
+    static int cenaPlus;
+public:
+    Balet():Pretstava(){
 
     }
+    Balet(Delo delo, int brojKarti, char *data):Pretstava(delo,brojKarti,data){}
+    int cena(){
+        return Pretstava::cena() + cenaPlus;
+    }
+    static void setCenaBalet(int p){
+        cenaPlus = p;
+    }
 };
-
 //citanje na delo
 Delo readDelo(){
     char ime[50];
