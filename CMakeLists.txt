@@ -148,6 +148,7 @@ add_executable(kolok2.11 kolok2/zad11.cpp)
 add_executable(ispit1.1 ispit/zad1.cpp)
 add_executable(ispit1.2 ispit/zad2.cpp)
 add_executable(ispit1.3 ispit/zad3.cpp)
+add_executable(ispit1.4 ispit/zad4.cpp)
 
 
 
