@@ -23,8 +23,40 @@ public:
         strcpy(this->author,author);
         this->basePrice=basePrice;
     }
+    Book(const Book &o){
+        strcpy(this->isbn,o.isbn);
+        strcpy(this->title,o.title);
+        strcpy(this->author,o.author);
+        this->basePrice=o.basePrice;
+    }
+    Book &operator = (const Book &o){
+        if (this!=&o){
+        strcpy(this->isbn,o.isbn);
+        strcpy(this->title,o.title);
+        strcpy(this->author,o.author);
+        this->basePrice=o.basePrice;
+        }
+        return *this;
+    }
+    ~Book(){
 
+    }
+
+    virtual double bookPrice() const = 0;
+
+    bool operator > (const Book &other) const{
+        return basePrice > other.basePrice;
+    }
+
+    friend ostream &operator <<(ostream &out, const Book &b){
+        out<<b.isbn<<": "<<b.title<<", "<<b.author<<" "<<b.bookPrice()<<endl;
+        return out;
+    }
+    char *setISBN(char *s){
+        strcpy(this->isbn,s);
+    }
 };
+
 class OnlineBook:public Book{
 private:
     char *url;
@@ -48,6 +80,7 @@ public:
     OnlineBook &operator=(const OnlineBook &o){
         if (this!=&o){
             delete[]url;
+            Book::operator=(o);
             this->url = new char[strlen(o.url)+1];
             strcpy(this->url,o.url);
             this->mb=o.mb;
@@ -57,7 +90,61 @@ public:
     ~OnlineBook(){
         delete[]url;
     }
+
+    double bookPrice() const override{
+        if (mb > 20){
+            return basePrice *1.20;
+        }else{
+            return basePrice;
+        }
+    }
 };
+class PrintBook:public Book{
+private:
+    float weight;
+    bool inStock;
+public:
+    PrintBook():Book(){
+        weight = 0;
+        inStock = false;
+    }
+    PrintBook(char *isbn, char *title, char *author, float basePrice, float weight, bool inStock):Book(isbn,title,author,basePrice){
+        this->weight=weight;
+        this->inStock=inStock;
+    }
+    double bookPrice() const override{
+        if (weight > 0.7){
+            return basePrice * 1.15;
+        }
+        return basePrice;
+    }
+};
+void mostExpensiveBook(Book ** books, int n){
+    int printedBooks = 0;
+    int onlineBooks = 0;
+    for (int i = 0; i < n; ++i) {
+        if (dynamic_cast<OnlineBook*>(books[i])){
+            onlineBooks++;
+        }
+        if (dynamic_cast<PrintBook*>(books[i])){
+            printedBooks++;
+        }
+    }
+    cout<<"FINKI-Education"<<endl;
+    cout<<"Total number of online books: "<<onlineBooks<<endl;
+    cout<<"Total number of print books: "<<printedBooks<<endl;
+    cout<<"The most expensive book is: "<<endl;
+    double max = books[0]->bookPrice();
+    int index = 0 ;
+    for (int i = 0; i < n; ++i) {
+        if (books[i]->bookPrice() > max){
+            max = books[i]->bookPrice();
+            index = i;
+
+        }
+    }
+    cout<<*books[index];
+}
 int main(){
 
     char isbn[20], title[50], author[30], url[100];
