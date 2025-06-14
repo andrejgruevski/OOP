@@ -140,7 +140,8 @@
 						122,
 						123,
 						124,
-						125
+						125,
+						126
 					]
 				}
 			],
@@ -280,7 +281,8 @@
 						122,
 						123,
 						124,
-						125
+						125,
+						126
 					]
 				}
 			],
@@ -326,6 +328,13 @@
 					"id" : "ispit1.6::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ispit1.6-Debug-076c1455bb9e0b761cda.json",
 					"name" : "ispit1.6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ispit1.7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ispit1.7-Debug-f10d5be2e87c8d16d5c2.json",
+					"name" : "ispit1.7",
 					"projectIndex" : 0
 				},
 				{

@@ -167,6 +167,7 @@ public:
     }
 
     friend ostream& operator<<(ostream& out, const User& u) {
+//        out<<endl;
         out << "User: " << u.username << endl;
         for (int i = 0; i < u.n; ++i) {
             out << "- " << *u.games[i] << endl;

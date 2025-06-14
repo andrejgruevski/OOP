@@ -151,6 +151,7 @@ add_executable(ispit1.3 ispit/zad3.cpp)
 add_executable(ispit1.4 ispit/zad4.cpp)
 add_executable(ispit1.5 ispit/zad5.cpp)
 add_executable(ispit1.6 ispit/zad6.cpp)
+add_executable(ispit1.7 ispit/zad7.cpp)
 
 
 
