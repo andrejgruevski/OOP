@@ -133,7 +133,7 @@ public:
         }else{
             for (int i = 0; i < n; ++i) {
                 if (pesni[i].fullName == author){
-                    p = pesni[i];
+//                    p = pesni[i];
                     f-=pesni[i];
                 }
             }
