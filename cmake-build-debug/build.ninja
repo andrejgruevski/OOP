@@ -4495,6 +4495,39 @@ build ispit1.15.exe: CXX_EXECUTABLE_LINKER__ispit1.2e15_Debug CMakeFiles/ispit1.
   TARGET_IMPLIB = libispit1.15.dll.a
   TARGET_PDB = ispit1.15.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ispit1.16
+
+
+#############################################
+# Order-only phony target for ispit1.16
+
+build cmake_object_order_depends_target_ispit1.16: phony || CMakeFiles/ispit1.16.dir
+
+build CMakeFiles/ispit1.16.dir/ispit/zad16.cpp.obj: CXX_COMPILER__ispit1.2e16_unscanned_Debug D$:/Huhe's$ New$ Folder$ 2023/FAx/OOP/ispit/zad16.cpp || cmake_object_order_depends_target_ispit1.16
+  DEP_FILE = CMakeFiles\ispit1.16.dir\ispit\zad16.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ispit1.16.dir
+  OBJECT_FILE_DIR = CMakeFiles\ispit1.16.dir\ispit
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ispit1.16
+
+
+#############################################
+# Link the executable ispit1.16.exe
+
+build ispit1.16.exe: CXX_EXECUTABLE_LINKER__ispit1.2e16_Debug CMakeFiles/ispit1.16.dir/ispit/zad16.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ispit1.16.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ispit1.16.exe
+  TARGET_IMPLIB = libispit1.16.dll.a
+  TARGET_PDB = ispit1.16.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -4534,6 +4567,8 @@ build ispit1.13: phony ispit1.13.exe
 build ispit1.14: phony ispit1.14.exe
 
 build ispit1.15: phony ispit1.15.exe
+
+build ispit1.16: phony ispit1.16.exe
 
 build ispit1.2: phony ispit1.2.exe
 
@@ -4799,7 +4834,7 @@ build vezhbi1.5: phony vezhbi1.5.exe
 #############################################
 # Folder: D:/Huhe's New Folder 2023/FAx/OOP/cmake-build-debug
 
-build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe vezhbi1.12.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe lab4.5.exe lab5.1.exe lab5.2.exe lab5.3.exe lab6.1.exe lab6.2.exe lab6.3.exe lab6.4.exe lab6.5.exe lab6.6.exe lab6.7.exe lab6.8.exe lab6.9.exe lab7.1.exe lab7.2.exe lab7.3.exe lab7.4.exe lab7.5.exe lab7.6.exe lab8.1.exe lab8.2.exe lab8.3.exe lab8.4.exe lab8.5.exe lab8.6.exe lab8.7.exe lab8.8.exe lab8.9.exe lab9.1.exe lab9.2.exe lab9.3.exe lab9.4.exe lab9.5.exe lab9.6.exe lab10.1.exe lab10.2.exe lab10.3.exe lab10.4.exe lab10.5.exe lab10.6.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe q17.exe q18.exe q19.exe q20.exe q21.exe q22.exe q23.exe q24.exe q25.exe q26.exe q27.exe q28.exe q29.exe q30.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe kk3.exe kolok2.exe kolok2.2.exe kolok2.4.exe kolok2.5.exe kolok2.6.exe kolok2.7.exe kolok2.8.exe kolok2.9.exe kolok2.10.exe kolok2.11.exe ispit1.1.exe ispit1.2.exe ispit1.3.exe ispit1.4.exe ispit1.5.exe ispit1.6.exe ispit1.7.exe ispit1.8.exe ispit1.9.exe ispit1.10.exe ispit1.11.exe ispit1.12.exe ispit1.13.exe ispit1.14.exe ispit1.15.exe
+build all: phony m.exe vezhbi1.1.exe vezhbi1.2.exe vezhbi1.3.exe vezhbi1.4.exe vezhbi1.5.exe vezhbi1.12.exe lab1.1.exe lab1.2.exe lab1.3.exe lab2.1.exe lab2.2.exe lab3.1.exe lab3.2.exe lab3.3.exe lab3.4.exe lab3.5.exe lab3.6.exe lab3.7.exe lab3.8.exe lab3.9.exe lab3.10.exe lab3.11.exe lab4.1.exe lab4.2.exe lab4.3.exe lab4.4.exe lab4.5.exe lab5.1.exe lab5.2.exe lab5.3.exe lab6.1.exe lab6.2.exe lab6.3.exe lab6.4.exe lab6.5.exe lab6.6.exe lab6.7.exe lab6.8.exe lab6.9.exe lab7.1.exe lab7.2.exe lab7.3.exe lab7.4.exe lab7.5.exe lab7.6.exe lab8.1.exe lab8.2.exe lab8.3.exe lab8.4.exe lab8.5.exe lab8.6.exe lab8.7.exe lab8.8.exe lab8.9.exe lab9.1.exe lab9.2.exe lab9.3.exe lab9.4.exe lab9.5.exe lab9.6.exe lab10.1.exe lab10.2.exe lab10.3.exe lab10.4.exe lab10.5.exe lab10.6.exe q1.exe q2.exe q3.exe q4.exe q5.exe q6.exe q7.exe q8.exe q9.exe q10.exe q11.exe q12.exe q13.exe q14.exe q15.exe q16.exe q17.exe q18.exe q19.exe q20.exe q21.exe q22.exe q23.exe q24.exe q25.exe q26.exe q27.exe q28.exe q29.exe q30.exe k1.exe k2.exe k3.exe k4.exe k5.exe k6.exe k7.exe k8.exe k10.exe k11.exe kk1.exe kk2.exe kk3.exe kolok2.exe kolok2.2.exe kolok2.4.exe kolok2.5.exe kolok2.6.exe kolok2.7.exe kolok2.8.exe kolok2.9.exe kolok2.10.exe kolok2.11.exe ispit1.1.exe ispit1.2.exe ispit1.3.exe ispit1.4.exe ispit1.5.exe ispit1.6.exe ispit1.7.exe ispit1.8.exe ispit1.9.exe ispit1.10.exe ispit1.11.exe ispit1.12.exe ispit1.13.exe ispit1.14.exe ispit1.15.exe ispit1.16.exe
 
 # =============================================================================
 # Built-in targets

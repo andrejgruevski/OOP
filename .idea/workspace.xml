@@ -144,6 +144,7 @@
       <config projectName="OOP" targetName="vezhbi1.4" />
       <config projectName="OOP" targetName="lab10.1" />
       <config projectName="OOP" targetName="ispit1.15" />
+      <config projectName="OOP" targetName="ispit1.16" />
       <config projectName="OOP" targetName="ispit1.13" />
       <config projectName="OOP" targetName="ispit1.14" />
     </generated>
@@ -155,14 +156,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/ispit/zad15.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ispit/zad16.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-50742f604e9f095f2805.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-06-15T20-09-06-0861.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a032aca9e50a7d28e2aa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-06-15T21-35-47-0155.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
@@ -220,6 +222,7 @@
     "CMake Application.ispit1.10.executor": "Run",
     "CMake Application.ispit1.13.executor": "Run",
     "CMake Application.ispit1.14.executor": "Run",
+    "CMake Application.ispit1.16.executor": "Run",
     "CMake Application.ispit1.6.executor": "Run",
     "CMake Application.k8.executor": "Run",
     "CMake Application.kk1.executor": "Run",
@@ -259,7 +262,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.ispit1.14">
+  <component name="RunManager" selected="CMake Application.ispit1.16">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -296,6 +299,11 @@
       </method>
     </configuration>
     <configuration name="ispit1.15" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.15" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.15">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ispit1.16" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.16" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.16">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -950,6 +958,7 @@
       <item itemvalue="CMake Application.ispit1.13" />
       <item itemvalue="CMake Application.ispit1.14" />
       <item itemvalue="CMake Application.ispit1.15" />
+      <item itemvalue="CMake Application.ispit1.16" />
       <item itemvalue="CMake Application.ispit1.2" />
       <item itemvalue="CMake Application.ispit1.3" />
       <item itemvalue="CMake Application.ispit1.4" />
@@ -1177,7 +1186,7 @@
       <workItem from="1749940293603" duration="5868000" />
       <workItem from="1749986899906" duration="13107000" />
       <workItem from="1750006507482" duration="460000" />
-      <workItem from="1750012515003" duration="9926000" />
+      <workItem from="1750012515003" duration="12754000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
