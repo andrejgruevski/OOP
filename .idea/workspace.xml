@@ -143,6 +143,7 @@
       <config projectName="OOP" targetName="lab3.3" />
       <config projectName="OOP" targetName="vezhbi1.4" />
       <config projectName="OOP" targetName="lab10.1" />
+      <config projectName="OOP" targetName="ispit1.13" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -152,18 +153,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/ispit/zad12.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ispit/zad13.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d69d61508525ac2c304a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-06-15T14-03-46-0077.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ispit/zad11.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ispit/zad11.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,55 +205,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "CMake Application.OOP.executor": "Run",
-    "CMake Application.ispit1.1.executor": "Debug",
-    "CMake Application.ispit1.10.executor": "Run",
-    "CMake Application.ispit1.6.executor": "Run",
-    "CMake Application.k8.executor": "Run",
-    "CMake Application.kk1.executor": "Run",
-    "CMake Application.kk2.executor": "Run",
-    "CMake Application.kolok1.executor": "Debug",
-    "CMake Application.lab2.1.executor": "Run",
-    "CMake Application.lab4.3.executor": "Run",
-    "CMake Application.lab6.2.executor": "Debug",
-    "CMake Application.m.executor": "Run",
-    "CMake Application.q16.executor": "Run",
-    "CMake Application.q17.executor": "Run",
-    "CMake Application.q18.executor": "Run",
-    "CMake Application.q19.executor": "Run",
-    "CMake Application.q20.executor": "Run",
-    "CMake Application.q21.executor": "Run",
-    "CMake Application.q22.executor": "Run",
-    "CMake Application.q23.executor": "Run",
-    "CMake Application.q24.executor": "Run",
-    "CMake Application.q25.executor": "Run",
-    "CMake Application.q26.executor": "Run",
-    "CMake Application.q27.executor": "Run",
-    "CMake Application.q28.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Huhe's New Folder 2023/FAx/OOP/CMakeLists.txt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;CMake Application.OOP.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.ispit1.1.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.ispit1.10.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.ispit1.6.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.k8.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.kk1.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.kk2.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.kolok1.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.lab2.1.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.lab4.3.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.lab6.2.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.m.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q16.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q17.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q18.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q19.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q20.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q21.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q22.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q23.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q24.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q25.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q26.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q27.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.q28.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Huhe's New Folder 2023/FAx/OOP/CMakeLists.txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="CMake Application.ispit1.10">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="ispit1.1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.1">
@@ -277,6 +272,11 @@
       </method>
     </configuration>
     <configuration name="ispit1.12" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.12" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.12">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ispit1.13" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.13" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.13">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -928,6 +928,7 @@
       <item itemvalue="CMake Application.ispit1.10" />
       <item itemvalue="CMake Application.ispit1.11" />
       <item itemvalue="CMake Application.ispit1.12" />
+      <item itemvalue="CMake Application.ispit1.13" />
       <item itemvalue="CMake Application.ispit1.2" />
       <item itemvalue="CMake Application.ispit1.3" />
       <item itemvalue="CMake Application.ispit1.4" />
@@ -1153,7 +1154,9 @@
       <workItem from="1749889163970" duration="19827000" />
       <workItem from="1749917352671" duration="3087000" />
       <workItem from="1749940293603" duration="5868000" />
-      <workItem from="1749986899906" duration="12281000" />
+      <workItem from="1749986899906" duration="13107000" />
+      <workItem from="1750006507482" duration="460000" />
+      <workItem from="1750012515003" duration="3767000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
