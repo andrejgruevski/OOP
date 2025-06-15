@@ -92,8 +92,8 @@ void calculatePercentageOfCost(Machine **machines, int n){
     }
     float totalW = (washing/total) * 100;
     float totalD = (drying/total) * 100;
-    cout<<"The total cost of washing machines is "<<washing<<"$, which is"<<totalW<<"% of total cost of machines."<<endl;
-    cout<<"The total cost of drying machines is "<<drying<<"$, which is"<<totalD<<"% of total cost of machines."<<endl;
+    cout<<"The total cost of washing machines is "<<washing<<"$, which is "<<totalW<<"% of total cost of machines."<<endl;
+    cout<<"The total cost of drying machines is "<<drying<<"$, which is "<<totalD<<"% of total cost of machines."<<endl;
 
 }
 Machine **createMachines(int &n){
