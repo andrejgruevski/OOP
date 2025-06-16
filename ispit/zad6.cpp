@@ -88,7 +88,7 @@ public:
     }
 
     friend ostream& operator<<(ostream& out, const SubscriptionGame& g) {
-        out << "Game: " << g.gameName << ", regular price: $" << g.gamePrice;
+        out << "Game:: " << g.gameName << ", regular price: $" << g.gamePrice;
         if (g.gameOnSale) {
             out << ", bought on sale";
         }
