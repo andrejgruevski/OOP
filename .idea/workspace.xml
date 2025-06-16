@@ -157,7 +157,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ispit/zad11.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ispit/zad11.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ispit/zad12.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ispit/zad12.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1177,7 +1177,7 @@
       <workItem from="1749986899906" duration="13107000" />
       <workItem from="1750006507482" duration="460000" />
       <workItem from="1750012515003" duration="14014000" />
-      <workItem from="1750068354144" duration="4242000" />
+      <workItem from="1750068354144" duration="10063000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
