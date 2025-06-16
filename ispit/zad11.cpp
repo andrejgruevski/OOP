@@ -1,144 +1,130 @@
-//
-// Created by Huhe on 6/15/2025.
-//
 #include <iostream>
 #include <cstring>
 #include <fstream>
 
+
 using namespace std;
-
-class Song {
+class Song{
 private:
-    string title;
-    string fullName;
+    string name;
+    string author;
     string izveduvach;
-    int vreme;
+    int duration;
 public:
-    Song(string title = "", string fullName = "", string izveduvach = "", int vreme = 0) {
-        this->title = title;
-        this->fullName = fullName;
-        this->izveduvach = izveduvach;
-        this->vreme = vreme;
-    }
+//    Song(string name="", string author="",string izveduvach = "", int duration = 0){
+//        this->name=name;
+//        this->author=author;
+//        this->izveduvach=izveduvach;
+//        this->duration=duration;
+//    }
 
-    friend ifstream &operator>>(ifstream &in, Song &s) {
-        getline(in, s.title);
-        getline(in, s.fullName);
-        getline(in, s.izveduvach);
-        in >> s.vreme;
+    friend istream  &operator>>(istream &in, Song &s){
         in.ignore();
+        getline(in,s.name);
+        getline(in,s.author);
+        getline(in,s.izveduvach);
+        in>>s.duration;
+//        in.ignore();
         return in;
     }
-
-    void print(ofstream &out) {
-        out << "Song title: " << title << ", Author: " << fullName << ", Interpreted by: " << izveduvach << ", "
-            << vreme << " sek."<<endl;
+    void print(ofstream &out){
+        out<<"Song title: "<<name<<", Author: "<<author<<", Interpreted by: "<<izveduvach<<", "<<duration<<" sek."<<endl;
     }
-
-    friend class Festival;
+    bool operator ==(const Song &other )const {
+        return (name == other.name) && (author == other.author) && (izveduvach == other.izveduvach) && (duration == other.duration);
+    }
+    string getAuthorr(){
+        return author;
+    }
 };
-
-class Festival {
+class Festival{
 private:
-
-    string imeFestival;
-    string grad;
-    string datum;
-    Song *pesni;
+    string nameFestival,city,date;
+    Song *songs;
     int n;
 public:
-    Festival(string imeFestival = "", string grad = "", Song *pesni = nullptr, int n = 0) {
-        this->imeFestival = imeFestival;
-        this->grad = grad;
-        this->datum = datum;
-        this->n = n;
-        this->pesni = new Song[n];
-        for (int i = 0; i < n; ++i) {
-            this->pesni[i] = pesni[i];
-        }
+    Festival(){
+        songs = new Song[0];
+        n = 0;
     }
-
-    Festival(const Festival &f) {
-        this->imeFestival = f.imeFestival;
-        this->grad = f.grad;
-        this->datum = f.datum;
+    Festival(const Festival &f){
+        this->nameFestival = f.nameFestival;
+        this->city = f.city;
+        this->date=f.date;
         this->n = f.n;
-        this->pesni = new Song[f.n];
+        this->songs = new Song[f.n];
         for (int i = 0; i < f.n; ++i) {
-            this->pesni[i] = f.pesni[i];
+            this->songs[i] = f.songs[i];
         }
     }
-
-    Festival &operator=(const Festival &f) {
-        if (this != &f) {
-            delete[]pesni;
-            this->imeFestival = f.imeFestival;
-            this->grad = f.grad;
-            this->datum = f.datum;
+    Festival &operator = (const Festival &f){
+        if (this!=&f){
+            delete[]songs;
+            this->nameFestival = f.nameFestival;
+            this->city = f.city;
+            this->date=f.date;
             this->n = f.n;
-            this->pesni = new Song[f.n];
+            this->songs = new Song[f.n];
             for (int i = 0; i < f.n; ++i) {
-                this->pesni[i] = f.pesni[i];
+                this->songs[i] = f.songs[i];
             }
         }
         return *this;
     }
 
-    ~Festival() {
-        delete[]pesni;
-    }
-
-    Festival &operator-=(const Song &s) {
-        if (n == 0) {
-            cout << "Trying to delete from an empty list!" << endl;
-            return *this;
+    Festival &operator -=( Song &s){
+        if (n == 0){
+            cout<<"Trying to delete from an empty list!"<<endl;
         }
+        int counter = 0;
         for (int i = 0; i < n; ++i) {
-            if ((pesni[i].fullName == s.fullName) &&
-                (pesni[i].izveduvach == s.izveduvach) &&
-                (pesni[i].title == s.title) &&
-                (pesni[i].vreme == s.vreme)){
-                for (int j = i; j <n-1 ; ++j) {
-                    pesni[j] = pesni[j+1];
-                }
+            if (songs[i]==s){
+                counter++;
             }
         }
-        n--;
+        Song *tmp = new Song[n-counter];
+        int j=0;
+        for (int i = 0; i < n; ++i) {
+            if (!(songs[i]==s)){
+               tmp[j++] = songs[i];
+            }
+        }
+        delete[]songs;
+        songs = tmp;
+        n = j;
         return *this;
     }
-    friend ifstream &operator >> (ifstream &in, Festival &f){
-        getline(in,f.imeFestival);
-        getline(in,f.grad);
-        getline(in,f.datum);
-        in>>f.n;
-        in.ignore();
-        f.pesni = new Song[f.n];
-        for (int i = 0; i < f.n; ++i) {
-            in>>f.pesni[i];
+    void print(ofstream &out){
+        out<<"Festival: "<<nameFestival<<" - "<<city<<", "<<date<<endl;
+        for (int i = 0; i < n; ++i) {
+            songs[i].print(out);
+        }
+    }
+    friend istream  &operator>>(istream &in, Festival &s){
+        getline(in,s.nameFestival);
+        getline(in,s.city);
+        getline(in,s.date);
+        in>>s.n;
+        s.songs = new Song[s.n];
+        for (int i = 0; i < s.n; ++i) {
+            in>>s.songs[i];
         }
         return in;
     }
-
-    void print(ofstream &out) {
-        out<<"Festival: "<<imeFestival<<" - "<<grad<<", "<<datum<<endl;
-        for (int i = 0; i < n; ++i) {
-            pesni[i].print(out);
-        }
-    }
-    Festival notFromAuthor(string author){
-        Festival f = *this;
-        Song p;
+    Festival notFromAuthor(string &author){
+        Festival newObject = *this;
         if (n == 0){
-            f -= p;
-        }else{
-            for (int i = 0; i < n; ++i) {
-                if (pesni[i].fullName == author){
-//                    p = pesni[i];
-                    f-=pesni[i];
-                }
+            cout<<"Trying to delete from an empty list!"<<endl;
+        }
+        for (int i = 0; i < n; ++i) {
+            if (songs[i].getAuthorr()==author){
+                newObject-=songs[i];
             }
         }
-        return f;
+        return newObject;
+    }
+    ~Festival(){
+        delete[]songs;
     }
 };
 
@@ -146,7 +132,7 @@ void wtf() {
     ofstream fout("vlezna.txt");
     string line;
     while (getline(std::cin, line)) {
-        if (line == "----") {
+        if (line == "----"){
             break;
         }
         fout << line << endl;
@@ -167,24 +153,33 @@ int main() {
     wtf();
 
     Festival festival;
-
+    //TODO your code here
+    //TODO Read the data from the file and store them in `festival`
     ifstream fin("vlezna.txt");
     ofstream fout("izlezna1.txt");
     ofstream fout2("izlezna2.txt");
 
     fin>>festival;
-
     fin.close();
+
+
+
+    //DO NOT MODIFY THE CODE BETWEEN THIS AND THE NEXT COMMENT
+    string author;
+    getline(cin, author);
+    //DO NOT MODIFY THE CODE BETWEEN THIS AND THE PREVIOUS COMMENT
+
+    //TODO Save the results in the files izlezna1.txt and izlezna2.txt after this line
 
     festival.print(fout);
     fout.close();
 
-    string author;
-    getline(cin, author);
-
-    festival.notFromAuthor(author).print(fout2);
+    Festival f = festival.notFromAuthor(author);
+    f.print(fout2);
     fout2.close();
 
+
+    //DO NOT MODIFY THE CODE BELLOW
 
     cout << "All the data for the festival:" << endl;
     rff("izlezna1.txt");
