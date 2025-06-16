@@ -74,7 +74,7 @@ public:
         return price;
     }
     void showDetails()override{
-        cout<<"Drying Machine "<<model<<" cost: "<<calculateCost()<<"$"<<endl;
+        cout<<"Drying Machine "<<model<<" cosst: "<<calculateCost()<<"$"<<endl;
     }
 };
 void calculatePercentageOfCost(Machine **machines, int n){
