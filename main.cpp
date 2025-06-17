@@ -87,23 +87,32 @@ public:
         if (n == 0){
             cout<<"Trying to delete from an empty list!"<<endl;
         }
-        int newCounter = 0;
         for (int i = 0; i < n; ++i) {
-            if (pesni[i].operator==(r)){
-                newCounter++;
+            if (pesni[i] == r){
+                for (int j = i; j <n-1 ; ++j) {
+                    pesni[j] = pesni[j+1];
+                }
             }
         }
-        Song *tmp = new Song[n - newCounter];
-        int j =0;
-        for (int i = 0; i < n; ++i) {
-            if (!(pesni[i]==r)){
-                tmp[j++] = pesni[i];
-            }
-        }
-        delete[]pesni;
-        pesni = tmp;
-        n = j;
+        n--;
         return *this;
+//        int newCounter = 0;
+//        for (int i = 0; i < n; ++i) {
+//            if (pesni[i].operator==(r)){
+//                newCounter++;
+//            }
+//        }
+//        Song *tmp = new Song[n - newCounter];
+//        int j =0;
+//        for (int i = 0; i < n; ++i) {
+//            if (!(pesni[i]==r)){
+//                tmp[j++] = pesni[i];
+//            }
+//        }
+//        delete[]pesni;
+//        pesni = tmp;
+//        n = j;
+//        return *this;
     }
     friend ifstream &operator>>(ifstream &in, Festival &f){
         getline(in,f.imeFestival);
