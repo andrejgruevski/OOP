@@ -156,8 +156,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kolok2/zad12.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +253,11 @@
   }
 }</component>
   <component name="RunManager" selected="CMake Application.ispit1.16">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ispit1.1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="ispit1.1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="ispit1.1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -409,6 +414,11 @@
       </method>
     </configuration>
     <configuration name="kolok2.11" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.11" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.11">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kolok2.12" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.12" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.12">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -934,6 +944,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.k10" />
+      <item itemvalue="CMake Application.k11" />
+      <item itemvalue="CMake Application.ispit1.1" />
       <item itemvalue="CMake Application.ispit1.10" />
       <item itemvalue="CMake Application.ispit1.11" />
       <item itemvalue="CMake Application.ispit1.12" />
@@ -941,7 +954,6 @@
       <item itemvalue="CMake Application.ispit1.14" />
       <item itemvalue="CMake Application.ispit1.15" />
       <item itemvalue="CMake Application.ispit1.16" />
-      <item itemvalue="CMake Application.ispit1.1" />
       <item itemvalue="CMake Application.ispit1.2" />
       <item itemvalue="CMake Application.ispit1.3" />
       <item itemvalue="CMake Application.ispit1.4" />
@@ -950,8 +962,6 @@
       <item itemvalue="CMake Application.ispit1.7" />
       <item itemvalue="CMake Application.ispit1.8" />
       <item itemvalue="CMake Application.ispit1.9" />
-      <item itemvalue="CMake Application.k10" />
-      <item itemvalue="CMake Application.k11" />
       <item itemvalue="CMake Application.k1" />
       <item itemvalue="CMake Application.k2" />
       <item itemvalue="CMake Application.k3" />
@@ -966,6 +976,7 @@
       <item itemvalue="CMake Application.kolok2" />
       <item itemvalue="CMake Application.kolok2.10" />
       <item itemvalue="CMake Application.kolok2.11" />
+      <item itemvalue="CMake Application.kolok2.12" />
       <item itemvalue="CMake Application.kolok2.2" />
       <item itemvalue="CMake Application.kolok2.4" />
       <item itemvalue="CMake Application.kolok2.5" />
@@ -1178,7 +1189,7 @@
       <workItem from="1750156229852" duration="1816000" />
       <workItem from="1750172769754" duration="9935000" />
       <workItem from="1750272559215" duration="938000" />
-      <workItem from="1750529170412" duration="9000" />
+      <workItem from="1750529170412" duration="730000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
