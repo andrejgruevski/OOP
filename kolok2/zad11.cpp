@@ -1,89 +1,114 @@
 //
-// Created by Huhe on 5/22/2025.
+// Created by Huhe on 6/23/2024.
 //
 #include<iostream>
-#include<cstring>
+#include "cstring"
 using namespace std;
 
 //место за вашиот код
 class Delo{
 private:
-    char ime[51];
-    int godina;
-    char zemja[51];
+    char name[51];
+    int year;
+    char country[51];
 public:
-    Delo(){
-        *ime='\0';
-        godina=0;
-        *zemja = '\0';
+    Delo(const char *name="", int year=0, const char *country="") {
+        strcpy(this->name, name);
+        this->year=year;
+        strcpy(this->country,country);
     }
-    Delo(char *ime, int godina, char *zemja){
-        strcpy(this->ime,ime);
-        this->godina=godina;
-        strcpy(this->zemja,zemja);
+
+    bool operator==(const Delo &rhs) {
+        return strcmp(name,rhs.name) ==0;
     }
-    bool operator == (Delo &d){
-       return (strcmp(ime,d.ime)==0);
+
+    char *getIme()  {
+        return name;
     }
-    int getGodina()const{
-        return godina;
+    int getYear()  {
+        return year;
     }
-    char *getIme() {
-        return ime;
+    char *getCountry()  {
+        return country;
     }
 };
 class Pretstava{
 private:
     Delo delo;
-    int brojKarti;
-    char data[16];
+    int karti;
+    char date[16];
 public:
-    Pretstava(){
-        brojKarti=0;
-        *data = '\0';
+    Pretstava(Delo delo= nullptr, int karti=0,const char *date=""){
+        this->delo=delo;
+        this->karti=karti;
+        strcpy(this->date,date);
     }
-    Pretstava(Delo delo, int brojKarti, char *data){
-       this->delo=delo;
-       this->brojKarti=brojKarti;
-        strcpy(this->data,data);
-    }
-    double cena(){
-        int n,m;
-        if (delo.getGodina() > 1900){
-            m = 50;
-        }else if (delo.getGodina() > 1800){
-            n = 75;
-        }else{
-            n = 100;
-        }
 
-        if (strcmp(delo.getIme(),"Italija")==0){
+    Delo getDelo()  {
+        return delo;
+    }
+
+
+    int getKarti() const {
+        return karti;
+    }
+
+    virtual int cena() {
+        int n , m;
+        if(delo.getYear() > 1900){
+            n = 50;
+        }else if (delo.getYear()>1800){
+            n= 75;
+        }
+        else n= 100;
+
+        if (strcmp(delo.getCountry(),"Italija")==0){
             m = 100;
-        }
-        else if (strcmp(delo.getIme(),"Rusija")==0){
+        }else if (strcmp(delo.getCountry(),"Rusija")==0){
             m = 150;
-        }else{
-            m = 80;
         }
+        else m = 80;
 
         return n+m;
     }
-    
 };
-class Balet : public Pretstava{
-    static int cenaPlus;
+
+class Balet:public Pretstava{
+    static int add;
 public:
-    Balet():Pretstava(){
+    Balet(Delo delo, int karti, char * date) : Pretstava(delo,karti,date){}
+    int cena(){
+        return Pretstava::cena() + add;
+    }
+    static void setCenaBalet(int _price){
+        add= _price;
+    }
+};
+int Balet::add = 150;
+
+class Opera: public Pretstava{
+public:
+    Opera(Delo delo, int karti, char * date) : Pretstava(delo,karti,date){}
+
+};
+
+int prihod(Pretstava **pPretstava, int n){
+    int total = 0;
+    for (int i = 0; i < n; ++i) {
+        total +=pPretstava[i]->cena() * pPretstava[i]->getKarti();
+    }
+    return total;
+}
+int brojPretstaviNaDelo(Pretstava **pPretstava, int n, Delo d){
+    int counter=0;
+    for (int i = 0; i < n; ++i) {
+        if (pPretstava[i]->getDelo()==d){
+            counter++;
+        }
 
     }
-    Balet(Delo delo, int brojKarti, char *data):Pretstava(delo,brojKarti,data){}
-    int cena(){
-        return Pretstava::cena() + cenaPlus;
-    }
-    static void setCenaBalet(int p){
-        cenaPlus = p;
-    }
-};
+    return counter;
+}
 //citanje na delo
 Delo readDelo(){
     char ime[50];
