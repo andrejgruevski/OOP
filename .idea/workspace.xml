@@ -157,6 +157,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -933,9 +934,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.k10" />
-      <item itemvalue="CMake Application.k11" />
-      <item itemvalue="CMake Application.ispit1.1" />
       <item itemvalue="CMake Application.ispit1.10" />
       <item itemvalue="CMake Application.ispit1.11" />
       <item itemvalue="CMake Application.ispit1.12" />
@@ -943,6 +941,7 @@
       <item itemvalue="CMake Application.ispit1.14" />
       <item itemvalue="CMake Application.ispit1.15" />
       <item itemvalue="CMake Application.ispit1.16" />
+      <item itemvalue="CMake Application.ispit1.1" />
       <item itemvalue="CMake Application.ispit1.2" />
       <item itemvalue="CMake Application.ispit1.3" />
       <item itemvalue="CMake Application.ispit1.4" />
@@ -951,6 +950,8 @@
       <item itemvalue="CMake Application.ispit1.7" />
       <item itemvalue="CMake Application.ispit1.8" />
       <item itemvalue="CMake Application.ispit1.9" />
+      <item itemvalue="CMake Application.k10" />
+      <item itemvalue="CMake Application.k11" />
       <item itemvalue="CMake Application.k1" />
       <item itemvalue="CMake Application.k2" />
       <item itemvalue="CMake Application.k3" />
@@ -1176,7 +1177,8 @@
       <workItem from="1750145364081" duration="3217000" />
       <workItem from="1750156229852" duration="1816000" />
       <workItem from="1750172769754" duration="9935000" />
-      <workItem from="1750272559215" duration="552000" />
+      <workItem from="1750272559215" duration="938000" />
+      <workItem from="1750529170412" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
