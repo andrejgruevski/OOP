@@ -109,6 +109,7 @@
       <config projectName="OOP" targetName="lab2.1" />
       <config projectName="OOP" targetName="lab2.2" />
       <config projectName="OOP" targetName="kolok2.11" />
+      <config projectName="OOP" targetName="kolok2.12" />
       <config projectName="OOP" targetName="q16" />
       <config projectName="OOP" targetName="q17" />
       <config projectName="OOP" targetName="q14" />
@@ -156,7 +157,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6ac0c7-fbba-4ad1-80ab-4afda6d6cb33" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/kolok2/zad12.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kolok2/zad13.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -419,6 +420,11 @@
       </method>
     </configuration>
     <configuration name="kolok2.12" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.12" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.12">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kolok2.13" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OOP" TARGET_NAME="kolok2.13" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OOP" RUN_TARGET_NAME="kolok2.13">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -977,6 +983,7 @@
       <item itemvalue="CMake Application.kolok2.10" />
       <item itemvalue="CMake Application.kolok2.11" />
       <item itemvalue="CMake Application.kolok2.12" />
+      <item itemvalue="CMake Application.kolok2.13" />
       <item itemvalue="CMake Application.kolok2.2" />
       <item itemvalue="CMake Application.kolok2.4" />
       <item itemvalue="CMake Application.kolok2.5" />
@@ -1189,7 +1196,7 @@
       <workItem from="1750156229852" duration="1816000" />
       <workItem from="1750172769754" duration="9935000" />
       <workItem from="1750272559215" duration="938000" />
-      <workItem from="1750529170412" duration="730000" />
+      <workItem from="1750529170412" duration="868000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

@@ -1,9 +1,6 @@
 //
 // Created by Huhe on 6/21/2025.
 //
-//
-// Created by ACER on 5/30/2023.
-//
 #include <iostream>
 #include <cstring>
 
